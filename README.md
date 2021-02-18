@@ -225,7 +225,7 @@ A solution to satisfy user requirements:
 
 ### Wireframes
 
-:point_right: [Wireframes for mobile and desktop](https://xd.adobe.com/view/0be6f6e5-363a-4b1b-9f8c-09e70fedf13b-5eb5/)
+:point_right: [Wireframes for mobile and desktop](https://xd.adobe.com/view/f1ba91b2-e0a0-438a-a80e-afe3e5ae5ee1-a4e9/)
 
 :point_right: [Wireframes - pdf] - to be added !!!!
 
