@@ -94,7 +94,7 @@
   ### Site Goals
   * Create a fun quiz game to play.
   
-  * Create a website fully responsive on mobiles, tablets and desktop devices.
+  * Create a website fully responsive on mobiles, tablets, and desktop devices.
   
   * Provide logical structure which is easy to follow with clear instructions on "how to play") 
   
@@ -138,8 +138,8 @@
   ### Planed Features:
   :black_square_button: Navigation header - Navigation header - A "sticky" navigation bar with 
   *  with sound icon on the left to turn off/on at any time 
-  * Clear captions/logo on what the website is(Quiz Game)
-  *  and an info icon on the right side of navigation bar, the button will open modal with game instructions.
+  * Clear captions/logo on what the website is (Quiz Game)
+  *  and an info icon on the right side of a navigation bar, the button will open modal with game instructions.
   
   :black_square_button: Game player name input field.
 
@@ -165,7 +165,7 @@
 
 A solution to satisfy user requirements:
   * "Sticky" navbar with Captions with name of the game.
-  * Quiz question with 4 choices for each question in the active quiz area 
+  * Quiz question with four choices for each question in the active quiz area 
 
 > As a new user, I want to be able to input my name to collect high scores.
 A solution to satisfy user requirements:
@@ -183,7 +183,7 @@ A solution to satisfy user requirements:
 > As a new user, I want to be able to select the difficulty level of the game
 
 A solution to satisfy user requirements:
-* Three buttons with difficulty level easy, medium and hard. 
+* Three buttons with difficulty level easy, medium, and hard. 
 
 > As a new user, I want to choose a quiz category.
 
@@ -245,10 +245,11 @@ A solution to satisfy user requirements:
 
 ### Typography
 
+
  :black_nib:
 
-* The primary font used in this project is **.........** with **...........** as a fallback font. 
-* The secondary font used for this website is **..........**  with **..........** as a fallback font.
+* The primary font used in this project is **Exo 2** with *sans-serif* as a fallback font. This font was chosen for this project because it gives a futuristic feeling while keeping an elegant design and delivering great readability.
+* The secondary font used for this website is **Open Sans**  with *sans-serif* as a fallback font.This font is elegant and modern. It offers an excellent reading experience.
 
 ### Imagery
 
@@ -367,6 +368,6 @@ A solution to satisfy user requirements:
 ### Images
 
 ## Acknowledgements
-* Udemy turtorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
+* Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
 * 
 
