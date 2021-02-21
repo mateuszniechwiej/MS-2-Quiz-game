@@ -6,8 +6,8 @@
     - [Project Goal](#project-goal)
     - [Site Goals](#site-goals)
     - [User Stories](#user-stories)
-      - [**New User**](#new-user)
-      - [**Returning User**](#returning-user)
+      - [New User](#new-user)
+      - [Returning User](#returning-user)
   - [The Scope Plane](#the-scope-plane)
     - [Planed Features:](#planed-features)
   - [The Structure Plane](#the-structure-plane)
@@ -35,7 +35,7 @@
   - [Colour Contrast](#colour-contrast)
   - [Functionality](#functionality)
 - [Deployment](#deployment)
-    - [This website was developed using GitPod and VSCode, with repository hosted on GitHub.](#this-website-was-developed-using-gitpod-and-vscode-with-repository-hosted-on-github)
+    - [This website was developed using GitPod and VSCode, with a repository hosted on GitHub.](#this-website-was-developed-using-gitpod-and-vscode-with-a-repository-hosted-on-github)
   - [Project Initiation](#project-initiation)
   - [Local Clone](#local-clone)
 - [Credits](#credits)
@@ -80,7 +80,7 @@
   - [Acknowledgements](#acknowledgements)
 
 # Project Workflow
-* To organise the project work I used JIRA project management tool:
+* To organise the project work I used the JIRA project management tool:
   
 ![JIRA](assets/Jira.PNG)
   
@@ -92,25 +92,28 @@
   The primary goal of this project is to create an easily navigated and entertaining Quiz Game for users of all age groups using Html, CSS and JavaScript.
 
   ### Site Goals
-  * Creat a fun quizz game to play.
+  * Create a fun quiz game to play.
   
   * Create a website fully responsive on mobiles, tablets and desktop devices.
   
   * Provide logical structure which is easy to follow with clear instructions on "how to play") 
   
-  * Create a game that user would like to go back to with user friendly design.
+  * Create a game that the user would like to go back to with a user-friendly design.
   
   * Learn a variety of coding techniques by creating this game and use learnt skills in future projects.
   
-  * A professional first project with the use of JavaScript to add to porfolio.
+  * A professional first project with the use of JavaScript to add to the portfolio.
 
   ### User Stories
-  #### **New User**
+
+  #### New User
    * As a new user, I want to understand the purpose of this website.
 
   * As a new user, I want to find clear instructions on how to play the game.
 
   * As a new user, I want to find an intuitive game with easy to see and press buttons.
+
+  * As a new user, I want to be able to input my name to collect high scores.
 
   * As a new user, I want to be able to select the difficulty level of the game.
 
@@ -128,7 +131,7 @@
 
   * As a new user, I want to be able to contact the owner of the website and see if the developer created other projects I might be interested in.
 
-#### **Returning User**
+#### Returning User
 * As a returning user, I want to find new questions and quizzes.
 
 ## The Scope Plane 
@@ -162,7 +165,11 @@
 
 A solution to satisfy user requirements:
   * "Sticky" navbar with Captions with name of the game.
-  * Quizz question with 4 choices for each questions in the active quiz area 
+  * Quiz question with 4 choices for each question in the active quiz area 
+
+> As a new user, I want to be able to input my name to collect high scores.
+A solution to satisfy user requirements:
+  * When the website starts a modal to input name will be displayed unless the name already present in local storage(in this case player name will be automatically assigned from local storage). 
 
 > As a new user, I want to find clear instructions on how to play the game.
 
@@ -172,16 +179,16 @@ A solution to satisfy user requirements:
 >  As a new user, I want to find an intuitive game with easy to see and press buttons.
 
 A solution to satisfy user requirements:
-  * All control buttons well sized on all devices and easy to find.
+  * All control buttons well-sized on all devices and easy to find.
 > As a new user, I want to be able to select the difficulty level of the game
 
 A solution to satisfy user requirements:
-* Three buttons with dificulty level easy,medium and hard. 
+* Three buttons with difficulty level easy, medium and hard. 
 
 > As a new user, I want to choose a quiz category.
 
 A solution to satisfy user requirements:
-* Area to select category before the quizz start.
+* Area to select a category before the quiz start.
 
 > As a new user, I want to be able to turn sound on/off anytime during the time I visit the website.
 
@@ -196,14 +203,14 @@ A solution to satisfy user requirements:
 > As a new user, I want to be able to see if my answer was correct or false during the game.
 
 A solution to satisfy user requirements:
-* After every question, the correct answer will have a green background on the button and user wrong answer button will get the red background.
+* After every question, the correct answer will have a green background on the button and the user wrong answer button will get the red background.
 * Current score result displayed in the quiz section.
 
 > As a new user, I want to get the final score of my quiz and be able to see my previous result.
 
 A solution to satisfy user requirements:
-* After quiz finished a modal with the final score displayed.
-* under player info result dispays last quiz answers.
+* After the quiz finished a modal with the final score displayed.
+* under player info result displays last quiz answers.
 
 > As a new user, I want to be able to easily start a new quiz.
 
@@ -213,7 +220,7 @@ A solution to satisfy user requirements:
 > As a new user, I want to be able to contact the owner of the website and see if the developer created other projects I might be interested in.
 
 A solution to satisfy user requirements:
-* In the footer Github icon linked to GitHub username site provided.
+* In the footer GitHub icon linked to the GitHub username site provided.
 * In the footer email link provided.
 
 > As a returning user, I want to find new questions and quizzes.
@@ -329,7 +336,7 @@ A solution to satisfy user requirements:
 
 # Deployment
 
-### This website was developed using GitPod and VSCode, with repository hosted on GitHub.
+### This website was developed using GitPod and VSCode, with a repository hosted on GitHub.
 
 ## Project Initiation
  This project was created using the following steps:
@@ -360,4 +367,6 @@ A solution to satisfy user requirements:
 ### Images
 
 ## Acknowledgements
+* Udemy turtorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
+* 
 
