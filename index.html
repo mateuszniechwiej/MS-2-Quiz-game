@@ -15,7 +15,7 @@
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar navbar-light bg-light">
-        <button class="" id ='sound-off' aria label = "mute button"><i onclick = "soundON(this)" class="fas fa-volume-mute"></i></button>
+        <button class="" id ='sound-off' aria label = "mute button" onclick="clickBtn()"><i onclick = "soundON(this)" class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
         <button type="button" class="btn btn-primary" onclick='openModal()'><i class="fas fa-info-circle"></i></button>
     </nav>
@@ -122,8 +122,9 @@
         </div>
         <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div>
     </section>
-
-    <!--Scripts -->
+    <!----- Audio ----->
+    <audio id="btnClick" src="assets/audio/click.mp3"></audio>
+    <!----- Scripts ------>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

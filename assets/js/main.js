@@ -23,6 +23,12 @@ window.onclick = (e) => {
 
 function soundON(e) {
   e.classList.toggle("fa-volume-up");
-}
+};
 
-// click sound 
+// click on sound on/off icon 
+
+const click = document.getElementById("btnClick");
+
+function clickBtn() {
+  click.play();
+}

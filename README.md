@@ -369,5 +369,5 @@ A solution to satisfy user requirements:
 
 ## Acknowledgements
 * Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
-* 
+* [To learn how to use Bootstrap modals without jQuery](https://dev.to/ara225/how-to-use-bootstrap-modals-without-jquery-3475)
 
