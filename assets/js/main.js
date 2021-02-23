@@ -20,15 +20,26 @@ window.onclick = (e) => {
 };
 
 // toggle sound icon on
+const iconOn = document.querySelector("#off");
 
-function soundON(e) {
-  e.classList.toggle("fa-volume-up");
-};
+ function switcher() {
 
-// click on sound on/off icon 
+  iconOn.classList.toggle("fa-volume-up");
+ };
 
-const click = document.getElementById("btnClick");
+
+iconOn.addEventListener('click', switcher);
+// Click Sound when volume on
+const click = document.querySelector("#btnClick");
+const allAudio = document.querySelectorAll(".btn")
+
 
 function clickBtn() {
-  click.play();
-}
+  if (document.querySelector(".fa-volume-up")) {
+    click.play();
+  }
+};
+Array.from(allAudio).forEach( (a) =>{
+  a.addEventListener('click', clickBtn);
+});
+

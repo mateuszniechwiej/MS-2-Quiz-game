@@ -15,9 +15,9 @@
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar navbar-light bg-light">
-        <button class="" id ='sound-off' aria label = "mute button" onclick="clickBtn()"><i onclick = "soundON(this)" class="fas fa-volume-mute"></i></button>
+        <button class="btn btn-mute" id ='btnMute' aria label = "Mute Button" ><i id="off" class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
-        <button type="button" class="btn btn-primary" onclick='openModal()'><i class="fas fa-info-circle"></i></button>
+        <button type="button" class="btn btn-primary" onclick="openModal()"><i class="fas fa-info-circle"></i></button>
     </nav>
     <!-- Player dashboard with name and high scores, categories to select and difficulty level -->
     <section>
@@ -33,7 +33,7 @@
                         <div class="col-12 col-sm-6">
                             <!--Category level-->
                             <h3>Categories</h3>
-                            <button>History</button>
+                            <button class="btn btn-prime">History</button>
                             <button>Politics</button>
                             <button>Animals</button>
                             <button>Sport</button>
