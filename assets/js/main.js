@@ -18,3 +18,11 @@ window.onclick = (e) => {
     closeModal()
   }
 };
+
+// toggle sound icon on
+
+function soundON(e) {
+  e.classList.toggle("fa-volume-up");
+}
+
+// click sound 

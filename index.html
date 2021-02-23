@@ -15,7 +15,7 @@
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar navbar-light bg-light">
-        <button class=""><i class="fas fa-volume-mute"></i></button>
+        <button class="" id ='sound-off' aria label = "mute button"><i onclick = "soundON(this)" class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
         <button type="button" class="btn btn-primary" onclick='openModal()'><i class="fas fa-info-circle"></i></button>
     </nav>
@@ -101,7 +101,7 @@
                     <div class="modal-header">
                         <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
                         <button type="button" class="close" aria-label="Close" onclick="closeModal()">
-                            <span aria-hidden="true">×</span>
+                            <span aria-hidden="true">X</span>
                         </button>
                     </div>
                     <div class="modal-body">
