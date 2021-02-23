@@ -17,7 +17,7 @@
     <nav class="navbar navbar-light bg-light">
         <button class="btn btn-mute" id ='btnMute' aria label = "Mute Button" ><i id="off" class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
-        <button type="button" class="btn btn-primary" onclick="openModal()"><i class="fas fa-info-circle"></i></button>
+        <button type="button" class="btn btn-primary" id="openModal"><i class="fas fa-info-circle"></i></button>
     </nav>
     <!-- Player dashboard with name and high scores, categories to select and difficulty level -->
     <section>
@@ -100,7 +100,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
-                        <button type="button" class="close" aria-label="Close" onclick="closeModal()">
+                        <button type="button" class="close" aria-label="Close" >
                             <span aria-hidden="true">X</span>
                         </button>
                     </div>
@@ -115,7 +115,7 @@
                             Only registered, enrolled users can take graded quizzes</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                        <button type="button" class="btn btn-secondary close" >Close</button>
                     </div>
                 </div>
             </div>
