@@ -11,103 +11,127 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz Game</title>
 </head>
-<!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
-<nav class="navbar navbar-light bg-light">
-    <button class=""><i class="fas fa-volume-mute"></i></button>
-    <h2>Quiz Game</h2>
-    <button class=""><i class="fas fa-info-circle"></i></button>
-</nav>
-<!-- Player dashboard with name and high scores, categories to select and difficulty level -->
-<section>
-    <div id="gameDashboard" class="container-fluid">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <!--Player name and high score-->
-                <h2>Player name</h2>
-                <h3>High Score</h3>
-            </div>
-            <div class="col-md-8 text-center">
-                <div class="row text-center">
-                    <div class="col-12 col-sm-6">
-                        <!--Category level-->
-                        <h3>Categories</h3>
-                        <button>History</button>
-                        <button>Politics</button>
-                        <button>Animals</button>
-                        <button>Sport</button>
-                    </div>
-                    <div class="col-12 col-sm-6 ">
-                        <!--Difficulty level-->
-                        <h3>difficulty level</h3>
-                        <button>Easy</button>
-                        <button>Medium</button>
-                        <button>Hard</button>
+
+<body>
+    <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
+    <nav class="navbar navbar-light bg-light">
+        <button class=""><i class="fas fa-volume-mute"></i></button>
+        <h2>Quiz Game</h2>
+        <button type="button" class="btn btn-primary" onclick='openModal()'><i class="fas fa-info-circle"></i></button>
+    </nav>
+    <!-- Player dashboard with name and high scores, categories to select and difficulty level -->
+    <section>
+        <div id="gameDashboard" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <!--Player name and high score-->
+                    <h2>Player name</h2>
+                    <h3>High Score</h3>
+                </div>
+                <div class="col-md-8 text-center">
+                    <div class="row text-center">
+                        <div class="col-12 col-sm-6">
+                            <!--Category level-->
+                            <h3>Categories</h3>
+                            <button>History</button>
+                            <button>Politics</button>
+                            <button>Animals</button>
+                            <button>Sport</button>
+                        </div>
+                        <div class="col-12 col-sm-6 ">
+                            <!--Difficulty level-->
+                            <h3>difficulty level</h3>
+                            <button>Easy</button>
+                            <button>Medium</button>
+                            <button>Hard</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</section>
-<div class="container-fluid mt-5">
-    <div id="game">
-        <h1 id="question">Is this quiz game showing correctly? </h1>
-        <div class="answers-container">
-            <p class="answer-prefix ">A</p>
-            <p class="answer-choice ">First Choice</p>
-        </div>
-        <div class="answers-container">
-            <p class="answer-prefix ">B</p>
-            <p class="answer-choice ">Second Choice</p>
-        </div>
-        <div class="answers-container">
-            <p class="answer-prefix ">C</p>
-            <p class="answer-choice ">Third Choice</p>
-        </div>
-        <div class="answers-container">
-            <p class="answer-prefix ">D</p>
-            <p class="answer-choice ">Fourth Choice</p>
-        </div>
-    </div>
-</div>
-
-<!--Quiz Game section with progress bar and current points display-->
-<section>
-
-</section>
-
-<!-- Footer with GitHub icon and email link to contact-->
-<footer>
-    <div class="container-fluid" id="qz-footer">
-        <div class="row">
-        <div class="col-6 text-left ">
-            <i class="far fa-envelope"></i>
-            <a href="mailto:niechwiej.mateusz@gmail.com"><span>niechwiej.mateusz@gmail.com</span></a>
-        </div>
-        <div class="col-6 text-right">
-            <a href="https://github.com/mateuszniechwiej"><i class="fab fa-github"></i></a>
+    </section>
+    <div class="container-fluid mt-5">
+        <div id="game">
+            <h1 id="question">Is this quiz game showing correctly? </h1>
+            <div class="answers-container">
+                <p class="answer-prefix ">A</p>
+                <p class="answer-choice ">First Choice</p>
+            </div>
+            <div class="answers-container">
+                <p class="answer-prefix ">B</p>
+                <p class="answer-choice ">Second Choice</p>
+            </div>
+            <div class="answers-container">
+                <p class="answer-prefix ">C</p>
+                <p class="answer-choice ">Third Choice</p>
+            </div>
+            <div class="answers-container">
+                <p class="answer-prefix ">D</p>
+                <p class="answer-choice ">Third Choice</p>
+            </div>
         </div>
     </div>
-    </div>
-</footer>
 
-<!--Section for three modals- Username,info modal, and Win modal  -->
-<section>
+    <!--Quiz Game section with progress bar and current points display-->
+    <section>
 
-</section>
+    </section>
 
-<!--Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-<script src="assets/js/main.js"></script>
+    <!-- Footer with GitHub icon and email link to contact-->
+    <footer>
+        <div class="container-fluid" id="qz-footer">
+            <div class="row">
+                <div class="col-6 text-left ">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:niechwiej.mateusz@gmail.com"><span>niechwiej.mateusz@gmail.com</span></a>
+                </div>
+                <div class="col-6 text-right">
+                    <a href="https://github.com/mateuszniechwiej"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!--Section for three modals- Username,info modal, and Win modal  -->
+    <section>
+        <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+            role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
+                        <button type="button" class="close" aria-label="Close" onclick="closeModal()">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This quiz consists of 10 multiple-choice questions. To be successful with the weekly quizzes, it’s important to thoroughly read chapter 5 in the textbook.  It will also be extremely useful to study the key terms at the end of the chapter and review the Test Your Knowledge activity at the end of the chapter. Keep the following in mind:
 
+                            Multiple Attempts - You will have three attempts for this quiz with your highest score being recorded in the grade book.
+                            Timing - You will need to complete each of your attempts in one sitting, as you are allotted 30 minutes to complete each attempt.
+                            Answers - You may review your answer-choices and compare them to the correct answers after your final attempt.
+                            To start, click the "Take the Quiz" button. When finished, click the "Submit Quiz" button.
+                            
+                            Only registered, enrolled users can take graded quizzes</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div>
+    </section>
 
-<body>
+    <!--Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
