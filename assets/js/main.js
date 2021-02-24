@@ -1,16 +1,31 @@
-// Function to check if user in local Storage
+// Function to check if user in local Storage(if not open username modal)
 let user = localStorage.getItem("user");
+let highScore = 0;
 
 function checkUserData() {
-  if ( (user === null) || (user === "")) {
-    console.log('there is no player')
-    //
+  if ( (user === null) || (user === "kajtek")) {
+    //console.log('there is no player')
+    localStorage.setItem(highScore, 0);
+    userModalOn();
   } else {
-    console.log('Welcome back')
-    //
+    user = localStorage.getItem("user");
+    highScore = localStorage.getItem("highScore");
+    return;
+    
   }
 }
 checkUserData();
+// function to store username in localstorage
+function userNameSubmit() {
+  user = document.querySelector("#user").value;
+  localStorage.setItem("user", user);
+  console.log(user);
+  userModalOff();
+}
+
+let subitName = document.querySelector("#submitName");
+subitName.addEventListener('click', userNameSubmit);
+
 
 //Username Modal
 function userModalOn() {
@@ -23,8 +38,8 @@ function userModalOff() {
   document.querySelector("#playerModal").style.display = "none";
   document.querySelector("#playerModal").classList.remove("show"); 
 }
-const userOn = document.querySelector("#openUser");
-userOn.addEventListener("click", userModalOn);
+// const userOn = document.querySelector("#openUser");
+// userOn.addEventListener("click", userModalOn);
 
 const userOff = document.querySelectorAll(".closeUser")
 
