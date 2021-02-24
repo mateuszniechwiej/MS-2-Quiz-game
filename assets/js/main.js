@@ -2,7 +2,7 @@
 let user = localStorage.getItem("user");
 let highScore = 0;
 
-function checkUserData() {
+checkUserData = () => {
   if ( (user === null) || (user === "")) {
     //console.log('there is no player')
     localStorage.setItem(highScore, 0);
@@ -18,17 +18,17 @@ function checkUserData() {
     
   }
 }
-checkUserData();
+checkUserData;
 // function to store username in localstorage
-function userNameSubmit() {
+userNameSubmit = () => {
   user = document.querySelector("#user").value;
   localStorage.setItem("user", user);
   console.log(user);
-  userModalOff();
+  userModalOff();// close username modal
   displayUsernameInfo();// function to display user data on dashboard
 }
 
-function displayUsernameInfo() {
+displayUsernameInfo = () => {
   document.querySelector(".userName").innerHTML = `${user}`;
   document.querySelector("#highScore").innerHTML = `${highScore} points`;
 }
@@ -38,12 +38,12 @@ subitName.addEventListener('click', userNameSubmit);
 
 
 //Username Modal
-function userModalOn() {
+userModalOn = () => {
   document.querySelector("#usernameModal--bg").style.display = "block"; 
   document.querySelector("#playerModal").style.display = "block"; 
   document.querySelector("#playerModal").classList.add("show"); 
 }
-function userModalOff() {
+userModalOff = () => {
   document.querySelector("#usernameModal--bg").style.display = "none";
   document.querySelector("#playerModal").style.display = "none";
   document.querySelector("#playerModal").classList.remove("show"); 
@@ -60,7 +60,7 @@ Array.from(userOff).forEach((e) => {
 // const userModal = document.querySelector("#playerModal");
 
 // To activate Info modal using javascript vanila
-function openModal() {
+openModal = () => {
   document.querySelector("#qz-modal--bg").style.display = "block"; //display bg as block
   document.querySelector("#qz-Modal").style.display = "block"; //display modal as a block
   document.querySelector("#qz-Modal").classList.add("show"); //add class to show the modal
@@ -68,7 +68,7 @@ function openModal() {
 const infoOn = document.querySelector("#openModal");
 infoOn.addEventListener("click", openModal);
 
-function closeModal() {
+closeModal = () => {
   document.querySelector("#qz-modal--bg").style.display = "none";
   document.querySelector("#qz-Modal").style.display = "none";
   document.querySelector("#qz-Modal").classList.remove("show"); // to close the modal remove show class
@@ -93,7 +93,7 @@ window.onclick = (e) => {
 // toggle sound icon on
 const iconOn = document.querySelector("#off");
 
-function switcher() {
+switcher = () => {
   iconOn.classList.toggle("fa-volume-up");
 }
 
@@ -102,7 +102,7 @@ iconOn.addEventListener("click", switcher);
 const click = document.querySelector("#btnClick");
 const allAudio = document.querySelectorAll(".btn");
 
-function clickBtn() {
+clickBtn =  () => {
   if (document.querySelector(".fa-volume-up")) {
     click.play();
   }
@@ -110,3 +110,25 @@ function clickBtn() {
 Array.from(allAudio).forEach((a) => {
   a.addEventListener("click", clickBtn);
 });
+
+
+// questions and game quiz
+const question = document.querySelector("#question");
+const choices = Array.from(document.querySelectorAll('.answer-choice'));
+
+let displayedQuestion = {};
+let acceptAnswer = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+let questions;//to fetch questions from trivia API
+
+// CONSTANST VARIABLES
+// Bonus point will depend on the level of quiz difficulty the player will chose 
+const EASY_BONUS = 10;
+const MEDIUM_BONUS = 12;
+const HARD_BONUS = 15;
+
+// startGame = () => {
+//   //
+// }
