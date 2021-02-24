@@ -15,7 +15,8 @@
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar navbar-light bg-light">
-        <button class="btn btn-mute" id ='btnMute' aria label = "Mute Button" ><i id="off" class="fas fa-volume-mute"></i></button>
+        <button class="btn btn-mute" id='btnMute' aria label="Mute Button"><i id="off"
+                class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
         <button type="button" class="btn btn-primary" id="openModal"><i class="fas fa-info-circle"></i></button>
     </nav>
@@ -94,28 +95,59 @@
 
     <!--Section for three modals- Username,info modal, and Win modal  -->
     <section>
+        <!--username Modal--> 
+        <button type="button" class="btn btn-primary" id="openUser"></button>
+        <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="Player name" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <h2 class="modal-title" id="exampleModalLabel">Input your name</h2>
+                        <button type="button" class="btn-close closeUser" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Enter your name</label>
+                                <input type="text" class="form-control" id="user" name="user" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop fade show " id="usernameModal--bg" style="display: none;"></div>
+        <!--Info modal-->
         <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
             role="dialog">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-fullscreen-sm-down" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
-                        <button type="button" class="close" aria-label="Close" >
+                        <button type="button" class="close" aria-label="Close">
                             <span aria-hidden="true">X</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>This quiz consists of 10 multiple-choice questions. To be successful with the weekly quizzes, it’s important to thoroughly read chapter 5 in the textbook.  It will also be extremely useful to study the key terms at the end of the chapter and review the Test Your Knowledge activity at the end of the chapter. Keep the following in mind:
+                        <p>This quiz consists of 10 multiple-choice questions. To be successful with the weekly quizzes,
+                            it’s important to thoroughly read chapter 5 in the textbook. It will also be extremely
+                            useful to study the key terms at the end of the chapter and review the Test Your Knowledge
+                            activity at the end of the chapter. Keep the following in mind:
 
-                            Multiple Attempts - You will have three attempts for this quiz with your highest score being recorded in the grade book.
-                            Timing - You will need to complete each of your attempts in one sitting, as you are allotted 30 minutes to complete each attempt.
-                            Answers - You may review your answer-choices and compare them to the correct answers after your final attempt.
+                            Multiple Attempts - You will have three attempts for this quiz with your highest score being
+                            recorded in the grade book.
+                            Timing - You will need to complete each of your attempts in one sitting, as you are allotted
+                            30 minutes to complete each attempt.
+                            Answers - You may review your answer-choices and compare them to the correct answers after
+                            your final attempt.
                             To start, click the "Take the Quiz" button. When finished, click the "Submit Quiz" button.
-                            
+
                             Only registered, enrolled users can take graded quizzes</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary close" >Close</button>
+                        <button type="button" class="btn btn-secondary close">Close</button>
                     </div>
                 </div>
             </div>
