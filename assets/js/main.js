@@ -3,13 +3,17 @@ let user = localStorage.getItem("user");
 let highScore = 0;
 
 function checkUserData() {
-  if ( (user === null) || (user === "kajtek")) {
+  if ( (user === null) || (user === "")) {
     //console.log('there is no player')
     localStorage.setItem(highScore, 0);
     userModalOn();
   } else {
     user = localStorage.getItem("user");
     highScore = localStorage.getItem("highScore");
+    if (highScore === null) {
+      highScore = 0;
+    };
+    displayUsernameInfo();
     return;
     
   }
@@ -21,6 +25,12 @@ function userNameSubmit() {
   localStorage.setItem("user", user);
   console.log(user);
   userModalOff();
+  displayUsernameInfo();// function to display user data on dashboard
+}
+
+function displayUsernameInfo() {
+  document.querySelector(".userName").innerHTML = `${user}`;
+  document.querySelector("#highScore").innerHTML = `${highScore} points`;
 }
 
 let subitName = document.querySelector("#submitName");
