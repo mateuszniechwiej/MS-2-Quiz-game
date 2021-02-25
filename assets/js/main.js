@@ -121,7 +121,23 @@ let acceptAnswer = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let questions;//to fetch questions from trivia API
+//selecting categories
+const categories = Array.from(document.querySelectorAll(".category"));
+
+// geting value of clicked cattegory button
+categories.forEach(category => {
+  category.addEventListener('click', e => {
+    const categoryId = e.target.value;
+    console.log(categoryId);
+  });
+});
+
+
+// const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}`
+
+
+
+
 
 // CONSTANST VARIABLES
 // Bonus point will depend on the level of quiz difficulty the player will chose 
@@ -131,4 +147,3 @@ const HARD_BONUS = 15;
 
 // startGame = () => {
 //   //
-// }
