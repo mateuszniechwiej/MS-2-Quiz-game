@@ -132,8 +132,18 @@ categories.forEach(category => {
   });
 });
 
+// selecting and getting diffculty level for game
 
-// const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}`
+const difficulty = Array.from(document.querySelectorAll(".difficulty"));
+
+difficulty.forEach(level => {
+  level.addEventListener('click', e => {
+    const difficultyLvl = e.target.value;
+    console.log(difficultyLvl);
+  });
+});
+
+// const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLvl}`
 
 
 
