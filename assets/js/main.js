@@ -145,6 +145,7 @@ settings = () => {
   }).then(importedQuestions => {
     console.log(importedQuestions);
     questions = importedQuestions;
+    startGame();
   })
     .catch(error => {
       console.error(error);
@@ -156,9 +157,20 @@ start.addEventListener('click', settings);
 
 // CONSTANST VARIABLES
 // Bonus point will depend on the level of quiz difficulty the player will chose
-const EASY_BONUS = 10;
-const MEDIUM_BONUS = 12;
-const HARD_BONUS = 15;
 
-// startGame = () => {
-//   //
+let bonus;
+startGame = () => {
+  
+  questionCounter = 0;
+  score = 0;
+  availableQuestions = questions;// need to change to [... questions] after fixing fetched questions
+  console.log(availableQuestions);
+  if (difficultyLvl == "easy") {
+    bonus = 10;
+  } else if (difficultyLvl === "medium") {
+    bonus = 12;
+  } else {
+    bonus = 15;
+  }
+  console.log(bonus);
+};
