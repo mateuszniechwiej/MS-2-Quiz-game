@@ -125,16 +125,13 @@ const categories = Array.from(document.querySelectorAll(".category"));
 
 difficulty.forEach((level) => {
   level.addEventListener("click", (e) => {
-    if ((difficultyLvl = e.target.value)) 
-      return;
-    
+    difficultyLvl = e.target.value
   });
 });
 
 categories.forEach((category) => {
   category.addEventListener("click", (e) => {
-    if ((categoryId = e.target.value)) 
-      return;
+    categoryId = e.target.value;
   });
 });
 settings = () => {
@@ -145,12 +142,14 @@ const start = document.querySelector("#start");
 
 start.addEventListener('click', settings);
 
+//
+
 
 // CONSTANST VARIABLES
 // Bonus point will depend on the level of quiz difficulty the player will chose
-const EASY_BONUS = 10;
-const MEDIUM_BONUS = 12;
-const HARD_BONUS = 15;
+// const EASY_BONUS = 10;
+// const MEDIUM_BONUS = 12;
+// const HARD_BONUS = 15;
 
 // startGame = () => {
 //   //
