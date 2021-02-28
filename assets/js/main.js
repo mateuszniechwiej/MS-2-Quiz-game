@@ -118,6 +118,8 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+let questions = [];
+
 // selecting and getting diffculty level and categories
 
 const difficulty = Array.from(document.querySelectorAll(".difficulty"));
@@ -137,19 +139,26 @@ categories.forEach((category) => {
 settings = () => {
   const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLvl}`;
   console.log(url);
+  fetch(url).then(respond => {
+    console.log(respond);
+    return respond.json();
+  }).then(importedQuestions => {
+    console.log(importedQuestions);
+    questions = importedQuestions;
+  })
+    .catch(error => {
+      console.error(error);
+  })
 };
 const start = document.querySelector("#start");
 
 start.addEventListener('click', settings);
 
-//
-
-
 // CONSTANST VARIABLES
 // Bonus point will depend on the level of quiz difficulty the player will chose
-// const EASY_BONUS = 10;
-// const MEDIUM_BONUS = 12;
-// const HARD_BONUS = 15;
+const EASY_BONUS = 10;
+const MEDIUM_BONUS = 12;
+const HARD_BONUS = 15;
 
 // startGame = () => {
 //   //
