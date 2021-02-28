@@ -120,6 +120,10 @@ let availableQuestions = [];
 
 let questions = [];
 
+// Bonus point will depend on the level of quiz difficulty the player will chose
+
+let bonus;
+
 // selecting and getting diffculty level and categories
 
 const difficulty = Array.from(document.querySelectorAll(".difficulty"));
@@ -139,12 +143,28 @@ categories.forEach((category) => {
 settings = () => {
   const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLvl}`;
   console.log(url);
+
+  if (difficultyLvl === "easy") {
+    bonus = 10;
+  } else if (difficultyLvl === "medium") {
+    bonus = 12;
+  } else {
+    bonus = 15;
+  }
+  console.log(bonus);
+
   fetch(url).then(respond => {
-    console.log(respond);
-    return respond.json();
+    console.log(respond);// getting response
+    return respond.json(); 
   }).then(importedQuestions => {
-    console.log(importedQuestions);
-    questions = importedQuestions;
+    console.log(importedQuestions);//getting object array out of response
+    questions = importedQuestions.results.map((importedQuestions) => {
+      const formattedQuestions = {
+        question: importedQuestions.question,
+      };
+      return formattedQuestions;//returning Array object with questions only to use in the quiz
+
+    });
     startGame();
   })
     .catch(error => {
@@ -155,22 +175,13 @@ const start = document.querySelector("#start");
 
 start.addEventListener('click', settings);
 
-// CONSTANST VARIABLES
-// Bonus point will depend on the level of quiz difficulty the player will chose
 
-let bonus;
+
 startGame = () => {
   
   questionCounter = 0;
   score = 0;
-  availableQuestions = questions;// need to change to [... questions] after fixing fetched questions
+  availableQuestions = [...questions];
   console.log(availableQuestions);
-  if (difficultyLvl == "easy") {
-    bonus = 10;
-  } else if (difficultyLvl === "medium") {
-    bonus = 12;
-  } else {
-    bonus = 15;
-  }
-  console.log(bonus);
+
 };
