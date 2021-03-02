@@ -35,6 +35,7 @@ body {
 
 .answer-choice {
     padding:1rem 0rem 0rem 2rem;
+    width: 100%;
 
 }
 .answer-prefix {
