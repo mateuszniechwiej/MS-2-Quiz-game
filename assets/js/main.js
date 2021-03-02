@@ -111,6 +111,7 @@ Array.from(allAudio).forEach((a) => {
 // questions and game quiz
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".answer-choice"));
+console.log(choices);
 
 let displayedQuestion = {};
 let acceptAnswer = true;
@@ -126,27 +127,43 @@ let bonus;
 
 // selecting and getting diffculty level and categories
 
-const difficulty = Array.from(document.querySelectorAll(".difficulty"));
-const categories = Array.from(document.querySelectorAll(".category"));
+const difficulty = document.querySelectorAll("#difficulty");// also without Arrayfrom and then p2
+const categories = document.querySelectorAll("#categories");
+let difficultyLevel;
+let categoryId;
 
 difficulty.forEach((level) => {
   level.addEventListener("click", (e) => {
-    difficultyLvl = e.target.value
+    difficultyLevel = e.target.value
   });
 });
-
+//or 
 categories.forEach((category) => {
   category.addEventListener("click", (e) => {
     categoryId = e.target.value;
   });
 });
+
+//p2 or categories.forEach((category) {
+// category.addEventListener('click', startGame);
+// }) and p3//change categories values numbers by using const his_category etc
+
+//after this
 settings = () => {
-  const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLvl}`;
+  const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}`;
   console.log(url);
 
-  if (difficultyLvl === "easy") {
+  /*P4. startGame = (e) => {
+  if (e.target.value) {
+    if(e.target === (anyof the categories)) {
+      categoryId = e.taget.value && e.target.value === any of difficulty)
+    }
+  }
+  } 
+  */
+  if (difficultyLevel === "easy") {
     bonus = 10;
-  } else if (difficultyLvl === "medium") {
+  } else if (difficultyLevel === "medium") {
     bonus = 12;
   } else {
     bonus = 15;
@@ -156,13 +173,21 @@ settings = () => {
   fetch(url).then(respond => {
     console.log(respond);// getting response
     return respond.json(); 
-  }).then(importedQuestions => {
-    console.log(importedQuestions);//getting object array out of response
-    questions = importedQuestions.results.map((importedQuestions) => {
-      const formattedQuestions = {
-        question: importedQuestions.question,
+  }).then((importedQuestions) => {
+    console.log(importedQuestions.results);//getting object array out of response
+    questions = importedQuestions.results.map(importedQuestion => {
+      const formattedQuestion = {
+        question: importedQuestion.question,
       };
-      return formattedQuestions;//returning Array object with questions only to use in the quiz
+
+      const answerChoices = [... importedQuestion.incorrect_answers];
+      formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;//to get random index between 0-3
+      answerChoices.splice(formattedQuestion.answer - 1, 0, importedQuestion.correct_answer);
+      
+      answerChoices.forEach((choice, index) => {
+        formattedQuestion['choice' + (index + 1)] = choice;
+      });
+      return formattedQuestion;//returning Array object with questions only to use in the quiz
 
     });
     startGame();
@@ -181,7 +206,40 @@ startGame = () => {
   
   questionCounter = 0;
   score = 0;
-  availableQuestions = [...questions];
+  availableQuestions = [...questions];// creating full copy of questions
   console.log(availableQuestions);
-
+  getNextQuestion();
 };
+
+getNextQuestion = () => {
+  questionCounter++;
+  const indexQuestion = Math.floor(Math.random() * availableQuestions.length)//to get random number depending on number questions available
+  displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question 
+  question.innerText = displayedQuestion.question;//displaying question by calling question property
+  
+  const buttonsToHide = Array.from(document.querySelectorAll(".hide"));
+  console.log(buttonsToHide);
+
+  const booleanQuestion = !displayedQuestion.choice3;
+
+  if (booleanQuestion) {
+
+    buttonsToHide.forEach(btn => {
+      btn.classList.add("hideBtn");
+    });
+    choices.forEach(choice => {
+      const number = choice.dataset["number"];
+      choice.innerText = displayedQuestion["choice" + number];
+    
+    
+    });
+  } else {
+    buttonsToHide.forEach(btn => {
+      btn.classList.remove("hideBtn");
+    });
+    choices.forEach(choice => {
+      const number = choice.dataset["number"];
+      choice.innerText = displayedQuestion["choice" + number];
+    });
+  }
+}

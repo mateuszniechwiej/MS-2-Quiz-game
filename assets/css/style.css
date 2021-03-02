@@ -57,3 +57,9 @@ i, a {
     color:#1a2238;
     font-size: 2.5rem;
 }
+
+/*------ hide answer buttons */
+
+.hideBtn {
+    visibility: hidden;
+}

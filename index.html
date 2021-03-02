@@ -26,26 +26,43 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <!--Player name and high score-->
-                    <h2 class = "userName">Player name</h2>
-                    <h3 id ="highScore" >High Score</h3>
+                    <h2 class="userName">Player name</h2>
+                    <h3 id="highScore">High Score</h3>
                 </div>
                 <div class="col-md-8 text-center">
                     <div class="row text-center">
                         <div class="col-12 col-sm-6">
                             <!--Category level-->
                             <h3>Categories</h3>
-                            <!--add category values from API-->
+                            <label for="categories"></label>
+
+                            <select name="cars" id="categories">
+                                <option value="select_category">Select Category Level</option>
+                                <option value="23">History</option>
+                                <option value="22">Geography</option>
+                                <option value="27">Animals</option>
+                                <option value="21">Sports</option>
+                            </select>
+                            <!-- add category values from API
                             <button class="btn btn-dark category" value="23">History</button>
                             <button class="btn btn-dark category" value="22">Geography</button>
                             <button class="btn btn-dark category" value="27">Animals</button>
-                            <button class="btn btn-dark category" value="21">Sports</button>
+                            <button class="btn btn-dark category" value="21">Sports</button>-->
                         </div>
                         <div class="col-12 col-sm-6 ">
                             <!--Difficulty level-->
                             <h3>difficulty level</h3>
-                            <button class="btn btn-dark difficulty" value="easy">Easy</button>
-                            <button class="btn btn-dark difficulty" value="medium">Medium</button>
-                            <button class="btn btn-dark difficulty" value="hard">Hard</button>
+                            <label for="difficulty"></label>
+
+                            <select name="cars" id="difficulty">
+                                <option value="select_difficulty">Select Difficulty Level</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <!-- <button class="btn btn-dark difficulty" value="easy">Easy</button>
+                                <button class="btn btn-dark difficulty" value="medium">Medium</button>
+                                <button class="btn btn-dark difficulty" value="hard">Hard</button> -->
                         </div>
                     </div>
                 </div>
@@ -64,19 +81,19 @@
             <h1 id="question">Is this quiz game showing correctly? </h1>
             <div class="answers-container">
                 <p class="answer-prefix ">A</p>
-                <p class="answer-choice ">First Choice</p>
+                <p class="answer-choice " data-number = 1>First Choice</p>
             </div>
             <div class="answers-container">
                 <p class="answer-prefix ">B</p>
-                <p class="answer-choice ">Second Choice</p>
+                <p class="answer-choice " data-number = 2>Second Choice</p>
             </div>
-            <div class="answers-container">
+            <div class="answers-container hide">
                 <p class="answer-prefix ">C</p>
-                <p class="answer-choice ">Third Choice</p>
+                <p class="answer-choice " data-number = 3>Third Choice</p>
             </div>
-            <div class="answers-container">
+            <div class="answers-container hide" >
                 <p class="answer-prefix ">D</p>
-                <p class="answer-choice ">Third Choice</p>
+                <p class="answer-choice " data-number = 4>Third Choice</p>
             </div>
         </div>
     </div>
@@ -103,13 +120,14 @@
 
     <!--Section for three modals- Username,info modal, and Win modal  -->
     <section>
-        <!--username Modal--> 
+        <!--username Modal-->
         <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="Player name" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header justify-content-center">
                         <h2 class="modal-title" id="exampleModalLabel">Input your name</h2>
-                        <button type="button" class="btn-close closeUser" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="btn-close closeUser" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -125,41 +143,49 @@
                 </div>
             </div>
         </div>
-        <div class="modal-backdrop fade show " id="usernameModal--bg" style="display: none;"></div>
-        <!--Info modal-->
-        <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
-            role="dialog">
-            <div class="modal-dialog modal-fullscreen-sm-down" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">X</span>
-                        </button>
+        <div class=" modal-backdrop fade show " id=" usernameModal--bg" style="display: none;">
                     </div>
-                    <div class="modal-body">
-                        <p>This quiz consists of 10 multiple-choice questions. To be successful with the weekly quizzes,
-                            it’s important to thoroughly read chapter 5 in the textbook. It will also be extremely
-                            useful to study the key terms at the end of the chapter and review the Test Your Knowledge
-                            activity at the end of the chapter. Keep the following in mind:
+                    <!--Info modal-->
+                    <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-modal="true" role="dialog">
+                        <div class="modal-dialog modal-fullscreen-sm-down" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">X</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>This quiz consists of 10 multiple-choice questions. To be successful with the
+                                        weekly quizzes,
+                                        it’s important to thoroughly read chapter 5 in the textbook. It will also be
+                                        extremely
+                                        useful to study the key terms at the end of the chapter and review the Test Your
+                                        Knowledge
+                                        activity at the end of the chapter. Keep the following in mind:
 
-                            Multiple Attempts - You will have three attempts for this quiz with your highest score being
-                            recorded in the grade book.
-                            Timing - You will need to complete each of your attempts in one sitting, as you are allotted
-                            30 minutes to complete each attempt.
-                            Answers - You may review your answer-choices and compare them to the correct answers after
-                            your final attempt.
-                            To start, click the "Take the Quiz" button. When finished, click the "Submit Quiz" button.
+                                        Multiple Attempts - You will have three attempts for this quiz with your highest
+                                        score being
+                                        recorded in the grade book.
+                                        Timing - You will need to complete each of your attempts in one sitting, as you
+                                        are allotted
+                                        30 minutes to complete each attempt.
+                                        Answers - You may review your answer-choices and compare them to the correct
+                                        answers after
+                                        your final attempt.
+                                        To start, click the "Take the Quiz" button. When finished, click the "Submit
+                                        Quiz" button.
 
-                            Only registered, enrolled users can take graded quizzes</p>
+                                        Only registered, enrolled users can take graded quizzes</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary close">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div>
+                    <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div>
     </section>
     <!----- Audio ----->
     <audio id="btnClick" src="assets/audio/click.mp3"></audio>
