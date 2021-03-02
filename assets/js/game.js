@@ -15,10 +15,20 @@ let questions = [];
 
 let bonus;
 startGame = () => {
+    
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
     console.log(availableQuestions);
+    
+    if (difficultyLevel === "easy") {
+        bonus = 10;
+    } else if (difficultyLevel === "medium") {
+        bonus = 12;
+    } else {
+        bonus = 15;
+    }
+    console.log(bonus);
     getNextQuestion();
 };
 
@@ -65,7 +75,21 @@ choices.forEach((choice) => {
 
         acceptingAnswer = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
-        getNextQuestion();
+        console.log(selectedChoice);
+        const selectedChoiceNumber = Number(selectedChoice.dataset["number"]);//to get change to number
+
+        console.log(selectedChoiceNumber === displayedQuestion.answer);//to compare selected answer number with correct choice
+
+        //decalring variable using tenary operator(allowed becouse it's gives an expression)
+        const answerClass = selectedChoiceNumber === displayedQuestion.answer ? "correct" : "incorrect";
+
+        selectedChoice.parentElement.classList.add(answerClass);//targetting parent element to get background colour change
+        setTimeout( () => {
+
+            selectedChoice.parentElement.classList.remove(answerClass);
+            getNextQuestion();
+        }, 500);
+
+
     });
 });

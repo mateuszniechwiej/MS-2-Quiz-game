@@ -59,8 +59,16 @@ i, a {
     font-size: 2.5rem;
 }
 
-/*------ hide answer buttons */
+/*------ add and remove classes */
 
 .hideBtn {
     visibility: hidden;
+}
+
+.correct {
+    background-color: #47bd11;
+}
+
+.incorrect {
+    background-color: #8b0017;
 }
