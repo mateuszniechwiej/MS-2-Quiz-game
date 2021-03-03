@@ -2,7 +2,7 @@
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".answer-choice"));
 const currentScore = document.querySelector("#current_score");
-const progressBarText = document.querySelector(".qz-progress-bar");
+const progressBar = document.querySelector(".qz-progress-bar");
 console.log(choices);
 
 let displayedQuestion = {};
@@ -43,9 +43,12 @@ getNextQuestion = () => {
     }
     counterQuestion++;
     
-    progressBarText.innerText = `${counterQuestion}/${MAX_QUESTIONS}`;
-    
+    progressBar.innerText = `${counterQuestion}/${MAX_QUESTIONS}`;
 
+    //sync counter Question with progress bar 
+    progressBar.style.width = `${(counterQuestion / MAX_QUESTIONS) * 100
+}%`;
+    
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
     question.innerText = displayedQuestion.question; //displaying question by calling question property
