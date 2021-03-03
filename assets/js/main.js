@@ -55,11 +55,16 @@ finalModalOn = () => {
   document.querySelector("#finalModal--bg").style.display = "block";
   document.querySelector("#finalModal").style.display = "block";
   document.querySelector("#finalModal").classList.add("show");
+
+  const finalScore = document.querySelector("#finalScore");
+  finalScore.innerText = currentScore.innerText;
 };
 finalModalOff = () => {
   document.querySelector("#finalModal--bg").style.display = "none";
   document.querySelector("#finalModal").style.display = "none";
   document.querySelector("#finalModal").classList.remove("show");
+
+  return window.location.assign("index.html");
 };
 const finalOff = document.querySelectorAll(".closeHighScore");
 

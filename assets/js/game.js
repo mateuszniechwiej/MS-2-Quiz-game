@@ -40,6 +40,7 @@ getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
         finalModalOn();
+        
     }
     counterQuestion++;
     
