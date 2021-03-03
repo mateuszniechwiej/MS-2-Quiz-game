@@ -79,23 +79,34 @@
     <!-- Game live porogress bar and current question-->
 
     <div class="container-fluid mt-5">
-        <div id="game">
-            <h1 id="question">Is this quiz game showing correctly? </h1>
-            <div class="answers-container">
-                <p class="answer-prefix ">A</p>
-                <p class="answer-choice " data-number = 1>First Choice</p>
+        <div class="row" id="game">
+            <div class="col-10">
+                <div>
+                    <h1 id="question">Is this quiz game showing correctly? </h1>
+                    <div class="answers-container">
+                        <p class="answer-prefix ">A</p>
+                        <p class="answer-choice " data-number=1>First Choice</p>
+                    </div>
+                    <div class="answers-container">
+                        <p class="answer-prefix ">B</p>
+                        <p class="answer-choice " data-number=2>Second Choice</p>
+                    </div>
+                    <div class="answers-container hide">
+                        <p class="answer-prefix ">C</p>
+                        <p class="answer-choice " data-number=3>Third Choice</p>
+                    </div>
+                    <div class="answers-container hide">
+                        <p class="answer-prefix ">D</p>
+                        <p class="answer-choice " data-number=4>Fourth Choice</p>
+                    </div>
+                </div>
             </div>
-            <div class="answers-container">
-                <p class="answer-prefix ">B</p>
-                <p class="answer-choice " data-number = 2>Second Choice</p>
-            </div>
-            <div class="answers-container hide">
-                <p class="answer-prefix ">C</p>
-                <p class="answer-choice " data-number = 3>Third Choice</p>
-            </div>
-            <div class="answers-container hide" >
-                <p class="answer-prefix ">D</p>
-                <p class="answer-choice " data-number = 4>Fourth Choice</p>
+            <div class="col-2 text-center align-self-center" id="score">
+                <div class=" text-center" >
+                    <p id="current_score">0 pt</p>
+                    
+
+                </div>
             </div>
         </div>
     </div>

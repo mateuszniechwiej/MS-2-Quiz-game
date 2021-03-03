@@ -46,6 +46,8 @@ body {
 #game {
     background-color: #ff6a3d ;
     padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #qz-footer {
@@ -71,4 +73,16 @@ i, a {
 
 .incorrect {
     background-color: #8b0017;
+}
+
+/*----------Game live score -----*/
+#score {
+    margin: auto;
+    background-color: #9daaf2;
+    border-radius: 100%;
+}
+#current_score {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1.5rem;
 }

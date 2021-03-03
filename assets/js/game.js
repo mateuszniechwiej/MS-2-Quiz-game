@@ -1,6 +1,7 @@
 // questions and game quiz
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".answer-choice"));
+const currentScore = document.querySelector("#current_score");
 console.log(choices);
 
 let displayedQuestion = {};
@@ -15,12 +16,12 @@ let questions = [];
 
 let bonus;
 startGame = () => {
-    
-    questionCounter = 0;
+
+    counterQuestion = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
     console.log(availableQuestions);
-    
+
     if (difficultyLevel === "easy") {
         bonus = 10;
     } else if (difficultyLevel === "medium") {
@@ -38,6 +39,9 @@ getNextQuestion = () => {
         return window.location.assign("index.html");
     }
     counterQuestion++;
+
+    
+
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
     question.innerText = displayedQuestion.question; //displaying question by calling question property
@@ -82,9 +86,14 @@ choices.forEach((choice) => {
 
         //decalring variable using tenary operator(allowed becouse it's gives an expression)
         const answerClass = selectedChoiceNumber === displayedQuestion.answer ? "correct" : "incorrect";
+        
+        if (answerClass === "correct") {
+            score += bonus;
+            currentScore.innerText = `${score} points`;
+        }
 
         selectedChoice.parentElement.classList.add(answerClass);//targetting parent element to get background colour change
-        setTimeout( () => {
+        setTimeout(() => {
 
             selectedChoice.parentElement.classList.remove(answerClass);
             getNextQuestion();
