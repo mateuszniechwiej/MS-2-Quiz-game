@@ -86,6 +86,29 @@ window.onclick = (e) => {
     closeModal();
   }
 };
+// Final Score Modal ***********************************************/
+finalModalOn = () => {
+  document.querySelector("#finalModal--bg").style.display = "block";
+  document.querySelector("#finalModal").style.display = "block";
+  document.querySelector("#finalModal").classList.add("show");
+};
+finalModalOff = () => {
+  document.querySelector("#finalModal--bg").style.display = "none";
+  document.querySelector("#finalModal").style.display = "none";
+  document.querySelector("#finalModal").classList.remove("show");
+};
+const finalOff = document.querySelectorAll(".closeHighScore");
+
+Array.from(finalOff).forEach((e) => {
+  e.addEventListener("click", finalModalOff);
+});
+// closing high Score Modal by clicking outside the modal
+window.onclick = (e) => {
+  if (e.target == finalModal) {
+    finalModalOff();
+  }
+};
+
 
 // toggle sound icon on
 const iconOn = document.querySelector("#off");
