@@ -11,7 +11,6 @@ userModalOff = () => {
 };
 // const userOn = document.querySelector("#openUser");
 // userOn.addEventListener("click", userModalOn);
-
 const userOff = document.querySelectorAll(".closeUser");
 
 Array.from(userOff).forEach((e) => {
@@ -64,6 +63,7 @@ finalModalOff = () => {
   document.querySelector("#finalModal--bg").style.display = "none";
   document.querySelector("#finalModal").style.display = "none";
   document.querySelector("#finalModal").classList.remove("show");
+
 };
 const finalOff = document.querySelectorAll(".closeHighScore");
 

@@ -26,8 +26,8 @@ userNameSubmit = () => {
 };
 
 displayUsernameInfo = () => {
-    user = document.querySelector(".userName").innerHTML = `${user}`;
-    highScore = document.querySelector("#highScore").innerHTML = `${highScore} points`;
+    document.querySelector("#userName").innerHTML = `${user}`;
+    document.querySelector("#highScore").innerHTML = `${highScore} points`;
 };
 
 let subitName = document.querySelector("#submitName");
