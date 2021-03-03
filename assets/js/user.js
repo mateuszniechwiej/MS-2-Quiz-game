@@ -26,10 +26,11 @@ userNameSubmit = () => {
 };
 
 displayUsernameInfo = () => {
-    document.querySelector(".userName").innerHTML = `${user}`;
-    document.querySelector("#highScore").innerHTML = `${highScore} points`;
+    user = document.querySelector(".userName").innerHTML = `${user}`;
+    highScore = document.querySelector("#highScore").innerHTML = `${highScore} points`;
 };
 
 let subitName = document.querySelector("#submitName");
 subitName.addEventListener("click", userNameSubmit);
 checkUserData();
+
