@@ -350,7 +350,7 @@ A solution to satisfy user requirements:
 7. Finally click on **Gitpod** button in the newly created repository to start working on this project.
 
 ## Local Clone
-1. Navigating to the GitHub [Repository](https://github.com/mateuszniechwiej/Ms-1-LP)
+1. Navigating to the GitHub [Repository]
 2. Click on **Code** green button.
 3. Under the _Clone_ section, copy the URL from the HTTPS dialogue box.
 4. Use the IDE of choice to open the terminal.

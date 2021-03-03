@@ -75,7 +75,16 @@ i, a {
     background-color: #8b0017;
 }
 
-/*----------Game live score -----*/
+/*----------Game live score & progressbar -----*/
+.progress-wraper {
+    max-width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2rem;
+}
+.qz-progress-bar {
+    width:10%;
+}
+
 #score {
     margin: auto;
     background-color: #9daaf2;

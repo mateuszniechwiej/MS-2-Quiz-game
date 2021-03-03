@@ -2,6 +2,7 @@
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".answer-choice"));
 const currentScore = document.querySelector("#current_score");
+const progressBarText = document.querySelector(".qz-progress-bar");
 console.log(choices);
 
 let displayedQuestion = {};
@@ -11,6 +12,8 @@ let counterQuestion = 0;
 let availableQuestions = [];
 
 let questions = [];
+
+const MAX_QUESTIONS = 10;
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
 
@@ -39,7 +42,8 @@ getNextQuestion = () => {
         return window.location.assign("index.html");
     }
     counterQuestion++;
-
+    
+    progressBarText.innerText = `${counterQuestion}/${MAX_QUESTIONS}`;
     
 
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
