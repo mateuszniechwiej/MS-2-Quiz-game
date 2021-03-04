@@ -20,15 +20,15 @@ Array.from(userOff).forEach((e) => {
 // const userModal = document.querySelector("#playerModal");
 
 // To activate Info modal using javascript vanila
-openModal = () => {
+infoModalOn = () => {
   document.querySelector("#qz-modal--bg").style.display = "block"; //display bg as block
   document.querySelector("#qz-Modal").style.display = "block"; //display modal as a block
   document.querySelector("#qz-Modal").classList.add("show"); //add class to show the modal
 };
 const infoOn = document.querySelector("#openModal");
-infoOn.addEventListener("click", openModal);
+infoOn.addEventListener("click", infoModalOn);
 
-closeModal = () => {
+infoModalOff = () => {
   document.querySelector("#qz-modal--bg").style.display = "none";
   document.querySelector("#qz-Modal").style.display = "none";
   document.querySelector("#qz-Modal").classList.remove("show"); // to close the modal remove show class
@@ -37,7 +37,7 @@ closeModal = () => {
 const infoOff = document.querySelectorAll(".close");
 
 Array.from(infoOff).forEach((e) => {
-  e.addEventListener("click", closeModal);
+  e.addEventListener("click", infoModalOff);
 });
 
 // Get the modal
@@ -46,7 +46,7 @@ var infoModal = document.querySelector("#qz-Modal");
 // Click outside the function close the modal
 window.onclick = (e) => {
   if (e.target == infoModal) {
-    closeModal();
+    infoModalOff();
   }
 };
 // Final Score Modal ***********************************************/

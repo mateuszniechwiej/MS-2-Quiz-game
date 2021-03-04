@@ -8,7 +8,7 @@ userHighScore.innerText = topScore;
 let user = localStorage.getItem("user");
 let highScore = 0;
 checkUserData = () => {
-    if (user === null || user === "Mateusz") {
+    if (user === null || user === "") {
         localStorage.setItem(highScore, 0);
         userModalOn();
     } else {
