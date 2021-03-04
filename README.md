@@ -34,6 +34,17 @@
   - [Performance](#performance)
   - [Colour Contrast](#colour-contrast)
   - [Functionality](#functionality)
+  - [Issues](#issues)
+- [Deployment](#deployment)
+    - [This website was developed using GitPod and VSCode, with a repository hosted on GitHub.](#this-website-was-developed-using-gitpod-and-vscode-with-a-repository-hosted-on-github)
+  - [Project Initiation](#project-initiation)
+  - [Local Clone](#local-clone)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+    - [Images](#images)
+  - [Acknowledgements](#acknowledgements)
+  
 - [Deployment](#deployment)
     - [This website was developed using GitPod and VSCode, with a repository hosted on GitHub.](#this-website-was-developed-using-gitpod-and-vscode-with-a-repository-hosted-on-github)
   - [Project Initiation](#project-initiation)
@@ -335,6 +346,10 @@ A solution to satisfy user requirements:
 ## Functionality 
 **Homepage**:
 
+## Issues
+  1.Encoding issue on some questions and answers fetched from Open Trivia API
+  *  Solution not resolved
+  
 # Deployment
 
 ### This website was developed using GitPod and VSCode, with a repository hosted on GitHub.

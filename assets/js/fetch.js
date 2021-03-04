@@ -20,7 +20,6 @@ fetchingData = () => {
                 formattedQuestion['choice' + (index + 1)] = choice;
             });
             return formattedQuestion;//returning Array object with questions only to use in the quiz
-
         });
         startGame();
     })
