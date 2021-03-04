@@ -50,20 +50,29 @@ window.onclick = (e) => {
   }
 };
 // Final Score Modal ***********************************************/
+
+const finalScore = document.querySelector("#finalScore");
+
 finalModalOn = () => {
   document.querySelector("#finalModal--bg").style.display = "block";
   document.querySelector("#finalModal").style.display = "block";
   document.querySelector("#finalModal").classList.add("show");
 
-  const finalScore = document.querySelector("#finalScore");
+  //checking if game score is higeher that current score,if yes set new score to localStorage and display
   finalScore.innerText = currentScore.innerText;
+  if (finalScore.innerText > userHighScore.innerText) {
+    localStorage.setItem("topScore", highScore)
+    userHighScore.innerText = finalScore.innerText;
+    
+  }
+  
   
 };
 finalModalOff = () => {
   document.querySelector("#finalModal--bg").style.display = "none";
   document.querySelector("#finalModal").style.display = "none";
   document.querySelector("#finalModal").classList.remove("show");
-
+  
 };
 const finalOff = document.querySelectorAll(".closeHighScore");
 

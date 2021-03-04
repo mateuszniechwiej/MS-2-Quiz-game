@@ -1,8 +1,14 @@
+const username = document.querySelector("#userName");
+const userHighScore = document.querySelector("#highScore");
+
+
+const topScore = localStorage.getItem("topScore");
+userHighScore.innerText = topScore;
 // Function to check if user in local Storage(if not open username modal)
 let user = localStorage.getItem("user");
 let highScore = 0;
 checkUserData = () => {
-    if (user === null || user === "") {
+    if (user === null || user === "Mateusz") {
         localStorage.setItem(highScore, 0);
         userModalOn();
     } else {
@@ -12,10 +18,8 @@ checkUserData = () => {
             highScore = 0;
         }
         displayUsernameInfo();
-        return;
     }
 };
-
 // function to store username in localstorage
 userNameSubmit = () => {
     user = document.querySelector("#user").value;
@@ -26,8 +30,9 @@ userNameSubmit = () => {
 };
 
 displayUsernameInfo = () => {
-    document.querySelector("#userName").innerHTML = `${user}`;
-    document.querySelector("#highScore").innerHTML = `${highScore} points`;
+    finalScore.innerText = topScore;
+    username.innerHTML = `${user}`;
+    userHighScore.innerHTML = `${highScore} points`;
 };
 
 let subitName = document.querySelector("#submitName");
