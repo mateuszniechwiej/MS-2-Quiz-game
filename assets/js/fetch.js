@@ -1,7 +1,13 @@
 fetchingData = () => {
     const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}`;
     console.log(url);
-
+    if (difficultyLevel === "easy") {
+        bonus = 10;
+    } else if (difficultyLevel === "medium") {
+        bonus = 12;
+    } else if (difficultyLevel === "hard") {
+        bonus = 15;
+    };
     fetch(url).then(respond => {
         console.log(respond);// getting response
         return respond.json();
@@ -29,4 +35,5 @@ fetchingData = () => {
 };
 const start = document.querySelector("#start");
 
-start.addEventListener('click', fetchingData); 
+
+start.addEventListener('click', fetchingData);

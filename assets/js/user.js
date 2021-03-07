@@ -45,4 +45,4 @@ displayUsernameInfo = () => {
 let submitName = document.querySelector("#submitName");
 submitName.addEventListener("click", userNameSubmit);
 
-checkUserData();
+window.onload = checkUserData();

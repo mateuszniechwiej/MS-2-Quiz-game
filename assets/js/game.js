@@ -3,7 +3,6 @@ const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".answer-choice"));
 const currentScore = document.querySelector("#current-score");
 const progressBar = document.querySelector(".qz-progress-bar");
-console.log(choices);
 
 let displayedQuestion = {};
 let acceptAnswer = false; //set to false so user can't answer before new question loaded
@@ -16,22 +15,12 @@ let questions = [];
 const MAX_QUESTIONS = 10;
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
-
 let bonus;
 startGame = () => {
     counterQuestion = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
-    console.log(availableQuestions);
 
-    if (difficultyLevel === "easy") {
-        bonus = 10;
-    } else if (difficultyLevel === "medium") {
-        bonus = 12;
-    } else {
-        bonus = 15;
-    }
-    console.log(bonus);
     getNextQuestion();
 };
 
@@ -98,12 +87,10 @@ choices.forEach((choice) => {
             selectedChoiceNumber === displayedQuestion.answer
                 ? "correct"
                 : "incorrect";
-
         if (answerClass === "correct") {
             score += bonus;
             currentScore.innerText = `${score} points`;
         }
-
         selectedChoice.parentElement.classList.add(answerClass); //targetting parent element to get background colour change
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(answerClass);
