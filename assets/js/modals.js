@@ -54,15 +54,7 @@ finalModalOn = () => {
   document.querySelector("#finalModal--bg").style.display = "block";
   document.querySelector("#finalModal").style.display = "block";
   document.querySelector("#finalModal").classList.add("show");
-
-  //checking if game score has higher then current score,if yes set new score to localStorage and display
-  finalScore.innerText = currentScore.innerText;
-  if (finalScore.innerText > userHighScore.innerText) {
-    localStorage.setItem("topScore", highScore)
-    userHighScore.innerText = finalScore.innerText;
-    
-  }
-
+  setHighScore();
 };
 finalModalOff = () => {
   document.querySelector("#finalModal--bg").style.display = "none";
