@@ -35,7 +35,6 @@
                             <!--Category level-->
                             <h3>Categories</h3>
                             <label for="categories"></label>
-
                             <select name="cars" id="categories">
                                 <option value="select_category">Select Category Level</option>
                                 <option value="23">History</option>
@@ -85,7 +84,12 @@
                 aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <div class="row" id="game">
-            <div class="col-10">
+            <div class="col-12 order-fist col-md-2 order-md-last text-center align-self-center " id="score">
+                <div class=" text-center">
+                    <p id="current-score">0 pt</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 ">
                 <h1 id="question"></h1>
                 <div>
 
@@ -107,13 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 text-center align-self-center" id="score">
-                <div class=" text-center">
-                    <p id="current-score">0 pt</p>
-
-
-                </div>
-            </div>
+            
         </div>
     </div>
 

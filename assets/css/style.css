@@ -88,7 +88,8 @@ i, a {
 #score {
     margin: auto;
     background-color: #9daaf2;
-    border-radius: 100%;
+    border-radius: 50%;
+    float:right;
 }
 #current_score {
     font-size: 2rem;
