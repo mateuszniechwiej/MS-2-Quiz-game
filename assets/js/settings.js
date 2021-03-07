@@ -22,22 +22,7 @@ Array.from(allAudio).forEach((a) => {
 
 // selecting and getting diffculty level and categories
 
-const difficulty = [
-    document.querySelector("#easy"),
-    document.querySelector("#medium"),
-    document.querySelector("#hard"),
-];
-
-getDifficulty = () => {
-    const checkDifficulty = difficulty.filter(element => element.checked);
-
-    if (checkDifficulty.length === 1) {
-        return checkDifficulty[0].id;
-    } else {
-        throw new Error('Please select a difficulty game level!');
-    }
-}
-
+const difficulty = document.querySelectorAll("#difficulty");// also without Arrayfrom and then p2
 const categories = document.querySelectorAll("#categories");
 let difficultyLevel;
 let categoryId;

@@ -1,5 +1,4 @@
 fetchingData = () => {
-    const difficultyLevel = getDifficulty();
     const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}`;
     console.log(url);
 
