@@ -16,6 +16,7 @@ Array.from(userOff).forEach((e) => {
   e.addEventListener("click", userModalOff);
 });
 
+
 // ***********************Info Modal******************************
 infoModalOn = () => {
   document.querySelector("#qz-modal--bg").style.display = "block"; //display bg as block

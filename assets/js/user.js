@@ -42,6 +42,7 @@ displayUsernameInfo = () => {
     userHighScore.innerHTML = `${highScore} `;
 };
 
-let subitName = document.querySelector("#submitName");
-subitName.addEventListener("click", userNameSubmit);
+let submitName = document.querySelector("#submitName");
+submitName.addEventListener("click", userNameSubmit);
+
 checkUserData();

@@ -347,8 +347,11 @@ A solution to satisfy user requirements:
 **Homepage**:
 
 ## Issues
-  1.Encoding issue on some questions and answers fetched from Open Trivia API
+    1.Encoding issue on some questions and answers fetched from Open Trivia API
   *  Solution not resolved
+  
+    2.Add event listener to submit username by press "Enter"
+  *  Solution not resolved    
   
 # Deployment
 
