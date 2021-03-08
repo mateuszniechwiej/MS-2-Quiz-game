@@ -354,7 +354,7 @@ A solution to satisfy user requirements:
   *  Solution not resolved 
 
     3.Looking to find solution to alert user when category and difficulty not selected
-  * in progress ...
+  * resolved
 
   
 # Deployment

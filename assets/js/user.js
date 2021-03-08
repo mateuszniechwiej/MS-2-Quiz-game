@@ -45,4 +45,11 @@ displayUsernameInfo = () => {
 let submitName = document.querySelector("#submitName");
 submitName.addEventListener("click", userNameSubmit);
 
+// const userInput = document.querySelector("#user");
+
+// userInput.addEventListener('keyup', function (e) {
+//     if (e.keyCode === 13) {
+//         submitName.click();
+//     }
+// });
 window.onload = checkUserData();
