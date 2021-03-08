@@ -21,10 +21,11 @@ checkUserData = () => {
 };
 
 setHighScore = () => {
-    finalScore.innerText = currentScore.innerText;
-    if (finalScore.innerText > userHighScore.innerText) {
-        userHighScore.innerText = finalScore.innerText;
-        localStorage.setItem("highScore", finalScore.innerText);
+    let gameScore = currentScore.innerText
+    finalScore.innerText = `Your score  is ${gameScore}`;
+    if (gameScore > userHighScore.innerText) {
+        userHighScore.innerText = gameScore
+        localStorage.setItem("highScore", gameScore);
     }
 };
 // function to store username in localstorage
@@ -49,7 +50,7 @@ submitName.addEventListener("click", userNameSubmit);
 
 // userInput.addEventListener('keyup', function (e) {
 //     if (e.keyCode === 13) {
-//         submitName.click();
+//         submitName();
 //     }
 // });
 window.onload = checkUserData();
