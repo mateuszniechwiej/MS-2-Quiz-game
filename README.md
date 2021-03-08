@@ -1,3 +1,4 @@
+:globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 # Table of Contest
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
@@ -39,6 +40,7 @@
     - [This website was developed using GitPod and VSCode, with a repository hosted on GitHub.](#this-website-was-developed-using-gitpod-and-vscode-with-a-repository-hosted-on-github)
   - [Project Initiation](#project-initiation)
   - [Local Clone](#local-clone)
+  - [GitHub Pages](#github-pages)
 - [Credits](#credits)
   - [Code](#code)
   - [Media](#media)
@@ -82,8 +84,8 @@
   - [Functionality](#functionality)
 - [Deployment](#deployment)
   - [Project Initiation](#project-initiation)
-  - [GitHub Pages](#github-pages)
   - [Local Clone](#local-clone)
+  - [GitHub Pages](#github-pages)
 - [Credits](#credits)
   - [Code](#code)
   - [Media](#media)
@@ -379,6 +381,14 @@ A solution to satisfy user requirements:
 5. Use **git clone** command followed by the copied URL.
 6. A clone of the project will now be created locally on your machine.   
 
+## GitHub Pages
+This website was published using [GitHub Pages](https://pages.github.com/) by:
+1. Navigating to the GitHub [Repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
+2. Under the name of this project, there is a navigation bar - > Click on **Settings**.
+3. Scroll down to the GitHub Pages Heading.
+4. Under the _Source_ Choose **Branch: master*
+5. Click the _Save_ button.
+6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
 
 ## Code
