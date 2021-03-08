@@ -26,11 +26,11 @@ startGame = () => {
 
 getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
-    if (availableQuestions.length === 0) {
+    console.log(difficultyLevel);
+    console.log(categoryId);
+    if (availableQuestions.length === 0 && (difficultyLevel !== undefined) && (categoryId !== undefined)) {
         finalModalOn();
-    } else {
-        
-    }
+    } 
     counterQuestion++;
     if (counterQuestion <= 10) {
         progressBar.innerText = `${counterQuestion}/${MAX_QUESTIONS}`;

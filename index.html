@@ -14,7 +14,7 @@
 
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light qz-navbar">
         <button class="btn btn-mute" id='btnMute' aria label="Mute Button"><i id="off"
                 class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
@@ -26,8 +26,10 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <!--Player name and high score-->
-                    <h2 id="userName">Player name</h2>
-                    <h3 id="highScore">High Score</h3>
+                    <h2 class="qz-hud">Player Name</h2>
+                    <p id="userName"></p>
+                    <h2 class="qz-hud">High Score</h2>
+                    <p id="highScore"></p>
                 </div>
                 <div class="col-md-8 text-center">
                     <div class="row text-center">
@@ -52,7 +54,7 @@
                             <!--Difficulty level-->
                             <h3>difficulty level</h3>
                             <label for="difficulty"></label>
-                            
+
                             <select name="cars" id="difficulty">
                                 <option value="select-option">Select Difficulty</option>
                                 <option value="easy">Easy</option>
@@ -85,7 +87,7 @@
         </div>
         <div class="row" id="game">
             <div class="col-12 order-fist col-md-2 order-md-last text-center align-self-center " id="score">
-                <div class=" text-center">
+                <div class=" text-center qz-circle">
                     <p id="current-score">0 pt</p>
                 </div>
             </div>
@@ -110,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -120,14 +122,17 @@
     </section>
 
     <!-- Footer with GitHub icon and email link to contact-->
-    <footer>
-        <div class="container-fluid" id="qz-footer">
+    <footer id="qz-footer">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-6 text-left ">
+                <div class="col-4 text-left ">
                     <i class="far fa-envelope"></i>
                     <a href="mailto:niechwiej.mateusz@gmail.com"><span>niechwiej.mateusz@gmail.com</span></a>
                 </div>
-                <div class="col-6 text-right">
+                <div class="col-4 text-center">
+                    <p>Copyright &copy;2021 by Mateusz</p>
+                </div>
+                <div class="col-4 text-right">
                     <a href="https://github.com/mateuszniechwiej"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -154,77 +159,76 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="submitName"">Start</button>
+                        <button type="button" class="btn btn-primary" id="submitName">Start</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class=" modal-backdrop fade show " id="usernameModal--bg" style="display: none;">
+        </div>
+        <!--Info modal-->
+        <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+            role="dialog">
+            <div class="modal-dialog modal-fullscreen-sm-down" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">X</span>
+                        </button>
                     </div>
-                    <!--Info modal-->
-                    <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-modal="true" role="dialog">
-                        <div class="modal-dialog modal-fullscreen-sm-down" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title" id="exampleModalLabel">Instruction</h3>
-                                    <button type="button" class="close" aria-label="Close">
-                                        <span aria-hidden="true">X</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>This quiz consists of 10 multiple-choice questions. To be successful with the
-                                        weekly quizzes,
-                                        it’s important to thoroughly read chapter 5 in the textbook. It will also be
-                                        extremely
-                                        useful to study the key terms at the end of the chapter and review the Test Your
-                                        Knowledge
-                                        activity at the end of the chapter. Keep the following in mind:
+                    <div class="modal-body">
+                        <p>This quiz consists of 10 multiple-choice questions. To be successful with the
+                            weekly quizzes,
+                            it’s important to thoroughly read chapter 5 in the textbook. It will also be
+                            extremely
+                            useful to study the key terms at the end of the chapter and review the Test Your
+                            Knowledge
+                            activity at the end of the chapter. Keep the following in mind:
 
-                                        Multiple Attempts - You will have three attempts for this quiz with your highest
-                                        score being
-                                        recorded in the grade book.
-                                        Timing - You will need to complete each of your attempts in one sitting, as you
-                                        are allotted
-                                        30 minutes to complete each attempt.
-                                        Answers - You may review your answer-choices and compare them to the correct
-                                        answers after
-                                        your final attempt.
-                                        To start, click the "Take the Quiz" button. When finished, click the "Submit
-                                        Quiz" button.
+                            Multiple Attempts - You will have three attempts for this quiz with your highest
+                            score being
+                            recorded in the grade book.
+                            Timing - You will need to complete each of your attempts in one sitting, as you
+                            are allotted
+                            30 minutes to complete each attempt.
+                            Answers - You may review your answer-choices and compare them to the correct
+                            answers after
+                            your final attempt.
+                            To start, click the "Take the Quiz" button. When finished, click the "Submit
+                            Quiz" button.
 
-                                        Only registered, enrolled users can take graded quizzes</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary close">Close</button>
-                                </div>
-                            </div>
-                        </div>
+                            Only registered, enrolled users can take graded quizzes</p>
                     </div>
-                    <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div>
-                    <!--Final Score Modal-->
-                    <!-- Button trigger modal -->
-                    <div class="modal fade" id="finalModal" tabindex="-1" aria-labelledby="finalModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-center modal-fullscreen-sm-down">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="finalModalLabel">Modal title</h5>
-                                    <button type="button" class="btn-close closeHighScore" data-bs-dismiss="modal"
-                                        aria-label="Close">X</button>
-                                </div>
-                                <div class="modal-body" id="finalScore">
-                                    Your score bla bla bla
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary closeHighScore"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close">Close</button>
                     </div>
-                    <div class=" modal-backdrop fade show " id="finalModal--bg" style="display: none;">
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div>
+        <!--Final Score Modal-->
+        <!-- Button trigger modal -->
+        <div class="modal fade" id="finalModal" tabindex="-1" aria-labelledby="finalModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-center modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="finalModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close closeHighScore" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
                     </div>
+                    <div class="modal-body" id="finalScore">
+                        Your score bla bla bla
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary closeHighScore"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" modal-backdrop fade show " id="finalModal--bg" style="display: none;">
+        </div>
     </section>
     <!----- Audio ----->
     <audio id="btnClick" src="assets/audio/click.mp3"></audio>
