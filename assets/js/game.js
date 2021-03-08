@@ -20,15 +20,19 @@ startGame = () => {
     counterQuestion = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
-
-    getNextQuestion();
+    if (difficultyLevel === undefined || difficultyLevel === "select-option"|| categoryId === undefined || categoryId === "select-option") {
+        alert("Please select a category or difficulty level")
+    } else {
+        ;
+        getNextQuestion();
+    }
 };
 
 getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     console.log(difficultyLevel);
     console.log(categoryId);
-    if (availableQuestions.length === 0 && (difficultyLevel !== undefined) && (categoryId !== undefined)) {
+    if (availableQuestions.length === 0 ) {
         finalModalOn();
     } 
     counterQuestion++;
