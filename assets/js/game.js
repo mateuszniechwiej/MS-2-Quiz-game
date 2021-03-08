@@ -23,7 +23,7 @@ startGame = () => {
     if (difficultyLevel === undefined || difficultyLevel === "select-option"|| categoryId === undefined || categoryId === "select-option") {
         alert("Please select a category or difficulty level")
     } else {
-        ;
+
         getNextQuestion();
     }
 };
@@ -32,7 +32,7 @@ getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     console.log(difficultyLevel);
     console.log(categoryId);
-    if (availableQuestions.length === 0 ) {
+    if (availableQuestions.length === 0) {
         finalModalOn();
     } 
     counterQuestion++;
