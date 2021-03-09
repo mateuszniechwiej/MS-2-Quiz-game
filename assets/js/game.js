@@ -35,7 +35,8 @@ getNextQuestion = () => {
     console.log(difficultyLevel);
     console.log(categoryId);
     if (availableQuestions.length === 0) {
-        finalModalOn();
+        $('#finalModal').modal('show');
+        setHighScore();
     } 
     counterQuestion++;
     if (counterQuestion <= 10) {

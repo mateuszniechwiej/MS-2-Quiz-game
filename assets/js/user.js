@@ -64,3 +64,11 @@ window.onload = checkUserData();
 // Array.from(userOff).forEach((e) => {
 // e.addEventListener("click", $('#playerModal').modal('hide') );
 //  });
+
+const finalOff = document.querySelectorAll(".closeHighScore");
+
+Array.from(finalOff).forEach((e) => {
+    e.addEventListener("click", () => {
+        $('#finalModal').modal('hide')
+    });
+ });
