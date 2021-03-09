@@ -1,7 +1,7 @@
 // *****************************************Game Settings*****************************************
 // selecting and getting diffculty level and categories
-const difficulty = document.querySelectorAll("#difficulty");// also without Arrayfrom and then p2
-const categories = document.querySelectorAll("#categories");
+const difficulty = document.querySelector("#difficulty");// also without Arrayfrom and then p2
+const categories = document.querySelector("#categories");
 let difficultyLevel;
 let categoryId;
 // toggle sound icon on
@@ -25,14 +25,14 @@ Array.from(allButtons).forEach((a) => {
     a.addEventListener("click", clickBtn);
 });
 
-difficulty.forEach((level) => {
-    level.addEventListener("click", (e) => {
+
+    difficulty.addEventListener("click", (e) => {
         difficultyLevel = e.target.value
     });
-});
 
-categories.forEach((category) => {
-    category.addEventListener("click", (e) => {
+
+
+    categories.addEventListener("click", (e) => {
         categoryId = e.target.value;
     });
-});
+

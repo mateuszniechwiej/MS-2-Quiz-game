@@ -20,7 +20,9 @@ startGame = () => {
     counterQuestion = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
-    if (difficultyLevel === undefined || difficultyLevel === "select-option"|| categoryId === undefined || categoryId === "select-option") {
+    console.log(difficultyLevel)
+    console.log(categoryId)
+    if (!difficultyLevel || !categoryId ) {
         alert("Please select a category or difficulty level")
     } else {
 

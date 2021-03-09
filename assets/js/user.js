@@ -9,6 +9,7 @@ let highScore = 0;
 checkUserData = () => {
     if (user === null || user === "") {
         localStorage.setItem("highScore", 0);
+        // $('#playerModal').modal('show')
         userModalOn();
     } else {
         user = localStorage.getItem("user");
@@ -39,8 +40,8 @@ userNameSubmit = () => {
 
 displayUsernameInfo = () => {
     finalScore.innerText = topScore;
-    username.innerHTML = `${user}`;
-    userHighScore.innerHTML = `${highScore} `;
+    username.innerHTML = user
+    userHighScore.innerHTML = highScore;
 };
 
 let submitName = document.querySelector("#submitName");
