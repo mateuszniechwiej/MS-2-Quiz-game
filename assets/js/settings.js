@@ -26,13 +26,13 @@ Array.from(allButtons).forEach((a) => {
 });
 
 
-    difficulty.addEventListener("click", (e) => {
+    difficulty.addEventListener("change", (e) => {
         difficultyLevel = e.target.value
     });
 
 
 
-    categories.addEventListener("click", (e) => {
+    categories.addEventListener("change", (e) => {
         categoryId = e.target.value;
     });
 
