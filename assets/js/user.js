@@ -28,6 +28,7 @@ setHighScore = () => {
         userHighScore.innerText = gameScore;
         localStorage.setItem("highScore", gameScore);
     }
+    
 };
 // function to store username in localstorage
 userNameSubmit = () => {
@@ -69,6 +70,7 @@ const finalOff = document.querySelectorAll(".closeHighScore");
 Array.from(finalOff).forEach((e) => {
     e.addEventListener("click", () => {
         $("#finalModal").modal("hide");
+        return window.location.assign("index.html");
     });
 });
 
@@ -95,3 +97,6 @@ userInput.addEventListener("keypress", (e) => {
         userNameSubmit();
     }
 });
+
+const hideGame = document.querySelector(".hideGame");
+
