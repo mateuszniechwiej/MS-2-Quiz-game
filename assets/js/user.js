@@ -36,7 +36,7 @@ userNameSubmit = () => {
     localStorage.setItem("user", user);
     console.log(user);
 
-    if(user) $('#playerModal').modal('hide');//if there is some user input allow to close modal
+    if (user) $('#playerModal').modal('hide');//if there is some user input allow to close modal
     // userModalOff(); // close username modal
     displayUsernameInfo(); // function to display user data on dashboard
 };
@@ -71,4 +71,17 @@ Array.from(finalOff).forEach((e) => {
     e.addEventListener("click", () => {
         $('#finalModal').modal('hide')
     });
- });
+});
+
+const infoOn = document.querySelector("#openModal");
+infoOn.addEventListener("click", () => {
+    $('#qz-Modal').modal('show')
+});
+
+const infoOff = document.querySelectorAll(".close");
+
+Array.from(infoOff).forEach((e) => {
+    e.addEventListener("click", () => {
+        $('#qz-Modal').modal('hide')
+    });
+});

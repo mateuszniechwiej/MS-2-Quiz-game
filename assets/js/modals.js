@@ -45,7 +45,7 @@ window.onclick = (e) => {
 };
 // *************************Final Score Modal *************************
 
-const finalScore = document.querySelector("#finalScore");
+// const finalScore = document.querySelector("#finalScore");
 
 // finalModalOn = () => {
 //   document.querySelector("#finalModal--bg").style.display = "block";
