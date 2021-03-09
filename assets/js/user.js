@@ -9,9 +9,8 @@ let highScore = 0;
 checkUserData = () => {
     if (user === null || user === "") {
         localStorage.setItem("highScore", 0);
-        $('#playerModal').modal('show');
+        $("#playerModal").modal("show");
         // userModalOn();
-
     } else {
         user = localStorage.getItem("user");
         highScore = localStorage.getItem("highScore");
@@ -23,10 +22,10 @@ checkUserData = () => {
 };
 
 setHighScore = () => {
-    let gameScore = currentScore.innerText
+    let gameScore = currentScore.innerText;
     finalScore.innerText = `Your score  is ${gameScore}`;
     if (gameScore > userHighScore.innerText) {
-        userHighScore.innerText = gameScore
+        userHighScore.innerText = gameScore;
         localStorage.setItem("highScore", gameScore);
     }
 };
@@ -36,14 +35,14 @@ userNameSubmit = () => {
     localStorage.setItem("user", user);
     console.log(user);
 
-    if (user) $('#playerModal').modal('hide');//if there is some user input allow to close modal
+    if (user) $("#playerModal").modal("hide"); //if there is some user input allow to close modal
     // userModalOff(); // close username modal
     displayUsernameInfo(); // function to display user data on dashboard
 };
 
 displayUsernameInfo = () => {
     finalScore.innerText = topScore;
-    username.innerHTML = user
+    username.innerHTML = user;
     userHighScore.innerHTML = highScore;
 };
 
@@ -69,19 +68,30 @@ const finalOff = document.querySelectorAll(".closeHighScore");
 
 Array.from(finalOff).forEach((e) => {
     e.addEventListener("click", () => {
-        $('#finalModal').modal('hide')
+        $("#finalModal").modal("hide");
     });
 });
 
 const infoOn = document.querySelector("#openModal");
 infoOn.addEventListener("click", () => {
-    $('#qz-Modal').modal('show')
+    $("#qz-Modal").modal("show");
 });
 
 const infoOff = document.querySelectorAll(".close");
 
 Array.from(infoOff).forEach((e) => {
     e.addEventListener("click", () => {
-        $('#qz-Modal').modal('hide')
+        $("#qz-Modal").modal("hide");
     });
+});
+
+const userInput = document.querySelector("#user");
+
+// adding event listener to 'Enter' key to submit username input
+
+userInput.addEventListener("keypress", (e) => {
+    if (e.which === 13) {
+        e.preventDefault(); //added to keep to behave the same as click event
+        userNameSubmit();
+    }
 });
