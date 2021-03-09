@@ -1,20 +1,16 @@
 //***********************Username Modal*************************
-userModalOn = () => {
-  document.querySelector("#usernameModal--bg").style.display = "block";
-  document.querySelector("#playerModal").style.display = "block";
-  document.querySelector("#playerModal").classList.add("show");
-};
-userModalOff = () => {
-  document.querySelector("#usernameModal--bg").style.display = "none";
-  document.querySelector("#playerModal").style.display = "none";
-  document.querySelector("#playerModal").classList.remove("show");
-};
+// userModalOn = () => {
+//   document.querySelector("#usernameModal--bg").style.display = "block";
+//   document.querySelector("#playerModal").style.display = "block";
+//   document.querySelector("#playerModal").classList.add("show");
+// };
+// userModalOff = () => {
+//   document.querySelector("#usernameModal--bg").style.display = "none";
+//   document.querySelector("#playerModal").style.display = "none";
+//   document.querySelector("#playerModal").classList.remove("show");
+// };
 
-const userOff = document.querySelectorAll(".closeUser");
 
-Array.from(userOff).forEach((e) => {
-  e.addEventListener("click", userModalOff);
-});
 
 
 // ***********************Info Modal******************************

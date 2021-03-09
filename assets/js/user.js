@@ -9,8 +9,9 @@ let highScore = 0;
 checkUserData = () => {
     if (user === null || user === "") {
         localStorage.setItem("highScore", 0);
-        // $('#playerModal').modal('show')
-        userModalOn();
+        $('#playerModal').modal('show');
+        // userModalOn();
+
     } else {
         user = localStorage.getItem("user");
         highScore = localStorage.getItem("highScore");
@@ -34,7 +35,9 @@ userNameSubmit = () => {
     user = document.querySelector("#user").value;
     localStorage.setItem("user", user);
     console.log(user);
-    userModalOff(); // close username modal
+
+    if(user) $('#playerModal').modal('hide');//if there is some user input allow to close modal
+    // userModalOff(); // close username modal
     displayUsernameInfo(); // function to display user data on dashboard
 };
 
@@ -50,8 +53,14 @@ submitName.addEventListener("click", userNameSubmit);
 // const userInput = document.querySelector("#user");
 
 // userInput.addEventListener('keyup', function (e) {
-//     if (e.keyCode === 13) {
-//         submitName();
-//     }
-// });
+//    if (e.keyCode === 13) {
+//        console.log("Enter")
+//   }
+//  });
 window.onload = checkUserData();
+
+// const userOff = document.querySelectorAll(".closeUser");
+
+// Array.from(userOff).forEach((e) => {
+// e.addEventListener("click", $('#playerModal').modal('hide') );
+//  });
