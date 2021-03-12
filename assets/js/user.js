@@ -50,20 +50,8 @@ displayUsernameInfo = () => {
 let submitName = document.querySelector("#submitName");
 submitName.addEventListener("click", userNameSubmit);
 
-// const userInput = document.querySelector("#user");
-
-// userInput.addEventListener('keyup', function (e) {
-//    if (e.keyCode === 13) {
-//        console.log("Enter")
-//   }
-//  });
 window.onload = checkUserData();
 
-// const userOff = document.querySelectorAll(".closeUser");
-
-// Array.from(userOff).forEach((e) => {
-// e.addEventListener("click", $('#playerModal').modal('hide') );
-//  });
 
 const finalOff = document.querySelectorAll(".closeHighScore");
 

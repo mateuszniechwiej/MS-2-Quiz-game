@@ -351,6 +351,7 @@ A solution to satisfy user requirements:
 ## Issues
     1.Encoding issue on some questions and answers fetched from Open Trivia API
   *  Solution not resolved
+  *  so far tried to resolve problem : fetch url with base64 encoding and then use atob() to display decoded questions and choices(still some questions display different characters);
   
     2.Add event listener to submit username Modal by pressing "Enter"
   *  Solution not resolved 

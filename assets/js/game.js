@@ -22,7 +22,14 @@ startGame = () => {
     availableQuestions = [...questions]; // creating full copy of questions
     console.log(difficultyLevel)
     console.log(categoryId)
-    if (!difficultyLevel || !categoryId ) {
+    if (difficultyLevel === "easy") {
+        bonus = 10;
+    } else if (difficultyLevel === "medium") {
+        bonus = 12;
+    } else if (difficultyLevel === "hard") {
+        bonus = 15;
+    };
+    if (!difficultyLevel || !categoryId) {
         alert("Please select a category or difficulty level")
     } else {
 
@@ -37,12 +44,12 @@ getNextQuestion = () => {
     if (availableQuestions.length === 0) {
         $('#finalModal').modal('show');
         setHighScore();
-    } 
+    }
     counterQuestion++;
     if (counterQuestion <= 10) {
         progressBar.innerText = `${counterQuestion}/${MAX_QUESTIONS}`;
     }
-    
+
 
     //sync counter Question with progress bar
     progressBar.style.width = `${(counterQuestion / MAX_QUESTIONS) * 100}%`;
@@ -105,3 +112,4 @@ choices.forEach((choice) => {
         }, 500);
     });
 });
+
