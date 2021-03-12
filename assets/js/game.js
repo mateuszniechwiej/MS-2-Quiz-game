@@ -30,7 +30,7 @@ startGame = () => {
         bonus = 15;
     };
     if (!difficultyLevel || !categoryId) {
-        alert("Please select a category or difficulty level")
+        $('#settingsModal').modal('show');
     } else {
 
         getNextQuestion();
@@ -57,6 +57,11 @@ getNextQuestion = () => {
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
     question.innerText = displayedQuestion.question; //displaying question by calling question property
+
+
+    console.log(displayedQuestion);
+
+    console.log(availableQuestions);
 
     const buttonsToHide = Array.from(document.querySelectorAll(".hide"));
     console.log(buttonsToHide);

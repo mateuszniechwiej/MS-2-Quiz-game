@@ -124,11 +124,12 @@
     <!--Section for three modals- Username,info modal, and Win modal  -->
     <section>
         <!--username Modal-->
-        <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="Player name" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="Player name" aria-hidden="true"
+            data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content" id="#usernameContent">
                     <div class="modal-header justify-content-center">
-                        <h2 class="modal-title" >Input your name</h2>
+                        <h2 class="modal-title">Input your name</h2>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -140,19 +141,36 @@
                                 <button type="button" class="btn btn-primary" id="submitName">Start</button>
                             </div>
                         </form>
-                    </div>                   
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class=" modal-backdrop fade show " id="usernameModal--bg" style="display: none;">
-        </div> -->
+        <!-- Settings modal-->
+        <div class="modal" id="settingsModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Select</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please select you category and difficulty level</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Info modal-->
         <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
             role="dialog">
             <div class="modal-dialog modal-fullscreen-sm-down" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title" >Instructions</h3>
+                        <h3 class="modal-title">Instructions</h3>
                         <button type="button" class="close" aria-label="Close">
                             <span aria-hidden="true">X</span>
                         </button>
@@ -166,13 +184,14 @@
                             Hard Level = 15 points <br>
 
                             The High Score will be displayed under player name after answering final question. <br>
-                            
-                            Answers - Correct answers will display with green background and incorrect selection will display with red background. <br>
+
+                            Answers - Correct answers will display with green background and incorrect selection will
+                            display with red background. <br>
 
                             Select your category and difficulty level. <br>
                             When you ready , click the "Start" button to start the Quiz.
 
-                            </p>
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary close">Close</button>
