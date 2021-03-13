@@ -10,6 +10,7 @@ fetchingData = () => {
         questions = importedQuestions.results.map(importedQuestion => {
             const formattedQuestion = {
                 question: importedQuestion.question,
+                possible_answers: [importedQuestion.correct_answer, ...importedQuestion.incorrect_answers]                 
             };
 
             const answerChoices = [...importedQuestion.incorrect_answers];
@@ -18,6 +19,7 @@ fetchingData = () => {
 
             answerChoices.forEach((choice, index) => {
                 formattedQuestion['choice' + (index + 1)] = choice;
+                console.log(choice);
             });
             console.log(formattedQuestion);
             return formattedQuestion;//returning Array object with questions only to use in the quiz
