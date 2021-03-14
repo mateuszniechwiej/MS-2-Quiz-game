@@ -66,9 +66,9 @@ getNextQuestion = () => {
     const buttonsToHide = Array.from(document.querySelectorAll(".hide"));
     console.log(buttonsToHide);
 
-    const booleanQuestion = !displayedQuestion.choice3; //varaible for when question has only 2 choices to answer,
+    //
 
-    if (booleanQuestion) {
+    if (displayedQuestion.possible_answers.length<3) {
         buttonsToHide.forEach((btn) => {
             btn.classList.add("hideBtn");
         });
