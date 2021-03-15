@@ -19,7 +19,27 @@ let bonus;
 startGame = () => {
     counterQuestion = 0;
     score = 0;
+    possibleAnswers = []
     availableQuestions = [...questions]; // creating full copy of questions
+    const answers = document.querySelector("#answers")
+
+    availableQuestions.forEach((question => {
+        possibleAnswers = question.possible_answers;
+    }));
+
+
+    possibleAnswers.forEach((answer, index) => {
+        const possibleAnswer = answer;
+        const alphabet = ["A", "B", "C", "D"];
+        answers.innerHTML += `
+        <div class="answers-container">
+                        <p class="answer-prefix ">${alphabet[index]}</p>
+                        <p class="answer-choice " data-number=1>${possibleAnswer}</p>
+                    </div>`
+    });
+
+
+
     console.log(difficultyLevel)
     console.log(categoryId)
     if (difficultyLevel === "easy") {
@@ -56,35 +76,35 @@ getNextQuestion = () => {
 
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
-    question.innerText = displayedQuestion.question; //displaying question by calling question property
+    if (displayedQuestion !== undefined) { question.innerText = displayedQuestion.question }; //displaying question by calling question property
 
 
     console.log(displayedQuestion);
 
     console.log(availableQuestions);
 
-    const buttonsToHide = Array.from(document.querySelectorAll(".hide"));
-    console.log(buttonsToHide);
+    // const buttonsToHide = Array.from(document.querySelectorAll(".hide"));
+    // console.log(buttonsToHide);
 
     //
 
-    if (displayedQuestion.possible_answers.length<3) {
-        buttonsToHide.forEach((btn) => {
-            btn.classList.add("hideBtn");
-        });
-        choices.forEach((choice) => {
-            const number = choice.dataset["number"];
-            choice.innerText = displayedQuestion["choice" + number];
-        });
-    } else {
-        buttonsToHide.forEach((btn) => {
-            btn.classList.remove("hideBtn");
-        });
-        choices.forEach((choice) => {
-            const number = choice.dataset["number"];
-            choice.innerText = displayedQuestion["choice" + number];
-        });
-    }
+    // if (displayedQuestion.possible_answers.length<3) {
+    //     buttonsToHide.forEach((btn) => {
+    //         btn.classList.add("hideBtn");
+    //     });
+    //     choices.forEach((choice) => {
+    //         const number = choice.dataset["number"];
+    //         choice.innerText = displayedQuestion["choice" + number];
+    //     });
+    // } else {
+    //     buttonsToHide.forEach((btn) => {
+    //         btn.classList.remove("hideBtn");
+    //     });
+    //     choices.forEach((choice) => {
+    //         const number = choice.dataset["number"];
+    //         choice.innerText = displayedQuestion["choice" + number];
+    //     });
+    // }
 
     availableQuestions.splice(indexQuestion, 1); //to remove old question and make space for new question
     acceptAnswer = true;
