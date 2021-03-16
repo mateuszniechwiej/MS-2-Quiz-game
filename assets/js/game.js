@@ -1,6 +1,5 @@
 // questions and game quiz
 const question = document.querySelector("#question");
-const choices = Array.from(document.querySelectorAll(".answer-choice"));
 const currentScore = document.querySelector("#current-score");
 const progressBar = document.querySelector(".qz-progress-bar");
 
@@ -23,6 +22,29 @@ startGame = () => {
     availableQuestions = [...questions]; // creating full copy of questions
     const answers = document.querySelector("#answers")
 
+    console.log(difficultyLevel)
+    console.log(categoryId)
+    if (difficultyLevel === "easy") {
+        bonus = 10;
+    } else if (difficultyLevel === "medium") {
+        bonus = 12;
+    } else if (difficultyLevel === "hard") {
+        bonus = 15;
+    };
+    if (!difficultyLevel || !categoryId) {
+        $('#settingsModal').modal('show');
+    } else {
+        answers.innerHTML = "";
+        getNextQuestion();
+    }
+
+};
+
+getNextQuestion = () => {
+    //temprorary setting quiz after questions finish to refresh page so game starts again
+    console.log(difficultyLevel);
+    console.log(categoryId);
+
     availableQuestions.forEach((question => {
         possibleAnswers = question.possible_answers;
     }));
@@ -38,29 +60,6 @@ startGame = () => {
                     </div>`
     });
 
-
-
-    console.log(difficultyLevel)
-    console.log(categoryId)
-    if (difficultyLevel === "easy") {
-        bonus = 10;
-    } else if (difficultyLevel === "medium") {
-        bonus = 12;
-    } else if (difficultyLevel === "hard") {
-        bonus = 15;
-    };
-    if (!difficultyLevel || !categoryId) {
-        $('#settingsModal').modal('show');
-    } else {
-
-        getNextQuestion();
-    }
-};
-
-getNextQuestion = () => {
-    //temprorary setting quiz after questions finish to refresh page so game starts again
-    console.log(difficultyLevel);
-    console.log(categoryId);
     if (availableQuestions.length === 0) {
         $('#finalModal').modal('show');
         setHighScore();
@@ -110,6 +109,12 @@ getNextQuestion = () => {
     acceptAnswer = true;
 };
 
+choices.forEach(choice => {
+    console.log(number);
+    const number = choice.dataset["number"];
+    choice.innerText = displayedQuestion["choice" + number];
+})
+
 choices.forEach((choice) => {
     choice.addEventListener("click", (e) => {
         if (!acceptAnswer) return;
@@ -133,6 +138,7 @@ choices.forEach((choice) => {
         selectedChoice.parentElement.classList.add(answerClass); //targetting parent element to get background colour change
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(answerClass);
+            answers.innerHTML = "";
             getNextQuestion();
         }, 500);
     });
