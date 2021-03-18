@@ -11,6 +11,7 @@ let availableQuestions = [];
 
 let questions = [];
 
+const EASY = "easy", MEDIUM = "medium", HARD = "hard";
 const MAX_QUESTIONS = 10;
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
@@ -24,11 +25,11 @@ startGame = () => {
 
     console.log(difficultyLevel)
     console.log(categoryId)
-    if (difficultyLevel === "easy") {
+    if (difficultyLevel === EASY) {
         bonus = 10;
-    } else if (difficultyLevel === "medium") {
+    } else if (difficultyLevel === MEDIUM) {
         bonus = 12;
-    } else if (difficultyLevel === "hard") {
+    } else if (difficultyLevel === HARD) {
         bonus = 15;
     };
     if (!difficultyLevel || !categoryId) {
