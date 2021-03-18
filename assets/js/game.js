@@ -7,7 +7,6 @@ let displayedQuestion = [];
 let acceptAnswer = false; //set to false so user can't answer before new question loaded
 let score = 0;
 let counterQuestion = 0;
-let availableQuestions = [];
 
 let questions = [];
 
@@ -44,8 +43,11 @@ startGame = () => {
 getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
+        question.innerHTML = "";
         $('#finalModal').modal('show');
         setHighScore();
+        return
+        
     }
     counterQuestion++;
     if (counterQuestion <= 10) {
