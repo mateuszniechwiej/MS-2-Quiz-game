@@ -12,6 +12,9 @@ let questions = [];
 
 const EASY = "easy", MEDIUM = "medium", HARD = "hard";
 const MAX_QUESTIONS = 10;
+// sounds
+const incorrectSound = document.querySelector("#incorrect");
+
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
 let bonus;
@@ -85,7 +88,7 @@ getNextQuestion = () => {
 
     availableQuestions.splice(indexQuestion, 1); //to remove old question and make space for new question
     acceptAnswer = true;
-    selectingChoice()
+    selectingChoice();
 };
 
 selectingChoice = () => {
@@ -109,6 +112,10 @@ selectingChoice = () => {
             if (answerClass === "correct") {
                 score += bonus;
                 currentScore.innerText = `${score} points`;
+            } else {
+                if (document.querySelector(".fa-volume-up")) {
+                    incorrectSound.play();
+                }
             }
             selectedChoice.parentElement.classList.add(answerClass); //targetting parent element to get background colour change
             setTimeout(() => {
