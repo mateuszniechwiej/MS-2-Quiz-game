@@ -14,6 +14,7 @@ const EASY = "easy", MEDIUM = "medium", HARD = "hard";
 const MAX_QUESTIONS = 10;
 // sounds
 const incorrectSound = document.querySelector("#incorrect");
+const correctSound = document.querySelector("#correct");
 
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
@@ -112,6 +113,9 @@ selectingChoice = () => {
             if (answerClass === "correct") {
                 score += bonus;
                 currentScore.innerText = `${score} points`;
+                if (document.querySelector(".fa-volume-up")) {
+                    correctSound.play();
+                }
             } else {
                 if (document.querySelector(".fa-volume-up")) {
                     incorrectSound.play();
