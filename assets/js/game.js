@@ -15,6 +15,7 @@ const MAX_QUESTIONS = 10;
 // sounds
 const incorrectSound = document.querySelector("#incorrect");
 const correctSound = document.querySelector("#correct");
+const finalSound = document.querySelector("#finalSound");
 
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
@@ -48,6 +49,9 @@ getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
         question.innerHTML = "";
+        if (document.querySelector(".fa-volume-up")) {
+            finalSound.play();
+        }
         $('#finalModal').modal('show');
         setHighScore();
         return
@@ -126,7 +130,7 @@ selectingChoice = () => {
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 500);
+            }, 1000);
         });
     });
 }
