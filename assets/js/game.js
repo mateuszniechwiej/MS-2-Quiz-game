@@ -40,7 +40,7 @@ startGame = () => {
     } else {
         answers.innerHTML = "";
         getNextQuestion();
-        
+
     }
 
 };
@@ -55,7 +55,7 @@ getNextQuestion = () => {
         $('#finalModal').modal('show');
         setHighScore();
         return
-        
+
     }
     counterQuestion++;
     if (counterQuestion <= 10) {
@@ -65,23 +65,30 @@ getNextQuestion = () => {
     console.log(categoryId);
 
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
+    console.log(availableQuestions);
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
     question.innerText = displayedQuestion.question; //displaying question by calling question property
 
     console.log(displayedQuestion);
-    
-    const possibleAnswers = displayedQuestion.possible_answers;
 
+
+    const possibleAnswers = displayedQuestion.possible_answers;
+    console.log(possibleAnswers);
 
     possibleAnswers.forEach((answer, index) => {
-        const possibleAnswer = answer;
         const alphabet = ["A", "B", "C", "D"];
-        answers.innerHTML += `
+        answer = answers.innerHTML += `
         <div class="answers-container">
                         <p class="answer-prefix ">${alphabet[index]}</p>
-                        <p class="answer-choice " data-number=${index+1}>${possibleAnswer}</p>
+                        <p class="answer-choice " data-number=${index + 1}></p>
                     </div>`
     });
+
+    const choices = document.querySelectorAll(".answer-choice");
+    choices.forEach(choice => {
+        const number = choice.dataset["number"];
+        choice.innerText = displayedQuestion["choice" + number];
+    })
 
     console.log(answers.innerHTML)
     //sync counter Question with progress bar
@@ -97,7 +104,7 @@ getNextQuestion = () => {
 };
 
 selectingChoice = () => {
-    const choices = document.querySelectorAll(".answer-choice")
+    const choices = document.querySelectorAll(".answer-choice");
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
             if (!acceptAnswer) return;
@@ -105,13 +112,13 @@ selectingChoice = () => {
             acceptingAnswer = false;
             const selectedChoice = e.target;
             console.log(selectedChoice);
-            const selectedChoiceNumber = Number(selectedChoice.dataset["number"]); //to get change to number
+            // const selectedChoice = Number(selectedChoice.dataset["number"]); //to get change to number
 
-            console.log(selectedChoiceNumber === displayedQuestion.answer); //to compare selected answer number with correct choice
+            console.log(selectedChoice.textContent === displayedQuestion.correct_answer); //to compare selected answer with correct answer
 
             //decalring variable using tenary operator(allowed becouse it's gives an expression)
             const answerClass =
-                selectedChoiceNumber === displayedQuestion.answer
+                selectedChoice.textContent === displayedQuestion.correct_answer
                     ? "correct"
                     : "incorrect";
             if (answerClass === "correct") {
@@ -130,7 +137,7 @@ selectingChoice = () => {
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 1000);
+            }, 800);
         });
     });
 }
