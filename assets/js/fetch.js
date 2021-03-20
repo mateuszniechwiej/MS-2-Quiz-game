@@ -1,7 +1,7 @@
 fetchingData = () => {
     const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}`;
     console.log(url);
-    
+
     fetch(url).then(respond => {
         console.log(respond);// getting response
         return respond.json();
@@ -12,17 +12,17 @@ fetchingData = () => {
                 question: importedQuestion.question,
                 possible_answers: [importedQuestion.correct_answer, ...importedQuestion.incorrect_answers],
                 correct_answer: importedQuestion.correct_answer,
-                incorrect_answers:[...importedQuestion.incorrect_answers]
+                incorrect_answers: [...importedQuestion.incorrect_answers]
             };
 
             const answerChoices = [...importedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;//to get random index between 0-3
-            answerChoices.splice(formattedQuestion.answer - 1, 0, importedQuestion.correct_answer);
+            randomNumber = Math.floor(Math.random() * 3) + 1;//to get random index between 0-3
+            answerChoices.splice(randomNumber - 1, 0, importedQuestion.correct_answer);
 
             answerChoices.forEach((choice, index) => {
                 formattedQuestion['choice' + (index + 1)] = choice;
-              console.log(choice);
-             });
+                console.log(choice);
+            });
             console.log(formattedQuestion);
             return formattedQuestion;//returning Array object with questions only to use in the quiz
         });
