@@ -99,9 +99,12 @@ a {
   max-width: 50%;
   margin-left: 25%;
   margin-bottom: 2rem;
+  height: 2rem;
+  border-radius: 15%;
 }
 .qz-progress-bar {
   width: 0%;
+  background-color: #ff6a3d;
 }
 
 #score {
