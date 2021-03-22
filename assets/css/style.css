@@ -115,7 +115,12 @@ a {
 }
 
 /*----------Game live score & progressbar -----*/
-
+#start {
+  width: 10rem;
+  height: 3rem;
+  background-color: #ff6a3d;
+  color: #000;
+}
 .progress-wraper {
   max-width: 80%;
   margin-left: 10%;
