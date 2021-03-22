@@ -39,7 +39,7 @@ p {
 /*-------------------------------------Colours--*/
 
 body {
-  background-color: #f2f2f2;
+  background-color: #9daaf2;
   color: #1a2238;
 }
 
@@ -51,10 +51,10 @@ body {
   background-color: #f4db7d;
 }
 
-/* .answers-container:hover {
+.answers-container:hover {
   box-shadow: 0 0.5em 0.5em -0.4em ;
   transform: translateY(-0.25em);
-} */
+} 
 
 .answer-choice {
   padding: 1rem 0rem 0rem 2rem;
@@ -155,3 +155,19 @@ a {
 }
 
 
+@media screen and (max-width:450px) {
+  .answer-choice {
+    padding-right:1.5rem;
+  }
+  #game {
+    padding: 0;
+    width: 100%;
+  }
+  #question {
+    margin:1rem 0 1rem 0;
+    font-size: x-large;
+  }
+  #qz-game {
+    margin-right: 1rem;
+  }
+}

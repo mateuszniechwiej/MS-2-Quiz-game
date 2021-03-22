@@ -76,7 +76,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col mt-4">
-                    <a href="#game"><button class="btn btn-dark" id="start">Start game</button></a>
+                    <a href="#focus"><button class="btn btn-dark" id="start">Start game</button></a>
                 </div>
             </div>
         </div>
@@ -89,13 +89,13 @@
             <div class="progress-bar 
             qz-progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="row " id="game">
+        <div class="row" >
             <div class="col-12 order-fist col-md-2 order-md-last text-center align-self-center " id="score">
                 <div class=" text-center qz-circle">
                     <p id="current-score">let's get some points</p>
                 </div>
             </div>
-            <div class="col-12 col-md-10 ">
+            <div class="col-12 col-md-10 " id="qz-game">
                 <h1 id="question"></h1>
                 <div id="answers">
                     <!-- <div class="answers-container">
@@ -118,13 +118,9 @@
             </div>
 
         </div>
-        <div class="push"></div>
+        <div class="push" id="focus"></div>
     </div>
-
     <!--Quiz Game section with progress bar and current points display-->
-    <section>
-
-    </section>
 
     <!--Section for three modals- Username,info modal, and Win modal  -->
     <section>
@@ -225,7 +221,7 @@
             </div>
         </div>
         <!-- <div class=" modal-backdrop fade show " id="finalmodal--bg" style="display: none;"> -->
-        </div> -->
+        </div> 
         <!-- Footer with GitHub icon and email link to contact-->
         <footer id="qz-footer">
             <div class="container-fluid">

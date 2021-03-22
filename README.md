@@ -395,7 +395,7 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 
 * [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
 * <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
-
+* <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
 ## Code
 
 * [Bootstrap library](https://getbootstrap.com/) - used to create a responsive design
