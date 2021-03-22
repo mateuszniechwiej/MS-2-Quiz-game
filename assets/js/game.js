@@ -21,6 +21,7 @@ const finalSound = document.querySelector("#finalSound");
 // Bonus point will depend on the level of quiz difficulty the player will chose
 let bonus;
 startGame = () => {
+    disableButtons();
     counterQuestion = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
@@ -140,4 +141,9 @@ selectingChoice = () => {
             }, 800);
         });
     });
+}
+
+disableButtons = () => {
+    document.querySelector("#categories").disabled = true;
+    document.querySelector("#difficulty").disabled = true;
 }

@@ -3,7 +3,7 @@ fetchingData = () => {
     console.log(url);
 
     fetch(url).then(respond => {
-        dd
+        console.log(respond);// getting response
         return respond.json();
     }).then(importedQuestions => {
         console.log(importedQuestions.results);//getting object array out of response
