@@ -354,7 +354,7 @@ A solution to satisfy user requirements:
   *  so far tried to resolve problem : fetch url with base64 encoding and then use atob() to display decoded questions and choices(still some questions display different characters);
   
     2.Add event listener to submit username Modal by pressing "Enter"
-  *  Solution not resolved 
+  *  resolved 
 
     3.Looking to find solution to alert user when category and difficulty not selected
   * resolved
@@ -391,6 +391,8 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 5. Click the _Save_ button.
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
+
+* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer  at the bottom of the page. 
 
 ## Code
 

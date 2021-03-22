@@ -14,7 +14,7 @@
 
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
-    <nav class="navbar navbar-light qz-navbar">
+    <nav class="navbar sticky-top navbar-light qz-navbar">
         <button class="btn btn-mute" id='btnMute' aria label="Mute Button"><i id="off"
                 class="fas fa-volume-mute"></i></button>
         <h2>Quiz Game</h2>
@@ -79,11 +79,11 @@
     </section>
     <!-- Game live porogress bar and current question-->
 
-    <div class="container-fluid mt-5 text-center align-self-center">
+    <div class="container-fluid mt-5 text-center align-self-center" id="wrapper">
         <h2 class="title">Game progress</h2>
         <div class="progress progress-wraper align-self-center">
             <div class="progress-bar progress-bar-striped
-             qz-progress-bar " role="progressbar" aria-valuenow="25"
+            qz-progress-bar " role="progressbar" aria-valuenow="25"
                 aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <div class="row " id="game">
@@ -115,6 +115,7 @@
             </div>
 
         </div>
+        <div class="push"></div>
     </div>
 
     <!--Quiz Game section with progress bar and current points display-->
