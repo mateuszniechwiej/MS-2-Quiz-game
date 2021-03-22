@@ -126,11 +126,15 @@ a {
   margin-left: 10%;
   margin-bottom: 2rem;
   height: 2rem;
-  
+  border: 1px solid #000;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .qz-progress-bar {
+  
+  color: #000;
   width: 0%;
-  background-color: #ff6a3d;
+  background-color: #9daaf2;
+  
 }
 
 #score {
