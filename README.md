@@ -315,7 +315,7 @@ A solution to satisfy user requirements:
 
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse) - as a part of the chrome dev tool was used to improve the quality of the web page.
 
-* [Favicon](https://favicon.io/) - to create a favicon for this Website
+* [Favicon](https://favicon.io/) - to create a favicon for this Website.
 
 
 
@@ -392,7 +392,8 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
 
-* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer  at the bottom of the page. 
+* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
+* <a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a>- icon downloaded to for favicon . 
 
 ## Code
 
