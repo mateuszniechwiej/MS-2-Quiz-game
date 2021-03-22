@@ -393,7 +393,7 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 # Credits
 
 * [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
-* <a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a>- icon downloaded to for favicon . 
+* <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
 
 ## Code
 
