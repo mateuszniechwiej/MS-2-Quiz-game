@@ -350,10 +350,11 @@ A solution to satisfy user requirements:
 
 ## Issues
     1.Encoding issue on some questions and answers fetched from Open Trivia API
-  *  Solution not resolved
-  *  so far tried to resolve problem : fetch url with base64 encoding and then use atob() to display decoded questions and choices(still some questions display different characters);
-  
-    2.Add event listener to submit username Modal by pressing "Enter"
+  *  resolved 
+  * solution explanation - by using Base64 encoding ,and then use atob() to decode questions and choices.
+
+
+ 1. Add event listener to submit username Modal by pressing "Enter"
   *  resolved 
 
     3.Looking to find solution to alert user when category and difficulty not selected

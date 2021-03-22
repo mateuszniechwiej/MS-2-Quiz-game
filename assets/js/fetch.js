@@ -1,5 +1,5 @@
 fetchingData = () => {
-    const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}`;
+    const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}&encode=base64`;
     console.log(url);
 
     fetch(url).then(respond => {

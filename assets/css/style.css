@@ -61,7 +61,7 @@ body {
   border-right: 0.2rem solid #1a2238;
 }
 #game {
-  background-color: #ff6a3d;
+  background-color: #9daaf2;
   padding: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -141,7 +141,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9daaf2;
+  background-color: #f2f2f2;
   padding: 1rem;
 }
 #current_score {
