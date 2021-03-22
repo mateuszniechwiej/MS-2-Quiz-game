@@ -17,7 +17,7 @@ const click = document.querySelector("#btnClick");
 const allButtons = document.querySelectorAll(".btn");
 
 clickBtn = () => {
-    if (document.querySelector(".fa-volume-up")) {
+    if (document.querySelector(".fa-volume-up ")) {
         click.play();
     }
 };

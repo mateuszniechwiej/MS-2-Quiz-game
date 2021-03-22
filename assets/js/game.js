@@ -50,7 +50,7 @@ getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
         question.innerHTML = "";
-        if (document.querySelector(".fa-volume-up")) {
+        if (document.querySelector(".fa-volume-up ")) {
             finalSound.play();
         }
         $('#finalModal').modal('show');
@@ -125,11 +125,11 @@ selectingChoice = () => {
             if (answerClass === "correct") {
                 score += bonus;
                 currentScore.innerText = `${score} points`;
-                if (document.querySelector(".fa-volume-up")) {
+                if (document.querySelector(".fa-volume-up ")) {
                     correctSound.play();
                 }
             } else {
-                if (document.querySelector(".fa-volume-up")) {
+                if (document.querySelector(".fa-volume-up ")) {
                     incorrectSound.play();
                 }
             }
