@@ -3,7 +3,7 @@ fetchingData = () => {
     console.log(url);
 
     fetch(url).then(respond => {
-        console.log(respond);// getting response
+        dd
         return respond.json();
     }).then(importedQuestions => {
         console.log(importedQuestions.results);//getting object array out of response
@@ -15,9 +15,9 @@ fetchingData = () => {
                 incorrect_answers: [...importedQuestion.incorrect_answers]
             };
 
-            const answerChoices = [...importedQuestion.incorrect_answers];
+            const answerChoices = [...formattedQuestion.incorrect_answers];
             randomNumber = Math.floor(Math.random() * 3) + 1;//to get random index between 0-3
-            answerChoices.splice(randomNumber - 1, 0, importedQuestion.correct_answer);
+            answerChoices.splice(randomNumber - 1, 0, formattedQuestion.correct_answer);
 
             answerChoices.forEach((choice, index) => {
                 formattedQuestion['choice' + (index + 1)] = choice;
