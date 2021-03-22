@@ -119,7 +119,7 @@ selectingChoice = () => {
 
             //decalring variable using tenary operator(allowed becouse it's gives an expression)
             const answerClass =
-                selectedChoice.textContent === displayedQuestion.correct_answer
+                selectedChoice.textContent === window.atob(displayedQuestion.correct_answer)
                     ? "correct"
                     : "incorrect";
             if (answerClass === "correct") {
