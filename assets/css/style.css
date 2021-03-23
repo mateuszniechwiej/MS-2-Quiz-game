@@ -47,8 +47,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #1a2238;
-  height: 100%;
-  overflow: hidden;
 }
 
 .answers-container {

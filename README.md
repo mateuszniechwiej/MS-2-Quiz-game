@@ -352,15 +352,16 @@ A solution to satisfy user requirements:
 
 ## Issues
     1.Encoding issue on some questions and answers fetched from Open Trivia API
-  *  resolved 
-  * solution explanation - by using Base64 encoding ,and then use atob() to decode questions and choices.
+  *  partly resolved 
+  * solution explanation - by using Base64 encoding ,and then use atob() to decode questions and choices.(impoved however some answers choices still wrongly disoplayed).
 
-
- 1. Add event listener to submit username Modal by pressing "Enter"
+    2.Add event listener to submit username Modal by pressing "Enter"
   *  resolved 
 
     3.Looking to find solution to alert user when category and difficulty not selected
   * resolved
+    4. Background image not showing on android phones
+  * not resolved ....
 
   
 # Deployment
