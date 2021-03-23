@@ -1,6 +1,6 @@
 // questions and game quiz
 const question = document.querySelector("#question");
-const currentScore = document.querySelector("#current-score");
+const currentScore = document.querySelector("#currentScore");
 const progressBar = document.querySelector(".qz-progress-bar");
 
 let displayedQuestion = [];

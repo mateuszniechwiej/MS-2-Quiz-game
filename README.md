@@ -396,6 +396,7 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 * [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
 * <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
 * <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
+* <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline - www.freepik.com</a> - use for background image.
 ## Code
 
 * [Bootstrap library](https://getbootstrap.com/) - used to create a responsive design
@@ -409,5 +410,5 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 ## Acknowledgements
 * Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
 * [To learn how to use Bootstrap modals without jQuery](https://dev.to/ara225/how-to-use-bootstrap-modals-without-jquery-3475)
-* 
+* [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
 
