@@ -40,11 +40,12 @@ p {
 /*-------------------------------------Colours--*/
 
 body {
-  background: url('/assets/images/quizBg.jpg') no-repeat bottom fixed;
+  background: url('/assets/images/quizBg.jpg') no-repeat center bottom fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #1a2238;
   height: 100%;
   overflow: hidden;
