@@ -302,6 +302,8 @@ A solution to satisfy user requirements:
 * [Concepts](https://concepts.app/en/) - to create the first hand-drawn wireframe
   
 * [Adobe Xd](https://www.adobe.com/ie/products/xd/wireframing-tool.html#:~:text=Adobe%20XD%20is%20a%20powerful,all%20in%20one%20design%20tool.) - for wireframe
+* [Adobe Colour](https://color.adobe.com/create/color-wheel) - for colour palette used in this project.
+* [Adobe Photoshop Express](https://photoshop.adobe.com/?promoid=SYBNM1DC&mv=other) - To crop the full page background image.
   
 * [Google Fonts](https://fonts.google.com/)-
 
