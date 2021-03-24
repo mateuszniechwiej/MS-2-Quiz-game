@@ -28,9 +28,9 @@ setHighScore = () => {
         userHighScore.innerText = gameScore;
         if (document.querySelector(".fa-volume-up ")) {
             fanfare.play();
+            localStorage.setItem("highScore", gameScore);
         }
-        
-        localStorage.setItem("highScore", gameScore);
+            
     } else {
         finalScore.innerText = `Your scored ${gameScore}`
         if (document.querySelector(".fa-volume-up ")) {

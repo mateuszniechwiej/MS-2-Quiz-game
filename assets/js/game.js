@@ -53,6 +53,7 @@ getNextQuestion = () => {
         question.innerHTML = "";
         
         $('#finalModal').modal('show');
+        
         setHighScore();
         return
 
