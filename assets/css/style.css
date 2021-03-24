@@ -48,7 +48,11 @@ p {
   background-repeat: no-repeat;
   color: #1a2238; 
 } */
-
+h2 span {
+  padding: 1rem;
+  background-color:rgba(250,250,250,0.6);
+  font-size: 2rem;
+}
 .answers-container {
   display: flex;
   margin-bottom: 1rem;
@@ -78,7 +82,6 @@ p {
   border-right: 0.2rem solid #1a2238;
 }
 #game {
-  background-color: #9daaf2;
   padding: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -95,7 +98,7 @@ p {
 i,
 a {
   color: #1a2238;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 /*-----------------------------------Navbar&footer------------ */
 
@@ -132,18 +135,22 @@ a {
 }
 
 /*----------Game live score & progressbar -----*/
-#start {
+#start,
+#start:active {
+  /* border-radius: 0; */
+  border:2px solid #1a2238;
   font-size: 2rem;
   width: 15rem;
   height: 4rem;
-  background-color: #fafafa;
+  background-color: #f26b1d;
   color: #000;
 }
 #start:hover,
 #start:focus {
-  /* background-color: #f26b1d; */
-  /* animation: pulse 1s;
-  box-shadow: 0 0 0 2em r */
+  
+  animation: pulse 2s;
+  border-color: #f26b1d; 
+  box-shadow: 0 0 3rem rgba(242, 107, 29, 0.4);
 }
 .progress-wraper {
   max-width: 80%;
@@ -163,13 +170,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f26b1d;
-  padding: 1rem;
+  background-color:#fed403;
+  padding: 0.5rem;
+  border:2px solid #1a2238;
+  
 }
 #current_score {
-  font-size: 2rem;
   margin: 0;
   padding: 1.5rem;
+}
+
+.qz-score--box p {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 450px) {
@@ -207,11 +219,11 @@ select {
   -moz-appearance: none;
   appearance: none; */
   /* background-image: url(../images/logoQuiz.jpg) 50% 15% no-repeat #fafafa;    */
-  margin: 40px;
-  width: 150px;
+  margin: 0px;
+  width: 170px;
   padding: 5px 0px 5px 10px;
-  border: 1px solid #1a2238;
+  border: 2px solid #1a2238;
   border-radius: 5%;
   height: 35px;
-  background:#f26b1d;
+  background:#fed403;
 }
