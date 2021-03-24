@@ -6,6 +6,14 @@ body {
   margin: 0;
 }
 
+body {
+  background: url("../images/quizBg.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #wrapper {
   min-height: 65%;
   margin-bottom: -0.5rem;
@@ -58,9 +66,13 @@ h2 span {
 }
 
 .answer-choice {
-  padding: 1rem 0rem 0rem 2rem;
+  padding: 1rem 0rem 1rem 2rem;
   width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
 }
+
+
 .title span {
   background: #fafafa;
   font-size: 2.4rem;
@@ -68,6 +80,7 @@ h2 span {
 }
 
 .answer-prefix {
+  font-size: 2rem;
   padding: 1rem 2rem;
   background-color: #f2f2f2;
   border-right: 0.2rem solid #1a2238;
@@ -207,13 +220,17 @@ a {
 }
 
 /*-------------------Modals-------------------*/
-
-body {
-  background: url("../images/quizBg.jpg") no-repeat center fixed;
+.qz-Modal--bg{
+  background: url("../images/yellowPaper.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+
+.qz-Modal--content  {
+  font-size: 2rem;
 }
 
 /*-------------Select menu style--------------*/
@@ -225,7 +242,7 @@ select {
   appearance: none; */
   /* background-image: url(../images/logoQuiz.jpg) 50% 15% no-repeat #fafafa;    */
   margin: 0px;
-  width: 170px;
+  width: 180px;
   padding: 5px 0px 5px 10px;
   border: 2px solid #1a2238;
   border-radius: 5%;

@@ -105,11 +105,11 @@
         <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="Player name" aria-hidden="true"
             data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
-                <div class="modal-content" id="#usernameContent">
+                <div class="modal-content qz-Modal--bg" id="#usernameContent">
                     <div class="modal-header justify-content-center">
                         <h2 class="modal-title">Input your name</h2>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body qz-Modal--content">
                         <form>
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Enter your name</label>
@@ -126,14 +126,14 @@
         <!-- Settings modal-->
         <div class="modal" id="settingsModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h5 class="modal-title">Select</h5>
+                        <h2 class="modal-title">SELECT</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body qz-Modal--content">
                         <p>Please select you category and difficulty level</p>
                     </div>
                     <div class="modal-footer">
@@ -145,23 +145,24 @@
         <!--Info modal-->
         <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
             role="dialog">
-            <div class="modal-dialog modal-fullscreen-sm-down" role="document">
-                <div class="modal-content">
+            <div class="modal-dialog modal-fullscreen-sm-down " role="document">
+                <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h3 class="modal-title">Instructions</h3>
+                        <h2 class="modal-title">GAME INSTRUCTIONS</h2>
                         <button type="button" class="close" aria-label="Close">
                             <span aria-hidden="true">X</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body qz-Modal--content">
                         <p>This quiz consists of 10 multiple or boolean choice questions.<br>
                             Player will be able to select 1 of 4 categories and 3 diffiulty levels.<br>
-                            Depending on difficulty Bonus point will be added per correct answer: <br>
-                            Easy Mode = 10 points <br>
+                            Depending on difficulty Bonus point will be added per correct answer:</p><hr>
+                        <p> 
+                     Easy Mode = 10 points <br>
                             Medium Level = 12 points <br>
-                            Hard Level = 15 points <br>
-
-                            The High Score will be displayed under player name after answering final question. <br>
+                            Hard Level = 15 points <br></p>
+                            <hr>
+                        <p>   The High Score will be displayed under player name after answering final question. <br>
 
                             Answers - Correct answers will display with green background and incorrect selection will
                             display with red background. <br>
@@ -182,13 +183,13 @@
         <!-- Button trigger modal -->
         <div class="modal fade" id="finalModal" tabindex="-1" aria-labelledby="finalModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-center modal-fullscreen-sm-down">
-                <div class="modal-content">
+                <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h3 class="modal-title" id="finalModalLabel">Congratulations</h3>
+                        <h2 class="modal-title" id="finalModalLabel">CONGRATULATIONS</h2>
                         <button type="button" class="btn-close closeHighScore" data-bs-dismiss="modal"
                             aria-label="Close">X</button>
                     </div>
-                    <div class="modal-body" id="finalScore">
+                    <div class="modal-body qz-Modal--content" id="finalScore">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary closeHighScore"
@@ -211,7 +212,7 @@
                         <p>Copyright &copy;2021 by Mateusz Niechwiej</p>
                     </div>
                     <div class="col-12 col-md-4 text-center text-md-right GitHub">
-                        <a href="https://github.com/mateuszniechwiej"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/mateuszniechwiej" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
