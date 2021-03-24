@@ -8,7 +8,7 @@ body {
 
 #wrapper {
   min-height: 65%;
-  margin-bottom: -50px;
+  margin-bottom: -0.5rem;
 }
 
 .footer,
@@ -226,4 +226,9 @@ select {
   border-radius: 5%;
   height: 35px;
   background:#fed403;
+}
+/*-------------------footer-----------*/
+.copy p {
+  font-size: 2rem;
+  font-weight: 500;
 }
