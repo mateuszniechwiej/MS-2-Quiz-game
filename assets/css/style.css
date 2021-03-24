@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
-  margin:0;
-
+  margin: 0;
 }
 
 #wrapper {
-  min-height: 65% ;
+  min-height: 65%;
   margin-bottom: -50px;
 }
 
 .footer,
 .push {
-  height:50px;
+  height: 50px;
 }
 /* -----------------------------------Fonts--*/
 
@@ -54,20 +54,20 @@ p {
   margin-bottom: 1rem;
   width: 100%;
   border: 0.2rem solid #1a2238;
-  background-color: #FED403;
+  background-color: #fed403;
 }
 
 .answers-container:hover {
-  box-shadow: 0 0.5em 0.5em -0.4em ;
+  box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.25em);
-} 
+}
 
 .answer-choice {
   padding: 1rem 0rem 0rem 2rem;
   width: 100%;
 }
-.title span{
-  background:#fafafa;
+.title span {
+  background: #fafafa;
   font-size: 2.4rem;
   padding: 1rem;
 }
@@ -88,11 +88,9 @@ p {
   background-color: #f2f2f2;
   padding: 2rem;
   margin-top: 3rem;
-  
 }
 #question {
-
-  background:#fafafa ;
+  background: #fafafa;
 }
 i,
 a {
@@ -103,11 +101,11 @@ a {
 
 #logo {
   width: 50px;
-  height:50px;
+  height: 50px;
 }
 .qz-navbar {
   background-color: #f2f2f2;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 #qz-footer {
@@ -115,7 +113,7 @@ a {
 }
 
 .qz-hud {
-  background-color: #F26B1D;
+  background-color: #f26b1d;
   margin-top: 1rem;
   padding-left: 0;
 }
@@ -135,10 +133,17 @@ a {
 
 /*----------Game live score & progressbar -----*/
 #start {
-  width: 10rem;
-  height: 3rem;
-  background-color: #F26B1D;
+  font-size: 2rem;
+  width: 15rem;
+  height: 4rem;
+  background-color: #fed403;
   color: #000;
+}
+#start:hover,
+#start:focus {
+  /* background-color: #f26b1d; */
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba();
 }
 .progress-wraper {
   max-width: 80%;
@@ -149,18 +154,16 @@ a {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .qz-progress-bar {
-  
   color: #000;
   width: 0%;
-  background-color: #F26B1D;
-  
+  background-color: #f26b1d;
 }
 
 #score {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F26B1D;
+  background-color: #f26b1d;
   padding: 1rem;
 }
 #current_score {
@@ -169,30 +172,46 @@ a {
   padding: 1.5rem;
 }
 
-
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .answer-choice {
-    padding-right:1.5rem;
+    padding-right: 1.5rem;
   }
   #game {
     padding: 0;
     width: 100%;
   }
   #question {
-    margin:1rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     font-size: x-large;
   }
   #qz-footer {
     padding: 0.5rem;
-    }
   }
+}
 
 /*-------------------Modals-------------------*/
 
 body {
-  background: url('../images/quizBg.jpg') no-repeat center fixed;
+  background: url("../images/quizBg.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/*-------------Select menu style--------------*/
+select {
+  font-size:1.5rem;
+  font-weight: 600;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  /* background-image: url(../images/logoQuiz.jpg) 50% 15% no-repeat #fafafa;    */
+  margin: 40px;
+  width: 150px;
+  padding: 5px 0px 5px 10px;
+  border: 1px solid #1a2238;
+  border-radius: 5%;
+  height: 35px;
+  background:#f26b1d;
 }

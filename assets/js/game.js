@@ -126,10 +126,14 @@ selectingChoice = () => {
                 score += bonus;
                 currentScore.innerText = `${score} points`;
                 if (document.querySelector(".fa-volume-up ")) {
+                    if (!incorrectSound || !correctSound) return;// stop sound going togheter
+                    correctSound.currentTime = 0;
                     correctSound.play();
                 }
             } else {
                 if (document.querySelector(".fa-volume-up ")) {
+                    if (!incorrectSound || !correctSound) return;
+                    incorrectSound.currentTime = 0;
                     incorrectSound.play();
                 }
             }
@@ -138,7 +142,7 @@ selectingChoice = () => {
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 800);
+            }, 100);
         });
     });
 }

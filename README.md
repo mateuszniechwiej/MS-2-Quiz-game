@@ -395,8 +395,6 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 5. Click the _Save_ button.
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
-
-* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
 * <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
 * <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
 * <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline - www.freepik.com</a> - use for background image.
@@ -414,4 +412,6 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 * Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
 * [To learn how to use Bootstrap modals without jQuery](https://dev.to/ara225/how-to-use-bootstrap-modals-without-jquery-3475)
 * [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
+* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
+* [JS30-"Drum_Kit"](https://javascript30.com/) -learned how to allow sound play after fast click next answer in Quiz.
 
