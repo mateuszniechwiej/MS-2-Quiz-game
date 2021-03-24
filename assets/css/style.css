@@ -91,6 +91,7 @@ a {
   color: #1a2238;
   font-size: 3rem;
 }
+
 /*-----------------------------------Navbar&footer------------ */
 
 #logo {
@@ -235,4 +236,21 @@ select {
 .copy p {
   font-size: 2rem;
   font-weight: 500;
+}
+
+.mail span {
+  font-size: 2rem;
+  text-decoration: none;
+}
+.mail a:hover,
+i:hover{
+  transition: 1s;
+  text-decoration: none;
+  color: #f26b1d;
+}
+
+.GitHub i:hover {
+  transition: 1s;
+  font-size: 4rem;
+  color: #f26b1d;
 }
