@@ -68,7 +68,7 @@ getNextQuestion = () => {
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     console.log(availableQuestions);
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
-    question.innerText = window.atob(displayedQuestion.question); //displaying question by calling question property
+    question.innerText = decodeURIComponent(displayedQuestion.question); //displaying question by calling question property
 
     console.log(displayedQuestion);
 
@@ -88,7 +88,7 @@ getNextQuestion = () => {
     const choices = document.querySelectorAll(".answer-choice");
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        choice.innerText = window.atob(displayedQuestion["choice" + number]);
+        choice.innerText = decodeURIComponent(displayedQuestion["choice" + number]);
     })
 
     console.log(answers.innerHTML)
@@ -119,7 +119,7 @@ selectingChoice = () => {
 
             //decalring variable using tenary operator(allowed becouse it's gives an expression)
             const answerClass =
-                selectedChoice.textContent === window.atob(displayedQuestion.correct_answer)
+                selectedChoice.textContent === decodeURIComponent(displayedQuestion.correct_answer)
                     ? "correct"
                     : "incorrect";
             if (answerClass === "correct") {

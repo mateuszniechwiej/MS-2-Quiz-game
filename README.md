@@ -352,8 +352,10 @@ A solution to satisfy user requirements:
 
 ## Issues
     1.Encoding issue on some questions and answers fetched from Open Trivia API
-  *  partly resolved 
-  * solution explanation - by using Base64 encoding ,and then use atob() to decode questions and choices.(impoved however some answers choices still wrongly disoplayed).
+  *  <del>partly resolved</del> 
+  * <del>solution explanation - by using Base64 encoding ,and then use atob() to decode questions and choices.(impoved however some answers choices still wrongly disoplayed).</del>
+  * resolved
+  * solution explained - change to URL Encoding (3986) and then decode to display by using decodeURIComponent() .
 
     2.Add event listener to submit username Modal by pressing "Enter"
   *  resolved 
