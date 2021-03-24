@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background: url("../images/quizBg.jpg") no-repeat center fixed;
+  background: url("../images/quizBg1.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -237,10 +237,6 @@ a {
 select {
   font-size:1.5rem;
   font-weight: 600;
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
-  /* background-image: url(../images/logoQuiz.jpg) 50% 15% no-repeat #fafafa;    */
   margin: 0px;
   width: 180px;
   padding: 5px 0px 5px 10px;
