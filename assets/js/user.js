@@ -23,10 +23,12 @@ checkUserData = () => {
 
 setHighScore = () => {
     let gameScore = currentScore.innerText;
-    finalScore.innerText = `Your score  is ${gameScore}`;
     if (gameScore > userHighScore.innerText && gameScore !== "SCORE") {
+        finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore}`
         userHighScore.innerText = gameScore;
         localStorage.setItem("highScore", gameScore);
+    } else {
+        finalScore.innerText = `Your scored ${gameScore}`
     }
     
 };
