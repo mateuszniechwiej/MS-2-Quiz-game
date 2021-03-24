@@ -39,15 +39,6 @@ p {
 
 /*-------------------------------------Colours--*/
 
-/* body {
-  background: url('/assets/images/quizBg.jpg') no-repeat center bottom fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #1a2238; 
-} */
 h2 span {
   padding: 1rem;
   background-color:rgba(250,250,250,0.6);
@@ -114,12 +105,17 @@ a {
 #qz-footer {
   box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
 }
-
 .qz-hud {
-  background-color: #f26b1d;
+  background:rgba(242, 107, 29, 0.8);
+  padding-left: 1rem;
+}
+.qz-hud h2 {
+  background-color:rgba(250,250,250,0.6);
   margin-top: 1rem;
   padding-left: 0;
+  font-size: 2rem;
 }
+
 /*------ add and remove classes */
 
 .hideBtn {
@@ -179,7 +175,15 @@ a {
   margin: 0;
   padding: 1.5rem;
 }
+#userName {
+  font-size: 2.4rem;
+  background-color:
+}
 
+#highScore {
+  font-size: 2.4rem;
+
+}
 .qz-score--box p {
   font-size: 2rem;
 }
