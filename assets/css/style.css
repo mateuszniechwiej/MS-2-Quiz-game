@@ -136,14 +136,14 @@ a {
   font-size: 2rem;
   width: 15rem;
   height: 4rem;
-  background-color: #fed403;
+  background-color: #fafafa;
   color: #000;
 }
 #start:hover,
 #start:focus {
   /* background-color: #f26b1d; */
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba();
+  /* animation: pulse 1s;
+  box-shadow: 0 0 0 2em r */
 }
 .progress-wraper {
   max-width: 80%;
