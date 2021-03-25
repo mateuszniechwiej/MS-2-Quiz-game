@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content = "Quiz Game with multiple and true/false questions ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
@@ -19,10 +20,10 @@
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar sticky-top navbar-light qz-navbar">
-        <button class="btn btn-mute" id='btnMute' aria label="Mute Button"><i id="off"
+        <button class="btn btn-mute" id='btnMute' aria-label="Mute Button" ><i id="off"
                 class="fas fa-volume-mute fa-fw"></i></button>
                 <img src="assets/images/logoQuiz.jpg" alt="logo" id="logo">
-        <button type="button" class="btn " id="openModal"><i class="fas fa-info-circle"></i></button>
+        <button type="button" class="btn " id="openModal" aria-label="Game Info"><i class="fas fa-info-circle"></i></button>
     </nav>
     <!-- Player dashboard with name and high scores, categories to select and difficulty level -->
     <section>
@@ -95,7 +96,7 @@
             </div>
 
         </div>
-        <div class="push" id="focus"></div>
+        <div class="push" ></div>
     </div>
     <!--Quiz Game section with progress bar and current points display-->
 
@@ -212,7 +213,7 @@
                         <p>Copyright &copy;2021 by Mateusz Niechwiej</p>
                     </div>
                     <div class="col-12 col-md-4 text-center text-md-right GitHub">
-                        <a href="https://github.com/mateuszniechwiej" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/mateuszniechwiej" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
