@@ -41,6 +41,9 @@ setHighScore = () => {
         const finalLabel = document.querySelector("#finalModalLabel");
         finalLabel.innerText = ""
         finalScore.innerText = "No point this time.Try Again!"
+        if (document.querySelector(".fa-volume-up ")) {
+            noPoints.play();
+        }
     }
     
 };
