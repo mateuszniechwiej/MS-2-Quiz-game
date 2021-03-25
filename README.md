@@ -1,5 +1,12 @@
+# ![logo](assets/images/logoQuiz.jpg)
+
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
+
+:page_facing_up: [GitHub repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
+
+![Quiz Game](assets/images/Mock_up.png)
 # Table of Contest
+- [!logo](#)
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
 - [UX](#ux)
@@ -256,6 +263,10 @@ A solution to satisfy user requirements:
 
 ### Colour Scheme
 
+* Extracted colours by using Adobe Color from the background image were used in this project.
+
+
+![Colour Pallete](assets/images/colours.jpeg)
 ### Typography
 
 
@@ -304,12 +315,14 @@ A solution to satisfy user requirements:
 * [Adobe Xd](https://www.adobe.com/ie/products/xd/wireframing-tool.html#:~:text=Adobe%20XD%20is%20a%20powerful,all%20in%20one%20design%20tool.) - for wireframe
 * [Adobe Colour](https://color.adobe.com/create/color-wheel) - for colour palette used in this project.
 * [Adobe Photoshop Express](https://photoshop.adobe.com/?promoid=SYBNM1DC&mv=other) - To crop the full page background image.
+* [JPEG-OPTIMIZER](http://jpeg-optimizer.com/) - optimized the size of images used in this project
+* [tinypng](https://tinypng.com/) - optimized Mockup.png for README
   
-* [Google Fonts](https://fonts.google.com/)-
+* [Google Fonts](https://fonts.google.com/)- to import 'Exo 2' and 'Open Sans' fonts used in this project.
 
-* [Font Awesome](https://fontawesome.com/) - 
+* [Font Awesome](https://fontawesome.com/) - for social media links on the website and SVG used in wireframe 
 
-* [Visual Studio Code](https://code.visualstudio.com/) - 
+* [Visual Studio Code](https://code.visualstudio.com/) - used for developing this website and commit the project to GitHub repository.
 
 * [Github](https://github.com/) - used to host the project and deploy the live website through [Git Pages](https://pages.github.com/).
 
@@ -320,6 +333,7 @@ A solution to satisfy user requirements:
 * [Favicon](https://favicon.io/) - to create a favicon for this Website.
 
 * [online-audio-converter](https://online-audio-converter.com/) - to convert files to mp3.
+* [techsini](https://techsini.com/) - To generate website mock-up for README file.
 
 
 

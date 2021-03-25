@@ -56,7 +56,7 @@ h2 span {
   display: flex;
   margin-bottom: 1rem;
   width: 100%;
-  border: 0.2rem solid #1a2238;
+  border: 0.2rem solid #011526;
   background-color: #fed403;
 }
 
@@ -83,7 +83,7 @@ h2 span {
   font-size: 2rem;
   padding: 1rem 2rem;
   background-color: #f2f2f2;
-  border-right: 0.2rem solid #1a2238;
+  border-right: 0.2rem solid #011526;
 }
 #game {
   padding: 2rem;
@@ -101,7 +101,7 @@ h2 span {
 }
 i,
 a {
-  color: #1a2238;
+  color: #011526;
   font-size: 3rem;
 }
 
@@ -148,7 +148,7 @@ a {
 #start,
 #start:active {
   /* border-radius: 0; */
-  border:2px solid #1a2238;
+  border:2px solid #011526;
   font-size: 2rem;
   width: 15rem;
   height: 4rem;
@@ -184,7 +184,7 @@ a {
   align-items: center;
   background-color:#fed403;
   padding: 0.5rem;
-  border:2px solid #1a2238;
+  border:2px solid #011526;
   
 }
 #current_score {
@@ -242,7 +242,7 @@ select {
   margin: 0px;
   width: 180px;
   padding: 5px 0px 5px 10px;
-  border: 2px solid #1a2238;
+  border: 2px solid #011526;
   border-radius: 5%;
   height: 35px;
   background:#fed403;
