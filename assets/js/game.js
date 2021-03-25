@@ -17,6 +17,7 @@ const incorrectSound = document.querySelector("#incorrect");
 const correctSound = document.querySelector("#correct");
 const finalSound = document.querySelector("#finalSound");
 const fanfare = document.querySelector('#fanfare');
+const noPoints = document.querySelector('#noPoints');
 
 
 // Bonus point will depend on the level of quiz difficulty the player will chose

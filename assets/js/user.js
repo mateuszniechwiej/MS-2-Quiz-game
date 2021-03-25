@@ -26,9 +26,10 @@ setHighScore = () => {
     if (gameScore > userHighScore.innerText && gameScore !== "SCORE") {
         finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore}`
         userHighScore.innerText = gameScore;
+        localStorage.setItem("highScore", gameScore);
         if (document.querySelector(".fa-volume-up ")) {
             fanfare.play();
-            localStorage.setItem("highScore", gameScore);
+            
         }
             
     } else if(gameScore<=userHighScore.innerText && gameScore !== "SCORE"){
