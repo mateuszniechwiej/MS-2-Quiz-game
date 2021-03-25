@@ -166,12 +166,14 @@ a {
   max-width: 80%;
   margin-left: 10%;
   margin-bottom: 2rem;
-  height: 2rem;
+  height: 3rem;
   border: 1px solid #000;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .qz-progress-bar {
   color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
   width: 0%;
   background-color: #f26b1d;
 }
