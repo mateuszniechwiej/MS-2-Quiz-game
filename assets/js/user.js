@@ -31,11 +31,15 @@ setHighScore = () => {
             localStorage.setItem("highScore", gameScore);
         }
             
-    } else {
+    } else if(gameScore<=userHighScore.innerText && gameScore !== "SCORE"){
         finalScore.innerText = `Your scored ${gameScore}`
         if (document.querySelector(".fa-volume-up ")) {
             finalSound.play();
         }
+    } else {
+        const finalLabel = document.querySelector("#finalModalLabel");
+        finalLabel.innerText = ""
+        finalScore.innerText = "No point this time.Try Again!"
     }
     
 };
