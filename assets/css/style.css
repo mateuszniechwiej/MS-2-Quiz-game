@@ -223,7 +223,8 @@ a {
 
 /*-------------------Modals-------------------*/
 .qz-Modal--bg{
-  background: url("../images/yellowPaper.jpg") no-repeat center fixed;
+  /* background: url("../images/yellowPaper.jpg") no-repeat center fixed; */
+  background: #f26b1d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -233,6 +234,29 @@ a {
 
 .qz-Modal--content  {
   font-size: 2rem;
+}
+
+button.close-select span,
+button.closeHighScore span,
+button.close span {
+  color:#011526;
+  font-weight: 800;
+  text-shadow: none;
+  font-family: "Open Sans",sans-serif;
+  font-size: 2.5rem;
+}
+
+button.close-select,
+button.closeHighScore,
+button.close {
+  opacity: 1;
+  padding-top: 0.5rem;
+}
+
+button.close-select:focus,
+button.closeHighScore:focus,
+button.close:focus {
+  outline: none;
 }
 
 /*-------------Select menu style--------------*/

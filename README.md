@@ -413,7 +413,7 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 5. Click the _Save_ button.
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
-* <a href="https://unsplash.com/photos/1_CMoFsPfso?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash-Joanna Kosinska</a> - Background for modal.
+<!-- * <a href="https://unsplash.com/photos/1_CMoFsPfso?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash-Joanna Kosinska</a> - Background for modal. -->
 * <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
 * <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
 * <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline - www.freepik.com</a> - use for background image.
