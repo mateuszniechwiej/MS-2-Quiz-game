@@ -12,6 +12,10 @@ let questions = [];
 
 const EASY = "easy", MEDIUM = "medium", HARD = "hard";
 const MAX_QUESTIONS = 10;
+
+// Buttons
+const categoryBtn = document.querySelector("#categories");
+const difficultyBtn = document.querySelector("#difficulty");
 // sounds
 const incorrectSound = document.querySelector("#incorrect");
 const correctSound = document.querySelector("#correct");
@@ -124,13 +128,16 @@ selectingChoice = () => {
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 100);
+            }, 150);
         });
     });
 };
 
 disableButtons = () => {
-    document.querySelector("#categories").disabled = true;
-    document.querySelector("#difficulty").disabled = true;
+    categoryBtn.disabled = true;
+    difficultyBtn.disabled = true;
 };
-
+enableButtons = () => {
+    categoryBtn.disabled = false;
+    difficultyBtn.disabled = false;
+};

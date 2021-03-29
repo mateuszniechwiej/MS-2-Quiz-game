@@ -73,7 +73,13 @@ const finalOff = document.querySelectorAll(".closeHighScore");
 Array.from(finalOff).forEach((e) => {
     e.addEventListener("click", () => {
         $("#finalModal").modal("hide");
-        return window.location.assign("index.html");
+        currentScore.innerText = "SCORE";
+        progressBar.innerText = "";
+        progressBar.style.width = "";
+        enableButtons();
+        scroll(0,0);
+
+        // return window.location.assign("index.html");
     });
 });
 
