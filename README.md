@@ -386,7 +386,17 @@ JS Validator  - [JSHint Validator](https://jshint.com/) - PASS
 
 
 ## Colour Contrast
+* By using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) colour contrast was tested:
 
+1. On the this project website right click on the pc mouse
+
+2. Press - "Inspect"
+
+3. Press - ctr+shift+c or "small box with an arrow" to inspect elements of the website.
+
+4. Move the mouse cursor over elements to see under Accessibility->Contrast the result.
+
+* All Html elements on the Quiz page were tested and contrast was correct.
 
 
 ## Functionality 
@@ -439,12 +449,15 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 5. Click the _Save_ button.
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
-<!-- * <a href="https://unsplash.com/photos/1_CMoFsPfso?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash-Joanna Kosinska</a> - Background for modal. -->
+
 * <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
 * <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
 * <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline - www.freepik.com</a> - use for background image.
 ## Code
-
+* Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
+* [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
+* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
+* [JS30-"Drum_Kit"](https://javascript30.com/) -learned how to allow sound play after fast answers click in Quiz.
 * [Bootstrap library](https://getbootstrap.com/) - used to create a responsive design
 
 ## Media
@@ -454,12 +467,4 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 * Game sounds for final win sound, correct and incorrect choices downloaded from [freesound](https://freesound.org/people/rhodesmas/sounds/320652/)
   
 
-### Images
-
 ## Acknowledgements
-* Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
-* [To learn how to use Bootstrap modals without jQuery](https://dev.to/ara225/how-to-use-bootstrap-modals-without-jquery-3475)
-* [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
-* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
-* [JS30-"Drum_Kit"](https://javascript30.com/) -learned how to allow sound play after fast click next answer in Quiz.
-
