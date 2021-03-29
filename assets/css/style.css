@@ -222,8 +222,8 @@ a {
 }
 
 /*-------------------Modals-------------------*/
-.qz-Modal--bg{
-  /* background: url("../images/yellowPaper.jpg") no-repeat center fixed; */
+.qz-Modal--bg {
+  
   background: #f26b1d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -233,11 +233,20 @@ a {
 
 
 .qz-Modal--content  {
+  font-size: 2.5rem;
+  font-weight: 400;
+} 
+
+.qz-Modal--content p {
   font-size: 2rem;
+  font-weight: 500 ;
+}
+#underline {
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
-button.close-select span,
-button.closeHighScore span,
+
 button.close span {
   color:#011526;
   font-weight: 800;
@@ -246,15 +255,16 @@ button.close span {
   font-size: 2.5rem;
 }
 
-button.close-select,
-button.closeHighScore,
+
 button.close {
   opacity: 1;
   padding-top: 0.5rem;
 }
 
-button.close-select:focus,
-button.closeHighScore:focus,
+button.close span:hover {
+  transition: 0.5s;
+  color: #fff;
+}
 button.close:focus {
   outline: none;
 }

@@ -6,7 +6,6 @@
 
 ![Quiz Game](assets/images/Mock_up.png)
 # Table of Contest
-- [!logo](#)
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
 - [UX](#ux)

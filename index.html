@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content = "Quiz Game with multiple and true/false questions ">
+    <meta name="description" content="Quiz Game with multiple and true/false questions ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
@@ -20,10 +20,11 @@
 <body>
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar sticky-top navbar-light qz-navbar">
-        <button class="btn btn-mute" id='btnMute' aria-label="Mute Button" ><i id="off"
+        <button class="btn btn-mute" id='btnMute' aria-label="Mute Button"><i id="off"
                 class="fas fa-volume-mute fa-fw"></i></button>
-                <img src="assets/images/logoQuiz.jpg" alt="logo" id="logo">
-        <button type="button" class="btn " id="openModal" aria-label="Game Info"><i class="fas fa-info-circle"></i></button>
+        <img src="assets/images/logoQuiz.jpg" alt="logo" id="logo">
+        <button type="button" class="btn " id="openModal" aria-label="Game Info"><i
+                class="fas fa-info-circle"></i></button>
     </nav>
     <!-- Player dashboard with name and high scores, categories to select and difficulty level -->
     <section>
@@ -31,7 +32,7 @@
             <div class="row text-center">
                 <div class="col-md-4 qz-hud">
                     <!--Player name and high score-->
-                    <h2 >Player Name</h2>
+                    <h2>Player Name</h2>
                     <p id="userName"></p>
                     <h2>High Score</h2>
                     <p class="pb-3" id="highScore"></p>
@@ -49,7 +50,7 @@
                                 <option value="27">ANIMALS</option>
                                 <option value="21">SPORTS</option>
                             </select>
-                
+
                         </div>
                         <div class="col-12 col-sm-6">
                             <!--Difficulty level-->
@@ -76,14 +77,14 @@
         </div>
     </section>
     <!-- Game live porogress bar and current question-->
-    
+
     <div class="container-fluid mt-5 text-center align-self-center" id="wrapper">
         <h2 class="title"><span>Game progress</span></h2>
         <div class="progress progress-wraper align-self-center text-center">
             <div class="progress-bar 
             qz-progress-bar " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="row justify-content-md-center" >
+        <div class="row justify-content-md-center">
             <div class="col-12 order-fist col-md-2 order-md-last text-center align-self-center " id="score">
                 <div class=" text-center qz-score--box">
                     <p id="currentScore">SCORE</p>
@@ -96,7 +97,7 @@
             </div>
 
         </div>
-        <div class="push" ></div>
+        <div class="push"></div>
     </div>
     <!--Quiz Game section with progress bar and current points display-->
 
@@ -130,16 +131,14 @@
                 <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
                         <h2 class="modal-title">SELECT</h2>
-                        <button type="button" class="btn close-select" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">X</span>
                         </button>
                     </div>
                     <div class="modal-body qz-Modal--content">
-                        <p>Please select you category and difficulty level</p>
+                        <p class="py-3">Please select you category and difficulty level</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -149,71 +148,66 @@
             <div class="modal-dialog modal-fullscreen-sm-down " role="document">
                 <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h2 class="modal-title">GAME INSTRUCTIONS</h2>
-                        <button type="button" class="close" aria-label="Close">
+                        <h1 class="modal-title">GAME INSTRUCTIONS</h1>
+                        <button type="button" class="btn close" aria-label="Close">
                             <span aria-hidden="true">X</span>
                         </button>
                     </div>
-                    <div class="modal-body qz-Modal--content">
+                    <div class="modal-body qz-Modal--content py-3">
                         <p>This quiz consists of 10 multiple or TRUE/FALSE questions.<br>
-                            Player will be able to select 1 of 4 categories and 3 diffiulty levels.<br>
-                            Depending on difficulty Bonus point will be added per correct answer:</p><hr>
-                        <p> 
-                     Easy Mode = 10 points <br>
+                            Player can select 1 of 4 categories and 3 diffiulty levels.<br>
+                            Depending on difficulty Bonus point will be added per correct answer:</p>
+                        <hr>
+                        <p id="underline">
+                            Easy Mode = 10 points <br>
                             Medium Level = 12 points <br>
                             Hard Level = 15 points <br></p>
-                            <hr>
-                        <p>   The High Score will be displayed under player name after answering final question. <br>
+                        <hr>
+                        <p> The High Score will be displayed under player name after answering final question. <br>
 
-                            Answers - Correct answers will display with green background and incorrect selection will
+                            <p>Answers - Correct answers will display with green background and incorrect selection will
                             display with red background. <br>
 
-                            Select your category and difficulty level. <br>
+                            Select your category and difficulty level.</p> <br>
                             When you ready , click the "Start" button to start the Quiz.
 
                         </p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary close">Close</button>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="modal-backdrop fade show" id="qz-modal--bg" style="display: none;"></div> -->
         <!--Final Score Modal-->
         <!-- Button trigger modal -->
         <div class="modal fade" id="finalModal" tabindex="-1" aria-labelledby="finalModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-center modal-fullscreen-sm-down">
                 <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h2 class="modal-title" id="finalModalLabel">CONGRATULATIONS</h2>
-                        <button type="button" class="btn closeHighScore" data-bs-dismiss="modal"
+                        <h1 class="modal-title" id="finalModalLabel">CONGRATULATIONS</h1>
+                        <button type="button" class="btn close closeHighScore" data-bs-dismiss="modal"
                             aria-label="Close"><span aria-hidden="true">X</span></button>
                     </div>
                     <div class="modal-body qz-Modal--content" id="finalScore">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary closeHighScore"
-                            data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- <div class=" modal-backdrop fade show " id="finalmodal--bg" style="display: none;"> -->
-        </div> 
+        </div>
         <!-- Footer with GitHub icon and email link to contact-->
         <footer id="qz-footer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-4 text-center text-md-left mail">
-                        
-                        <a href="mailto:niechwiej.mateusz@gmail.com"><i class="far fa-envelope"></i><span> niechwiej.mateusz@gmail.com</span></a>
+
+                        <a href="mailto:niechwiej.mateusz@gmail.com"><i class="far fa-envelope"></i><span>
+                                niechwiej.mateusz@gmail.com</span></a>
                     </div>
-                    <div class="col-12 col-md-4 text-center mt-3 copy" >
+                    <div class="col-12 col-md-4 text-center mt-3 copy">
                         <p>Copyright &copy;2021 by Mateusz Niechwiej</p>
                     </div>
                     <div class="col-12 col-md-4 text-center text-md-right GitHub">
-                        <a href="https://github.com/mateuszniechwiej" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/mateuszniechwiej" target="_blank" rel="noopener"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
