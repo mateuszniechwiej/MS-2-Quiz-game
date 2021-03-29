@@ -100,7 +100,7 @@
   - [Acknowledgements](#acknowledgements)
 
 # Project Workflow
-* To organise the project work I used the JIRA project management tool:
+ * To organise the project work - Jira project management toowas used:
   
 ![JIRA](assets/Jira.PNG)
   
@@ -109,7 +109,8 @@
 
 ## The Strategy Plane
   ### Project Goal 
-  The primary goal of this project is to create an easily navigated and entertaining Quiz Game for users of all age groups using Html, CSS and JavaScript.
+  The primary goal of this project is to create an easily navigated and entertaining Quiz Game for my Milestone Projexct 2 at Code Institute.
+  This game is designed for users of all age groups build using Html, CSS, and JavaScript.
 
   ### Site Goals
   * Create a fun quiz game to play.
@@ -141,7 +142,7 @@
 
   * As a new user, I want to be able to turn sound on/off anytime during the time I visit the website.
 
-  * As a new user, I want to see the form of progress through the quiz.
+  * As a new user, I want to see the form of progress through th quiz.
 
   * As a new user, I want to be able to see if my answer was correct or false during the game.
 
@@ -350,9 +351,10 @@ This website is for Milestone Project 2 .Build with HTML,CSS and JavaScript.
 6. Game functionality with all available scenarios
 
 ## CSS, HTML and JS Test
-### CSS Validator - Test
 
-CSS Validator - Pass
+### CSS Validator - Test 
+
+CSS Validator - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - PASS
 
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -362,12 +364,19 @@ CSS Validator - Pass
     </a>
 </p>
 
+Comments: 1 error found - code was not needed and delated.
 
+### HTML Validator - Test
 
-### HTML Validator - Test...
+HTML Validator - [W3C HTML Validator](https://validator.w3.org/) - PASS
 
-### JavaScript Validator - Test ...
+ Comments: Errors and warnings have been and fixed.
 
+### JavaScript Validator - Test 
+
+JS Validator  - [JSHint Validator](https://jshint.com/) - PASS
+
+#### Comments: Add missing semicolens and delate unused code.
 
 ## Browsers Testing
 

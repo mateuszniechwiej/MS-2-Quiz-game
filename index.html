@@ -71,7 +71,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col mt-4">
-                    <a href="#start"><button class="btn btn-dark" id="start">Start game</button></a>
+                    <a class="btn btn-dark" id="start" href="#start">Start game</a>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
     <!--Section for three modals- Username,info modal, and Win modal  -->
     <section>
         <!--username Modal-->
-        <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="Player name" aria-hidden="true"
+        <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModal" aria-hidden="true"
             data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content qz-Modal--bg" id="#usernameContent">
@@ -114,7 +114,7 @@
                     <div class="modal-body qz-Modal--content">
                         <form>
                             <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Enter your name</label>
+                                <label for="user" class="col-form-label">Enter your name</label>
                                 <input type="text" class="form-control" id="user" name="user" required>
                             </div>
                             <div class="modal-footer">
@@ -143,12 +143,12 @@
             </div>
         </div>
         <!--Info modal-->
-        <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+        <div class="modal fade" id="qz-Modal" tabindex="-1" aria-labelledby="qz-Modal" aria-modal="true"
             role="dialog">
             <div class="modal-dialog modal-fullscreen-sm-down " role="document">
                 <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h1 class="modal-title">GAME INSTRUCTIONS</h1>
+                        <h2 class="modal-title">GAME INSTRUCTIONS</h2>
                         <button type="button" class="btn close" aria-label="Close">
                             <span aria-hidden="true">X</span>
                         </button>
@@ -165,11 +165,10 @@
                         <hr>
                         <p> The High Score will be displayed under player name after answering final question. <br>
 
-                            <p>Answers - Correct answers will display with green background and incorrect selection will
-                            display with red background. <br>
+                            <p>Answers - Correct answers will display with green background and an incorrect selection will display with red background. <br>
 
-                            Select your category and difficulty level.</p> <br>
-                            When you ready , click the "Start" button to start the Quiz.
+                           <p> Select your category and difficulty level.</p> <br>
+                            <p>When you ready, click the "Start" button to start the Quiz.
 
                         </p>
                     </div>
@@ -182,7 +181,7 @@
             <div class="modal-dialog modal-dialog-center modal-fullscreen-sm-down">
                 <div class="modal-content qz-Modal--bg">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="finalModalLabel">CONGRATULATIONS</h1>
+                        <h2 class="modal-title" id="finalModalLabel">CONGRATULATIONS</h2>
                         <button type="button" class="btn close closeHighScore" data-bs-dismiss="modal"
                             aria-label="Close"><span aria-hidden="true">X</span></button>
                     </div>
@@ -190,8 +189,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <div class=" modal-backdrop fade show " id="finalmodal--bg" style="display: none;"> -->
         </div>
         <!-- Footer with GitHub icon and email link to contact-->
         <footer id="qz-footer">
