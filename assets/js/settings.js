@@ -27,7 +27,7 @@ Array.from(allButtons).forEach((a) => {
 
 
     difficulty.addEventListener("change", (e) => {
-        difficultyLevel = e.target.value
+        difficultyLevel = e.target.value;
     });
 
 

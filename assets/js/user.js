@@ -24,7 +24,7 @@ checkUserData = () => {
 setHighScore = () => {
     let gameScore = currentScore.innerText;
     if (gameScore > userHighScore.innerText && gameScore !== "SCORE") {
-        finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore}`
+        finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore}`;
         userHighScore.innerText = gameScore;
         localStorage.setItem("highScore", gameScore);
         if (document.querySelector(".fa-volume-up ")) {
@@ -33,14 +33,14 @@ setHighScore = () => {
         }
             
     } else if(gameScore<=userHighScore.innerText && gameScore !== "SCORE"){
-        finalScore.innerText = `Your scored ${gameScore}`
+        finalScore.innerText = `Your scored ${gameScore}`;
         if (document.querySelector(".fa-volume-up ")) {
             finalSound.play();
         }
     } else {
         const finalLabel = document.querySelector("#finalModalLabel");
-        finalLabel.innerText = ""
-        finalScore.innerText = "No point this time.Try Again!"
+        finalLabel.innerText = "";
+        finalScore.innerText = "No point this time.Try Again!";
         if (document.querySelector(".fa-volume-up ")) {
             noPoints.play();
         }
@@ -51,10 +51,8 @@ setHighScore = () => {
 userNameSubmit = () => {
     user = document.querySelector("#user").value;
     localStorage.setItem("user", user);
-    console.log(user);
 
     if (user) $("#playerModal").modal("hide"); //if there is some user input allow to close modal
-    // userModalOff(); // close username modal
     displayUsernameInfo(); // function to display user data on dashboard
 };
 
@@ -103,5 +101,4 @@ userInput.addEventListener("keypress", (e) => {
     }
 });
 
-const hideGame = document.querySelector(".hideGame");
 

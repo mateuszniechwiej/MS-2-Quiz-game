@@ -91,11 +91,6 @@ h2 span {
   margin-right: 1rem;
 }
 
-#qz-footer {
-  background-color: #f2f2f2;
-  padding: 2rem;
-  margin-top: 3rem;
-}
 #question {
   background: #fafafa;
 }
@@ -116,9 +111,6 @@ a {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-#qz-footer {
-  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
-}
 .qz-hud {
   background:rgba(242, 107, 29, 0.8);
   padding-left: 1rem;
@@ -271,7 +263,7 @@ button.close:focus {
 
 /*-------------Select menu style--------------*/
 select {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0px;
   width: 180px;
@@ -282,6 +274,13 @@ select {
   background:#fed403;
 }
 /*-------------------footer-----------*/
+#qz-footer {
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2); 
+  background-color: #f2f2f2;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
 .copy p {
   font-size: 2rem;
   font-weight: 500;
