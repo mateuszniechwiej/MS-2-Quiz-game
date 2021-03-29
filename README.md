@@ -6,6 +6,7 @@
 
 ![Quiz Game](assets/images/Mock_up.png)
 # Table of Contest
+- [!logo](#)
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
 - [UX](#ux)
@@ -338,11 +339,28 @@ A solution to satisfy user requirements:
 
 # Testing
 
- 
+This website is for Milestone Project 2 .Build with HTML,CSS and JavaScript.
+
+### The test is covering:
+1. Html,Css  and Js validation
+2. Testing website responsiveness on devices from 280px width- elements should not overlap each other 
+3. Website performance and best practise
+4. Visual aspects of the website: fonts and colour contrast
+5. User stories documented in this README file
+6. Game functionality with all available scenarios
 
 ## CSS, HTML and JS Test
+### CSS Validator - Test
 
-### CSS Validator - Test ...
+CSS Validator - Pass
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 
 
