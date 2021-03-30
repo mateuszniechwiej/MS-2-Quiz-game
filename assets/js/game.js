@@ -44,6 +44,7 @@ startGame = () => {
     } else {
         disableButtons();
         answers.innerHTML = "";
+        location.href = "#start";
         getNextQuestion();
 
     }
