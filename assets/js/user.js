@@ -10,7 +10,9 @@ checkUserData = () => {
     if (user === null || user === "") {
         localStorage.setItem("highScore", 0);
         $("#playerModal").modal("show");
-        // userModalOn();
+        $("#playerModal").ready(function() {
+            $('#user').focus();
+        });
     } else {
         user = localStorage.getItem("user");
         highScore = localStorage.getItem("highScore");
