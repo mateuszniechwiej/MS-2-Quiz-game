@@ -1,4 +1,4 @@
-# ![logo](assets/images/logoQuiz.jpg)
+# QUIZ  ![logo](assets/images/logoQuiz.jpg) GAME
 
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 
@@ -6,6 +6,7 @@
 
 ![Quiz Game](assets/images/Mock_up.png)
 # Table of Contest
+
 - [!logo](#)
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
@@ -31,13 +32,14 @@
   - [Future Features:](#future-features)
 - [Technologies Used](#technologies-used)
   - [Languages Used](#languages-used)
-  - [Framework](#framework)
-  - [Programmes and Libraries](#programmes-and-libraries)
+  - [Frameworks, Programmes and Libraries](#frameworks-programmes-and-libraries)
 - [Testing](#testing)
+    - [The test is covering:](#the-test-is-covering)
   - [CSS, HTML and JS Test](#css-html-and-js-test)
-    - [CSS Validator - Test ...](#css-validator---test-)
-    - [HTML Validator - Test...](#html-validator---test)
-    - [JavaScript Validator - Test ...](#javascript-validator---test-)
+    - [CSS Validator - Test](#css-validator---test)
+    - [HTML Validator - Test](#html-validator---test)
+    - [JavaScript Validator - Test](#javascript-validator---test)
+      - [Comments: Add missing semicolens and delate unused code.](#comments-add-missing-semicolens-and-delate-unused-code)
   - [Browsers Testing](#browsers-testing)
   - [Performance](#performance)
   - [Colour Contrast](#colour-contrast)
@@ -51,7 +53,6 @@
 - [Credits](#credits)
   - [Code](#code)
   - [Media](#media)
-    - [Images](#images)
   - [Acknowledgements](#acknowledgements)
   
 - [Deployment](#deployment)
@@ -301,15 +302,10 @@ A solution to satisfy user requirements:
 
   * [JavaScript](https://pl.wikipedia.org/wiki/JavaScript)
  
-
-## Framework
-
-* [Bootstrap v.4.5.2](https://getbootstrap.com/) - used for layouts, styling and custom components such as navigation bar or image carousel.
- 
-
-## Programmes and Libraries
-
-* [JIRA](https://www.atlassian.com/software/jira) - project management tool
+## Frameworks, Programmes and Libraries
+* [Bootstrap v.4.5.2](https://getbootstrap.com/) - used for layouts, styling and custom components such as navigation bar or modals.
+* [jQuery](https://jquery.com/) - used jQuery for Modals in this website.
+* [JIRA](https://www.atlassian.com/software/jira) - project management tool to organize workflow.
 
 * [Concepts](https://concepts.app/en/) - to create the first hand-drawn wireframe
   

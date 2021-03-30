@@ -72,7 +72,7 @@ window.onload = checkUserData();
 
 const finalOff = document.querySelectorAll(".closeHighScore");
 
-Array.from(finalOff).forEach((e) => {
+finalOff.forEach((e) => {
     e.addEventListener("click", () => {
         $("#finalModal").modal("hide");
         currentScore.innerText = "SCORE";
@@ -88,6 +88,7 @@ Array.from(finalOff).forEach((e) => {
 const infoOn = document.querySelector("#openModal");
 infoOn.addEventListener("click", () => {
     $("#qz-Modal").modal("show");
+    
 });
 
 const infoOff = document.querySelectorAll(".close");
