@@ -1,13 +1,19 @@
-# QUIZ  ![logo](assets/images/logoQuiz.jpg) GAME
 
+# QUIZ GAME
+
+### ABOUT 
+
+This project was created for Milestone Project 2("Code Institute").It was build using HTML5,CSS and Java Script.
+
+
+![Quiz Game](assets/images/Mock_up.png)
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 
 :page_facing_up: [GitHub repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
-
-![Quiz Game](assets/images/Mock_up.png)
+#
 # Table of Contest
-
-- [!logo](#)
+- [QUIZ GAME](#quiz-game)
+    - [ABOUT](#about)
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
 - [UX](#ux)
@@ -282,12 +288,39 @@ A solution to satisfy user requirements:
 # Features
 
 ## Existing Features:
+:one: Header - with a sticky navigation bar located on the top of the page allowing the user to have access to:
+*  sound icon - to turn sound on/off located on the left side of navbar.
+*  quiz logo in the centre of the bar.
+*  info icon - to open modal with Game instructions.
+
+:two: Game user details and scores:
+* activating modal for a first-time user to input the name of the player.
+* Game Dashboard - displaying username and the highest score stored in local storage.
+
+:three: Quiz questions settings:
+* Quiz questions fetched from **Open Trivia API**
+* four categories to select
+* three difficulty levels to chose
+* open settings modal activated to remind the user to select category and difficulty if any setting is missing.
+* start game button to start the "Quiz".
+
+:four: Active Game features:
+ * progress bar displaying current question in the game.
+ * current score display (to the right on desktop devices, above questions on mobiles).
+ * correct/incorrect - selected answer changing background colours(red for wrong answer and green for good choice). 
+ * final modal displaying scores with three different messages with unique sound effects depending on the final score.
+
+:five: Footer :
+* active email link to contact the owner of this project.
+* copyright information 
+* GitHub icon -  link to site owner GitHub repositories.
 
 
 ## Future Features:
 
-:white_circle: - collections.
+:white_large_square: - additional categories to be added.
 
+:white_large_square: - Allowing to save more users in localStorage and display them high scores.
 
 
 
