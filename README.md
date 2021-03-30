@@ -3,17 +3,16 @@
 
 ### ABOUT 
 
-This project was created for Milestone Project 2("Code Institute").It was build using HTML5,CSS and Java Script.
+This project was created for Milestone Project 2("Code Institute"). It was build using HTML5, CSS,  and JavaScript.
 
 
 ![Quiz Game](assets/images/Mock_up.png)
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 
 :page_facing_up: [GitHub repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
-#
+
 # Table of Contest
-- [QUIZ GAME](#quiz-game)
-    - [ABOUT](#about)
+
 - [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
 - [UX](#ux)
@@ -46,8 +45,12 @@ This project was created for Milestone Project 2("Code Institute").It was build 
     - [HTML Validator - Test](#html-validator---test)
     - [JavaScript Validator - Test](#javascript-validator---test)
       - [Comments: Add missing semicolens and delate unused code.](#comments-add-missing-semicolens-and-delate-unused-code)
-  - [Browsers Testing](#browsers-testing)
+  - [Browsers Testing ... to be finished](#browsers-testing--to-be-finished)
+    - [For Mobiles:](#for-mobiles)
+    - [For Tablet:](#for-tablet)
+    - [For Desktop:](#for-desktop)
   - [Performance](#performance)
+    - [To improve and check performance for this website I used Lighthouse, which is part of [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).](#to-improve-and-check-performance-for-this-website-i-used-lighthouse-which-is-part-of-chrome-developer-tools)
   - [Colour Contrast](#colour-contrast)
   - [Functionality](#functionality)
   - [Issues](#issues)
@@ -407,12 +410,37 @@ JS Validator  - [JSHint Validator](https://jshint.com/) - PASS
 
 #### Comments: Add missing semicolens and delate unused code.
 
-## Browsers Testing
+## Browsers Testing ... to be finished 
+|Screen size\Browser |Chrome            |Opera             |Edge              |Firefox           |Safari            
+|--------------------|------------------|------------------|------------------|------------------|------------------| 
+|Mobile              |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|Tablet              |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|Not Tested        |
+|Desktop             |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
+The website was tested on a varied number of devices:
+### For Mobiles:
+* Android - Samsung Galaxy S10 (screen size - 6.1-inch) on Chrome, Opera, Firefox and Microsoft Edge
+* IOS - iPhone 7 (screen size - 4.7-inch) on Safari and Chrome
+* IOS - iphone Pro 12 (screen size 6.1-inch) Safari
+### For Tablet:
+Surface Book in tablet view - Chrome, Opera, Firefox, Edge (screen size - 13.5- inch)
+### For Desktop:
+* PC Windows (Windows 10):
+  1. Surface Book on (screen size - 13.5-inch)
+  2. Surface Book on the second monitor DELL U2419H(screen size - 24-inch)
+   
+  Tested on  Chrome, Opera, Firefox and Microsoft Edge
+* MacBook pro 13 :
+  * Tested on Safari and Chrome browser.
+
+  
+Also, friends and family were asked to test this website and I did not receive any information on noticed bugs in the feedback from them.
 
 
 ## Performance
+### To improve and check performance for this website I used [Lighthouse](https://developers.google.com/web/tools/lighthouse), which is part of [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).
 
+![Lighthouse Test](assets/images/lighthouse.png)
 
 ## Colour Contrast
 * By using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) colour contrast was tested:
@@ -441,10 +469,12 @@ JS Validator  - [JSHint Validator](https://jshint.com/) - PASS
     2.Add event listener to submit username Modal by pressing "Enter"
   *  resolved 
 
-    3.Looking to find solution to alert user when category and difficulty not selected
+    3.Looking to find a solution to alert the user when category and difficulty not selected
   * resolved
     4. Background image not showing on android phones
-  * not resolved ....
+  *  resolved. 
+    5. By activating info modal background image is moving.
+   * not resolved.  
 
   
 # Deployment

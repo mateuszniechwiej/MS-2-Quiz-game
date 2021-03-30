@@ -129,7 +129,7 @@ selectingChoice = () => {
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 150);
+            }, 250);
         });
     });
 };
