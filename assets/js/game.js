@@ -39,7 +39,7 @@ startGame = () => {
     } else if (difficultyLevel === HARD) {
         bonus = 15;
     }
-    if (!difficultyLevel || difficultyLevel === "select-difficulty" || !categoryId || categoryId === "select-category") {
+    if (!difficultyLevel || !categoryId) {
         $('#settingsModal').modal('show');
     } else {
         disableButtons();

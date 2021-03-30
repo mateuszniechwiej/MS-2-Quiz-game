@@ -1,10 +1,12 @@
-fetchingData = () => {
+const fetchingData = async () => {
     const url = `https://opentdb.com/api.php?amount=10&category=${categoryId}&difficulty=${difficultyLevel}&encode=url3986`;
 
-    fetch(url).then(respond => {
-        return respond.json();
-    }).then(importedQuestions => {
-        questions = importedQuestions.results.map(importedQuestion => {
+    const response = await fetch(url)
+    if (response) {
+        const data = await response.json();
+        console.log(data,response);
+        // }).then(importedQuestions => {
+        questions = data.results.map(importedQuestion => {
             const formattedQuestion = {
                 question: importedQuestion.question,
                 possible_answers: [importedQuestion.correct_answer, ...importedQuestion.incorrect_answers],
@@ -22,10 +24,11 @@ fetchingData = () => {
             return formattedQuestion;//returning Array object with questions only to use in the quiz
         });
         startGame();
-    })
-        .catch(error => {
-            console.error(error);
-        });
+    }
+    // })
+        // .catch(error => {
+        //     console.error(error);
+        // });
 };
 const start = document.querySelector("#start");
 
