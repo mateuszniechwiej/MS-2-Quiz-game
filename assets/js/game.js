@@ -45,6 +45,7 @@ startGame = () => {
         disableButtons();
         answers.innerHTML = "";
         location.href = "#start";
+        gameProgress.classList.remove("hide");
         getNextQuestion();
 
     }
@@ -57,8 +58,8 @@ getNextQuestion = () => {
         question.innerHTML = "";
 
         $('#finalModal').modal('show');
-
         setHighScore();
+        gameProgress.classList.add("hide");
         return;
 
     }

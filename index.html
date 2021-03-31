@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <title>Quiz Game</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <!--Navigation bar with sound on/off icon,game name in the center, and info icon-->
     <nav class="navbar sticky-top navbar-light qz-navbar">
         <button class="btn btn-mute" id='btnMute' aria-label="Mute Button"><i id="off"
@@ -78,7 +78,7 @@
     </section>
     <!-- Game live porogress bar and current question-->
 
-    <div class="container-fluid mt-5 text-center align-self-center" id="wrapper">
+    <div class="container-fluid mt-5 text-center align-self-center hide" id="wrapper">
         <h2 class="title"><span>Game progress</span></h2>
         <div class="progress progress-wraper align-self-center text-center">
             <div class="progress-bar 
@@ -98,7 +98,7 @@
             </div>
 
         </div>
-        <div class="push"></div>
+        <!-- <div class="push"></div> -->
     </div>
     <!--Quiz Game section with progress bar and current points display-->
 
@@ -192,7 +192,7 @@
             </div>
         </div>
         <!-- Footer with GitHub icon and email link to contact-->
-        <footer id="qz-footer">
+        <footer class="footer mt-auto py-3"id="qz-footer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-4 text-center text-md-left mail">
