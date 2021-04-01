@@ -515,7 +515,7 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 ## Code
 * Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
 * [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
-* [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/) - To learn how to keep the footer at the bottom of the page. 
+* [Bootsrap examples](https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/) - learn how to make bootstrap sticky footer with fixed navbar.
 * [JS30-"Drum_Kit"](https://javascript30.com/) -learned how to allow sound play after fast answers click in Quiz.
 * [Bootstrap library](https://getbootstrap.com/) - used to create a responsive design
 
