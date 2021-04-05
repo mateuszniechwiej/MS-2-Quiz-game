@@ -74,6 +74,7 @@ const finalOff = document.querySelectorAll(".closeHighScore");
 
 finalOff.forEach((e) => {
     e.addEventListener("click", () => {
+        gameProgress.classList.add("hide");
         $("#finalModal").modal("hide");
         currentScore.innerText = "SCORE";
         progressBar.innerText = "";

@@ -61,9 +61,7 @@ getNextQuestion = () => {
 
         $('#finalModal').modal('show');
         setHighScore();
-        gameProgress.classList.add("hide");
         gameDashboard.classList.remove("display");
-        return;
 
     }
     counterQuestion++;
