@@ -114,11 +114,18 @@ a {
   /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); */
   margin-bottom: 5rem;
 }
-
-.qz-hud {
-  padding-left: 1rem;
-  margin-top: 6.5rem;
+ i:hover {
+   transition: 1s;
+   color: #f2f2f2;
+ }
+#gameDashboard {
+  margin-top: 6rem;
 }
+.qz-hud {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  background-color: #f26b1d;
+} 
 .qz-hud h2 {
   background-color:rgba(250,250,250,0.6);
   margin-top: 1rem;
@@ -141,6 +148,10 @@ a {
 }
 
 /*----------Game live score & progressbar -----*/
+.display {
+  display:none;
+}
+
 #start,
 #start:active {
   /* border-radius: 0; */
@@ -325,8 +336,7 @@ select {
   text-decoration: none;
 }
 .mail span:hover,
-.mail a:hover,
-i:hover{
+.mail a:hover {
   transition: 1s;
   text-decoration: none;
   color: #f26b1d;

@@ -78,10 +78,6 @@ finalOff.forEach((e) => {
         currentScore.innerText = "SCORE";
         progressBar.innerText = "";
         progressBar.style.width = "";
-        enableButtons();
-        scroll(0,0);
-
-        // return window.location.assign("index.html");
     });
 });
 

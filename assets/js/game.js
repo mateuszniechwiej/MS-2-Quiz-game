@@ -2,6 +2,7 @@
 const question = document.querySelector("#question");
 const currentScore = document.querySelector("#currentScore");
 const progressBar = document.querySelector(".qz-progress-bar");
+const gameDashboard = document.querySelector("#gameDashboard");
 
 let displayedQuestion = [];
 let acceptAnswer = false; //set to false so user can't answer before new question loaded
@@ -42,10 +43,11 @@ startGame = () => {
     if (!difficultyLevel || !categoryId) {
         $('#settingsModal').modal('show');
     } else {
-        disableButtons();
+        // disableButtons();
         answers.innerHTML = "";
         location.href = "#start";
         gameProgress.classList.remove("hide");
+        gameDashboard.classList.add("display");
         getNextQuestion();
 
     }
@@ -60,6 +62,7 @@ getNextQuestion = () => {
         $('#finalModal').modal('show');
         setHighScore();
         gameProgress.classList.add("hide");
+        gameDashboard.classList.remove("display");
         return;
 
     }
@@ -135,11 +138,4 @@ selectingChoice = () => {
     });
 };
 
-disableButtons = () => {
-    categoryBtn.disabled = true;
-    difficultyBtn.disabled = true;
-};
-enableButtons = () => {
-    categoryBtn.disabled = false;
-    difficultyBtn.disabled = false;
-};
+
