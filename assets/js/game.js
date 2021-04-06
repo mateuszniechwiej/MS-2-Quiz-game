@@ -27,7 +27,7 @@ const noPoints = document.querySelector('#noPoints');
 
 // Bonus point will depend on the level of quiz difficulty the player will chose
 let bonus;
-startGame = () => {
+const startGame = () => {
     counterQuestion = 0;
     score = 0;
     availableQuestions = [...questions]; // creating full copy of questions
@@ -43,7 +43,6 @@ startGame = () => {
     if (!difficultyLevel || !categoryId) {
         $('#settingsModal').modal('show');
     } else {
-        // disableButtons();
         answers.innerHTML = "";
         location.href = "#start";
         gameProgress.classList.remove("hide");
@@ -54,7 +53,7 @@ startGame = () => {
 
 };
 
-getNextQuestion = () => {
+const getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
         question.innerHTML = "";
@@ -98,7 +97,7 @@ getNextQuestion = () => {
     selectingChoice();
 };
 
-selectingChoice = () => {
+const selectingChoice = () => {
     const choices = document.querySelectorAll(".answer-choice");
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
