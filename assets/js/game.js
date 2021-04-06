@@ -62,7 +62,7 @@ getNextQuestion = () => {
         $('#finalModal').modal('show');
         setHighScore();
         gameDashboard.classList.remove("display");
-
+        return;
     }
     counterQuestion++;
     if (counterQuestion <= 10) {
