@@ -6,7 +6,7 @@ userHighScore.innerText = topScore;
 // Function to check if user in local Storage(if not open username modal)
 let user = localStorage.getItem("user");
 let highScore = 0;
-checkUserData = () => {
+const checkUserData = () => {
     if (user === null || user === "") {
         localStorage.setItem("highScore", 0);
         $("#playerModal").modal("show");
@@ -24,9 +24,11 @@ checkUserData = () => {
 };
 
 setHighScore = () => {
-    let gameScore = currentScore.innerText;
+    let gameScore = parseInt(currentScore.innerText);
+    console.log(gameScore);
+    console.log(gameScore > parseInt(userHighScore.innerText));
     if (gameScore > userHighScore.innerText && gameScore !== "SCORE") {
-        finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore}`;
+        finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore} points`;
         userHighScore.innerText = gameScore;
         localStorage.setItem("highScore", gameScore);
         if (document.querySelector(".fa-volume-up ")) {
@@ -35,7 +37,7 @@ setHighScore = () => {
         }
             
     } else if(gameScore<=userHighScore.innerText && gameScore !== "SCORE"){
-        finalScore.innerText = `Your scored ${gameScore}`;
+        finalScore.innerText = `Your scored ${gameScore} points`;
         if (document.querySelector(".fa-volume-up ")) {
             finalSound.play();
         }
@@ -47,10 +49,9 @@ setHighScore = () => {
             noPoints.play();
         }
     }
-    
 };
 // function to store username in localstorage
-userNameSubmit = () => {
+const userNameSubmit = () => {
     user = document.querySelector("#user").value;
     localStorage.setItem("user", user);
 
@@ -58,7 +59,7 @@ userNameSubmit = () => {
     displayUsernameInfo(); // function to display user data on dashboard
 };
 
-displayUsernameInfo = () => {
+const displayUsernameInfo = () => {
     finalScore.innerText = topScore;
     username.innerHTML = user;
     userHighScore.innerHTML = highScore;

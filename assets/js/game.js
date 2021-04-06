@@ -40,6 +40,7 @@ const startGame = () => {
     } else if (difficultyLevel === HARD) {
         bonus = 15;
     }
+
     if (!difficultyLevel || !categoryId) {
         $('#settingsModal').modal('show');
     } else {
@@ -57,8 +58,7 @@ const getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
         question.innerHTML = "";
-
-        $('#finalModal').modal('show');
+        $('#finalModal').modal('show');        
         setHighScore();
         gameDashboard.classList.remove("display");
         return;
@@ -112,7 +112,7 @@ const selectingChoice = () => {
 
             if (answerClass === "correct") {
                 score += bonus;
-                currentScore.innerText = `${score} points`;
+                currentScore.innerText = score;
                 if (document.querySelector(".fa-volume-up ")) {
                     if (!incorrectSound || !correctSound) return;// stop sound going togheter
                     correctSound.currentTime = 0;

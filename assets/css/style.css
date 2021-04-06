@@ -34,8 +34,13 @@ h6 {
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
   margin: 0;
+}
+
+.hScore {
+  display:inline-block;
 }
 
 /*-------------------------------------Colours--*/
@@ -90,15 +95,12 @@ h2 span {
 }
 
 #question {
-  /* font-size: 2rem;
-  line-height: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600; */
   background: #f26b1d;
   padding: 1rem;
   border:2px solid #000;
   border-radius: .5rem;
 }
+
 i,
 a {
   color: #011526;
