@@ -71,11 +71,9 @@ h2 span {
 
 
 .title span {
-  background: none;
-  text-decoration: underline;
-  line-height: 3rem; 
+  /* line-height: 3.5rem;  */
   font-size: 3rem;
-  padding: 1rem;
+  background-clip: content-box;
 }
 
 .answer-prefix {
@@ -92,7 +90,14 @@ h2 span {
 }
 
 #question {
-  background: #fafafa;
+  /* font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600; */
+  background: #f26b1d;
+  padding: 1rem;
+  border:2px solid #000;
+  border-radius: .5rem;
 }
 i,
 a {
@@ -228,7 +233,7 @@ a {
   };
   #question {
     margin: 1rem 0 1rem 0;
-    font-size: x-large;
+    font-size: 2rem;
   };
    #qz-footer {
     padding: 0.5rem;

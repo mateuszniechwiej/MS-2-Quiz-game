@@ -70,7 +70,7 @@ const getNextQuestion = () => {
 
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
-    question.innerText = decodeURIComponent(displayedQuestion.question); //displaying question by calling question property
+    question.innerText =`${counterQuestion}. ${decodeURIComponent(displayedQuestion.question)}` ; //displaying question by calling question property
 
     const possibleAnswers = displayedQuestion.possible_answers;
 
