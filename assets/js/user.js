@@ -27,7 +27,7 @@ setHighScore = () => {
     let gameScore = parseInt(currentScore.innerText);
     console.log(gameScore);
     console.log(gameScore > parseInt(userHighScore.innerText));
-    if (gameScore > userHighScore.innerText && gameScore !== "SCORE") {
+    if (gameScore > userHighScore.innerText && gameScore !== undefined) {
         finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore} points`;
         userHighScore.innerText = gameScore;
         localStorage.setItem("highScore", gameScore);
@@ -36,7 +36,7 @@ setHighScore = () => {
             
         }
             
-    } else if(gameScore<=userHighScore.innerText && gameScore !== "SCORE"){
+    } else if(gameScore<=userHighScore.innerText && gameScore !== undefined){
         finalScore.innerText = `Your scored ${gameScore} points`;
         if (document.querySelector(".fa-volume-up ")) {
             finalSound.play();
@@ -77,7 +77,7 @@ finalOff.forEach((e) => {
     e.addEventListener("click", () => {
         gameProgress.classList.add("hide");
         $("#finalModal").modal("hide");
-        currentScore.innerText = "SCORE";
+        currentScore.innerText = "";
         progressBar.innerText = "";
         progressBar.style.width = "";
     });
