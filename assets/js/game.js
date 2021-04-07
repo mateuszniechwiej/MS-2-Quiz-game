@@ -77,7 +77,7 @@ const getNextQuestion = () => {
     possibleAnswers.forEach((answer, index) => {
         const alphabet = ["A", "B", "C", "D"];
         answer = answers.innerHTML += `
-        <div class="answers-container">
+        <div class="answers-container col-12 col-sm-5">
                         <p class="answer-prefix ">${alphabet[index]}</p>
                         <p class="answer-choice " data-number=${index + 1}></p>
                     </div>`;
