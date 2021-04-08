@@ -17,7 +17,7 @@ const MAX_QUESTIONS = 10;
 // Buttons
 const categoryBtn = document.querySelector("#categories");
 const difficultyBtn = document.querySelector("#difficulty");
-// sounds
+// Sounds
 const incorrectSound = document.querySelector("#incorrect");
 const correctSound = document.querySelector("#correct");
 const finalSound = document.querySelector("#finalSound");
@@ -49,7 +49,6 @@ const startGame = () => {
         gameProgress.classList.remove("hide");
         gameDashboard.classList.add("display");
         getNextQuestion();
-
     }
 
 };
@@ -85,7 +84,7 @@ const getNextQuestion = () => {
 
     const choices = document.querySelectorAll(".answer-choice");
     choices.forEach(choice => {
-        const number = choice.dataset["number"];
+        const number = choice.dataset.number;
         choice.innerText = decodeURIComponent(displayedQuestion["choice" + number]);
     });
 
@@ -107,8 +106,7 @@ const selectingChoice = () => {
             const selectedChoice = e.target;
 
             const answerClass =
-                selectedChoice.textContent === decodeURIComponent(displayedQuestion.correct_answer)
-                    ? "correct" : "incorrect";
+                selectedChoice.textContent === decodeURIComponent(displayedQuestion.correct_answer) ? "correct" : "incorrect";
 
             if (answerClass === "correct") {
                 score += bonus;

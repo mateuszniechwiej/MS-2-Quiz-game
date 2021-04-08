@@ -1,4 +1,5 @@
 // *****************************************Game Settings*****************************************
+
 // selecting and getting diffculty level and categories
 const difficulty = document.querySelector("#difficulty");// also without Arrayfrom and then p2
 const categories = document.querySelector("#categories");

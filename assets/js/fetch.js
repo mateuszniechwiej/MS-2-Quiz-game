@@ -15,7 +15,7 @@ const fetchingData = async () => {
                 incorrect_answers: [...importedQuestion.incorrect_answers],
             };
             const answerChoices = [...formattedQuestion.incorrect_answers];
-            randomNumber = Math.floor(Math.random() * 3) + 1; //to get random index between 0-3
+            randomNumber = Math.floor(Math.random() * 3) + 1; 
             answerChoices.splice(
                 randomNumber - 1,
                 0,
@@ -25,7 +25,7 @@ const fetchingData = async () => {
             answerChoices.forEach((choice, index) => {
                 formattedQuestion["choice" + (index + 1)] = choice;
             });
-            return formattedQuestion; //returning Array object with questions only to use in the quiz
+            return formattedQuestion; 
         });
         startGame();
     }

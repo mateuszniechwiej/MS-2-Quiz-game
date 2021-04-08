@@ -11,7 +11,7 @@ const checkUserData = () => {
     if (user === null || user === "") {
         localStorage.setItem("highScore", 0);
         $("#playerModal").modal("show");
-        $("#playerModal").ready(function() {
+        $("#playerModal").ready(function () {
             $('#user').focus();
         });
     } else {
@@ -24,7 +24,7 @@ const checkUserData = () => {
     }
 };
 
-setHighScore = () => {
+const setHighScore = () => {
     let gameScore = parseInt(currentScore.innerText);
     console.log(gameScore);
     console.log(gameScore > parseInt(userHighScore.innerText));
@@ -35,9 +35,9 @@ setHighScore = () => {
         localStorage.setItem("highScore", gameScore);
         if (document.querySelector(".fa-volume-up ")) {
             fanfare.play();
-            
+
         }
-            
+
     } else if (gameScore <= userHighScore.innerText && gameScore !== undefined) {
         finalLabel.innerText = "RESULT";
         finalScore.innerText = `Your scored ${gameScore} points`;
@@ -72,7 +72,6 @@ submitName.addEventListener("click", userNameSubmit);
 
 window.onload = checkUserData();
 
-
 const finalOff = document.querySelectorAll(".closeHighScore");
 
 finalOff.forEach((e) => {
@@ -88,7 +87,7 @@ finalOff.forEach((e) => {
 const infoOn = document.querySelector("#openModal");
 infoOn.addEventListener("click", () => {
     $("#qz-Modal").modal("show");
-    
+
 });
 
 const infoOff = document.querySelectorAll(".close");
