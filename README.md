@@ -270,7 +270,25 @@ A solution to satisfy user requirements:
  * [Wireframes tablet pdf](assets/README/tablet.pdf)
  * [Wireframes desktop pdf](assets/README/desktop.pdf)
 
- 
+### Diference to design:
+For all screen sizes:
+1. When game start username, High Score, categories and difficulty are not displayed.
+Comments: It was decided after feedback that that would increase user experience with better content readability.
+2. Selecting game difficulty and categories by dropdown menu
+Comments: Taking less viewing browser viewing space
+3. Not using next question buttons:
+Comments: It is more practically to jump to the next question after selecting an answer.
+4. minor difference in footer with email,copyrights and github icon.
+
+For screens >= 576px : 
+1. Current score display located above question :
+
+Comment: It's easier to follow the score.
+
+2. Two answer choices beside each others:
+
+Comment: For visual purposes, it looks better on bigger screens to have two answers 
+choices per row.
 
 
 ## The Surface Plane
@@ -291,6 +309,9 @@ A solution to satisfy user requirements:
 * The secondary font used for this website is **Open Sans**  with *sans-serif* as a fallback font.This font is elegant and modern. It offers an excellent reading experience.
 
 ### Imagery
+One image used as a background in this project
+[Pexels - João Jesus](https://www.pexels.com/photo/silhouette-of-grass-under-white-sky-925743/)
+
 
 # Features
 
@@ -349,7 +370,7 @@ A solution to satisfy user requirements:
 
 * [Concepts](https://concepts.app/en/) - to create the first hand-drawn wireframe
   
-* [Adobe Xd](https://www.adobe.com/ie/products/xd/wireframing-tool.html#:~:text=Adobe%20XD%20is%20a%20powerful,all%20in%20one%20design%20tool.) - for wireframe
+* [Adobe Xd](https://www.adobe.com/ie/products/xd/wireframing-tool.html#:~:text=Adobe%20XD%20is%20a%20powerful,all%20in%20one%20design%20tool.) - to create wireframes
 * [Adobe Colour](https://color.adobe.com/create/color-wheel) - for colour palette used in this project.
 * [Adobe Photoshop Express](https://photoshop.adobe.com/?promoid=SYBNM1DC&mv=other) - To crop the full page background image.
 * [JPEG-OPTIMIZER](http://jpeg-optimizer.com/) - optimized the size of images used in this project
@@ -410,13 +431,13 @@ HTML Validator - [W3C HTML Validator](https://validator.w3.org/) - PASS
 
 [HTML Validation PDF](assets/README/HTML_Validator.pdf)
 
- Comments: Errors and warnings have been and fixed.
+ Comments: Errors been and fixed
 
 ### JavaScript Validator - Test 
 
 JS Validator  - [JSHint Validator](https://jshint.com/) - PASS
 
-#### Comments: Add missing semicolens and delate unused code.
+ Comments: Add missing semicolons and fix warning("is better use in dot notation").
 
 ## Browsers Testing ... to be finished 
 |Screen size\Browser |Chrome            |Opera             |Edge              |Firefox           |Safari            
