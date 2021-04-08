@@ -388,6 +388,8 @@ This website is for Milestone Project 2 .Build with HTML,CSS and JavaScript.
 
 CSS Validator - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - PASS
 
+[Report PDF](assets/README/Css_Validator.pdf)
+
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"

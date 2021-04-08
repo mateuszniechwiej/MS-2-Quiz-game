@@ -1,5 +1,6 @@
 const username = document.querySelector("#userName");
 const userHighScore = document.querySelector("#highScore");
+const finalLabel = document.querySelector("#finalModalLabel");
 
 const topScore = localStorage.getItem("topScore");
 userHighScore.innerText = topScore;
@@ -22,7 +23,7 @@ const checkUserData = () => {
         displayUsernameInfo();
     }
 };
-const finalLabel = document.querySelector("#finalModalLabel");
+
 setHighScore = () => {
     let gameScore = parseInt(currentScore.innerText);
     console.log(gameScore);
@@ -38,7 +39,7 @@ setHighScore = () => {
         }
             
     } else if (gameScore <= userHighScore.innerText && gameScore !== undefined) {
-        finalLabel.innerText = "RESULT ";
+        finalLabel.innerText = "RESULT";
         finalScore.innerText = `Your scored ${gameScore} points`;
         if (document.querySelector(".fa-volume-up ")) {
             finalSound.play();
