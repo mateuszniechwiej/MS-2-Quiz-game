@@ -83,7 +83,6 @@
         </div>
     </section>
     <!-- Game live porogress bar and current question-->
-
     <div class="container-fluid mt-5 text-center align-self-center hide" id="wrapper">
         <h2 class="title"><span>GAME PROGRESS</span></h2>
         <div class="progress progress-wraper align-self-center text-center">
@@ -102,15 +101,11 @@
                 <h2><span>QUESTION</span></h2>
                 <h1 id="question"></h1>
                 <div class="container-fluid">
-                    <div class="row justify-content-center"id="answers"></div>
+                    <div class="row justify-content-center" id="answers"></div>
                 </div>
             </div>
-
         </div>
     </div>
-
-    <!--Quiz Game section with progress bar and current points display-->
-
     <!--Section for three modals- Username,info modal, and Win modal  -->
     <section>
         <!--username Modal-->
@@ -118,9 +113,6 @@
             data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
                 <div class="modal-content qz-Modal--bg" id="#usernameContent">
-                    <!-- <div class="modal-header justify-content-center">
-                        <h2 class="modal-title">PLA</h2>
-                    </div> -->
                     <div class="modal-body qz-Modal--content">
                         <form>
                             <div class="mb-3 text-center">
@@ -148,7 +140,6 @@
                     <div class="modal-body qz-Modal--content">
                         <p class="py-3">Please select you category and difficulty level</p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -173,20 +164,16 @@
                             Hard Level = 15 points <br></p>
                         <hr>
                         <p> The High Score will be displayed under player name after answering final question. <br>
-
                         <p>Answers - Correct answers will display with green background and an incorrect selection will
                             display with red background. <br>
-
                         <p> Select your category and difficulty level.</p> <br>
                         <p>When you ready, click the "Start" button to start the Quiz.
-
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <!--Final Score Modal-->
-        <!-- Button trigger modal -->
         <div class="modal fade" id="finalModal" tabindex="-1" aria-labelledby="finalModal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog modal-dialog-center modal-fullscreen-sm-down">
                 <div class="modal-content qz-Modal--bg">
@@ -200,9 +187,10 @@
                 </div>
             </div>
         </div>
+    </section>
     </main>
         <!-- Footer with GitHub icon and email link to contact-->
-        <footer class="footer mt-auto py-3"id="qz-footer">
+        <footer class="footer mt-auto py-3" id="qz-footer">
             <div class="container-fluid">
                 <div class="row ">
                     <div class="col-12 col-lg-4 text-center text-lg-left mail">
@@ -215,21 +203,20 @@
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-right GitHub">
                         <a href="https://github.com/mateuszniechwiej" target="_blank" rel="noopener"><i
-                                class="fab fa-github" aria-label="GitHub"></i></a>
+                                class="fab fa-github"></i>
+                                <span class="sr-only">Link to GitHub account</span></a>
                     </div>
                 </div>
             </div>
         </footer>
-
-    </section>
-    <!----- Audio ----->
+    <!--Audio-->  
     <audio id="btnClick" src="assets/audio/click.mp3"></audio>
     <audio id="incorrect" src="assets/audio/incorrect.wav"></audio>
     <audio id="correct" src="assets/audio/correct.wav"></audio>
     <audio id="finalSound" src="assets/audio/final_success.wav"></audio>
     <audio id="fanfare" src="assets/audio/tada.mp3"></audio>
     <audio id="noPoints" src="assets/audio/noPoints.wav"></audio>
-    <!----- Scripts ------>
+    <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -237,7 +224,6 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script src="assets/js/settings.js"></script>
-    <!-- <script src="assets/js/modals.js"></script> -->
     <script src="assets/js/user.js"></script>
     <script src="assets/js/fetch.js"></script>
     <script src="assets/js/game.js"></script>

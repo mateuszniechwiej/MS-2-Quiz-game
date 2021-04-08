@@ -388,7 +388,7 @@ This website is for Milestone Project 2 .Build with HTML,CSS and JavaScript.
 
 CSS Validator - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - PASS
 
-[Report PDF](assets/README/Css_Validator.pdf)
+[CSS Validation PDF](assets/README/Css_Validator.pdf)
 
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -403,6 +403,8 @@ Comments: 1 error found - code was not needed and delated.
 ### HTML Validator - Test
 
 HTML Validator - [W3C HTML Validator](https://validator.w3.org/) - PASS
+
+[HTML Validation PDF](assets/README/HTML_Validator.pdf)
 
  Comments: Errors and warnings have been and fixed.
 
