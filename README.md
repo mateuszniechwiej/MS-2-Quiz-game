@@ -6,7 +6,7 @@
 This project was created for Milestone Project 2("Code Institute"). It was build using HTML5, CSS,  and JavaScript.
 
 
-![Quiz Game](assets/images/Mock_up.png)
+![Quiz Game](assets/images/Mockup.PNG)
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 
 :page_facing_up: [GitHub repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
