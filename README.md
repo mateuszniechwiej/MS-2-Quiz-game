@@ -6,7 +6,7 @@
 This project was created for Milestone Project 2("Code Institute"). It was build using HTML5, CSS,  and JavaScript.
 
 
-![Quiz Game](assets/images/Mockup.PNG)
+![Quiz Game](assets/README/Mockup.PNG)
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 
 :page_facing_up: [GitHub repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
@@ -50,7 +50,6 @@ This project was created for Milestone Project 2("Code Institute"). It was build
     - [For Tablet:](#for-tablet)
     - [For Desktop:](#for-desktop)
   - [Performance](#performance)
-    - [To improve and check performance for this website I used Lighthouse, which is part of [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).](#to-improve-and-check-performance-for-this-website-i-used-lighthouse-which-is-part-of-chrome-developer-tools)
   - [Colour Contrast](#colour-contrast)
   - [Functionality](#functionality)
   - [Issues](#issues)
@@ -112,7 +111,7 @@ This project was created for Milestone Project 2("Code Institute"). It was build
 # Project Workflow
  * To organise the project work - Jira project management toowas used:
   
-![JIRA](assets/Jira.PNG)
+![JIRA](assets/README/Jira.PNG)
   
   
 # UX   
@@ -263,9 +262,15 @@ A solution to satisfy user requirements:
 
 ### Wireframes
 
-:point_right: [Wireframes for mobile and desktop](https://xd.adobe.com/view/f1ba91b2-e0a0-438a-a80e-afe3e5ae5ee1-a4e9/)
+:point_right: [Wireframes for mobile, tablet and desktop](https://xd.adobe.com/view/f1ba91b2-e0a0-438a-a80e-afe3e5ae5ee1-a4e9/)
 
-:point_right: [Wireframes - pdf] - to be added !!!!
+ :point_down: 
+
+ * [Wireframes mobile pdf](assets/README/mobile.pdf)
+ * [Wireframes tablet pdf](assets/README/tablet.pdf)
+ * [Wireframes desktop pdf](assets/README/desktop.pdf)
+
+ 
 
 
 ## The Surface Plane
@@ -274,10 +279,9 @@ A solution to satisfy user requirements:
 
 ### Colour Scheme
 
-* Extracted colours by using Adobe Color from the background image were used in this project.
+* Used Adobe Color to chose the colour pallete.
+![Colour Pallete](assets/README/colours.jpeg)
 
-
-![Colour Pallete](assets/images/colours.jpeg)
 ### Typography
 
 
@@ -444,7 +448,7 @@ Also, friends and family were asked to test this website and I did not receive a
 ## Performance
 ### To improve and check performance for this website I used [Lighthouse](https://developers.google.com/web/tools/lighthouse), which is part of [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).
 
-![Lighthouse Test](assets/images/lighthouse.png)
+![Lighthouse Test](assets/README/lighthouse.png)
 
 ## Colour Contrast
 * By using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) colour contrast was tested:
