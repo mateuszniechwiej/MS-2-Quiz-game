@@ -40,8 +40,8 @@ h2 span {
 /*----------------Navbar-------------- */
 
 #logo {
-  width: 90px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 .qz-navbar {
   background-color: #000;
@@ -49,6 +49,7 @@ h2 span {
   margin-bottom: 5rem;
 }
 .qz-navbar i {
+  font-size: 3.5rem;
   color: #f2f2f2;
 }
 button i:hover {
@@ -59,7 +60,7 @@ button i:hover {
 /*------------ Game HUD & settings------------- */
 
 #gameDashboard {
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 .qz-hud {
   margin-top: 1rem;
