@@ -471,7 +471,7 @@ Also, friends and family were asked to test this website and I did not receive a
 ## Performance
 ### To improve and check performance for this website I used [Lighthouse](https://developers.google.com/web/tools/lighthouse), which is part of [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).
 
-![Lighthouse Test](assets/README/lighthouse.png)
+![Lighthouse Test](assets/README/lighthouse.PNG)
 
 ## Colour Contrast
 * By using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) colour contrast was tested:
