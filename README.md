@@ -393,7 +393,7 @@ One image used as a background in this project
 * [Favicon](https://favicon.io/) - to create a favicon for this Website.
 
 * [online-audio-converter](https://online-audio-converter.com/) - to convert files to mp3.
-* [techsini](https://techsini.com/) - To generate website mock-up for README file.
+* [techsini](https://techsini.com/) - To generate website mock-up .
 
 
 
