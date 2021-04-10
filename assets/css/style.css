@@ -40,17 +40,20 @@ h2 span {
 /*----------------Navbar-------------- */
 
 #logo {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 60px;
 }
 .qz-navbar {
-  background-color: #f26b1d;
+  background-color: #000;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 5rem;
 }
+.qz-navbar i {
+  color: #f2f2f2;
+}
 button i:hover {
   transition: 1s;
-  color: #f2f2f2;
+  color: #F2B90F;
 }
 
 /*------------ Game HUD & settings------------- */
@@ -62,7 +65,7 @@ button i:hover {
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 1.5rem;
-  background: #f26b1d;
+  background: #F2B90F;
   background-clip: content-box;
 }
 .qz-hud h2 {
@@ -80,8 +83,9 @@ select {
   border: 2px solid #011526;
   border-radius: 5%;
   height: 35px;
-  background: #fed403;
+  background: #F2B90F;
 }
+
 /*----------Game live score & progressbar -----*/
 
 #start,
@@ -90,14 +94,14 @@ select {
   font-size: 2rem;
   width: 15rem;
   height: 4rem;
-  background-color: #f26b1d;
+  background-color: #F2B90F;
   color: #000;
 }
 #start:hover,
 #start:focus {
   animation: pulse 2s;
-  border-color: #f26b1d;
-  box-shadow: 0 0 3rem rgba(242, 107, 29, 0.4);
+  border-color: #F2B90F;
+  box-shadow: 0 0 3rem rgba(210, 29, 242, 0.4);
 }
 .progress-wraper {
   max-width: 80%;
@@ -112,7 +116,7 @@ select {
   font-size: 1.5rem;
   font-weight: 500;
   width: 0%;
-  background-color: #f26b1d;
+  background-color: #7957F2;
 }
 .hScore {
   display: inline-block;
@@ -124,7 +128,7 @@ select {
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
-  background-color: #fed403;
+  background-color: #F2B90F;
   padding: 0.5rem;
   border: 2px solid #011526;
 }
@@ -150,8 +154,8 @@ select {
   border-radius: 1.5rem;
   margin-bottom: 1rem;
   width: 100%;
-  border: 0.2rem solid #011526;
-  background-color: #fed403;
+  border: 0.2rem solid #141A40;
+  background-color: #F2B90F;
 }
 
 .answers-container:hover {
@@ -181,7 +185,7 @@ select {
 }
 
 #question {
-  background: #f26b1d;
+  background: #7957F2;
   padding: 1rem;
   border: 2px solid #000;
   border-radius: 0.5rem;
@@ -189,14 +193,14 @@ select {
 
 i,
 a {
-  color: #011526;
+  color: #141A40;
   font-size: 3rem;
 }
 
 /*-------------------Modals-------------------*/
 
 .qz-Modal--bg {
-  background: #f26b1d;
+  background: #F2B90F;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -212,7 +216,7 @@ a {
   font-size: 2.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #f26b1d;
+  color: #7957F2;
   background-color: #011526;
 }
 
@@ -238,12 +242,12 @@ a {
 
 #submitName:hover {
   transition: 0.5s;
-  color: #f26b1d;
-  border: 1px solid #f26b1d;
+  color: #7957F2;
+  border: 1px solid #7957F2;
 }
 
 button.close span {
-  color: #011526;
+  color: #141A40;
   font-weight: 800;
   text-shadow: none;
   font-family: "Open Sans", sans-serif;
@@ -257,7 +261,7 @@ button.close {
 
 button.close span:hover {
   transition: 0.5s;
-  color: #fff;
+  color: #8b0017;
 }
 button.close:focus {
   outline: none;
@@ -267,30 +271,31 @@ button.close:focus {
 
 .copy p {
   font-size: 2rem;
-  font-weight: 500;
-  color: #f2f2f2;
+  font-weight: 600;
+  color: #F2f2f2;
 }
 .mail i,
 .mail span {
-  color: #f2f2f2;
+  color:#F2f2f2;
   font-size: 2rem;
+  font-weight: 600;
   text-decoration: none;
 }
 .mail span:hover,
 .mail a:hover {
   transition: 1s;
   text-decoration: none;
-  color: #f26b1d;
+  color: #7957F2;
 }
 
 .GitHub i {
-  color: #f2f2f2;
+  color: #F2f2f2;
 }
 
 .GitHub i:hover {
   transition: 1s;
   font-size: 4rem;
-  color: #f26b1d;
+  color: #7957F2;
 }
 
 /*------------ add and remove classes---------- */

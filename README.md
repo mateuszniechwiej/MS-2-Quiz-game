@@ -373,7 +373,9 @@ One image used as a background in this project
 * [Adobe Xd](https://www.adobe.com/ie/products/xd/wireframing-tool.html#:~:text=Adobe%20XD%20is%20a%20powerful,all%20in%20one%20design%20tool.) - to create wireframes
 * [Adobe Colour](https://color.adobe.com/create/color-wheel) - for colour palette used in this project.
 * [Adobe Photoshop Express](https://photoshop.adobe.com/?promoid=SYBNM1DC&mv=other) - To crop the full page background image.
-* [JPEG-OPTIMIZER](http://jpeg-optimizer.com/) - optimized the size of images used in this project
+
+* [Canva](https://www.canva.com/) - to creat logo for the game.
+ * [JPEG-OPTIMIZER](http://jpeg-optimizer.com/) - optimized the size of images used in this project
 * [tinypng](https://tinypng.com/) - optimized Mockup.png for README
   
 * [Google Fonts](https://fonts.google.com/)- to import 'Exo 2' and 'Open Sans' fonts used in this project.
@@ -538,7 +540,6 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
 
-* <a href="https://www.vecteezy.com/free-vector/quiz">Quiz Vectors by Vecteezy</a>- icon downloaded to for favicon and game logo. 
 * <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
 * <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline - www.freepik.com</a> - use for background image.
 ## Code
