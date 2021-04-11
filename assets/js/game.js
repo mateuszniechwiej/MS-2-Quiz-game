@@ -85,6 +85,8 @@ const getNextQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset.number;
         choice.innerText = decodeURIComponent(displayedQuestion["choice" + number]);
+        if (choice.innerText === decodeURIComponent(displayedQuestion.correct_answer))
+            choice.setAttribute("id", "correct_answer")
     });
 
     //sync counter Question with progress bar
@@ -103,7 +105,7 @@ const selectingChoice = () => {
 
             acceptingAnswer = false;
             const selectedChoice = e.target;
-
+            const correctAnswer = document.querySelector('#correct_answer');
             const answerClass =
                 selectedChoice.textContent === decodeURIComponent(displayedQuestion.correct_answer) ? "correct" : "incorrect";
 
@@ -116,6 +118,7 @@ const selectingChoice = () => {
                     correctSound.play();
                 }
             } else {
+                correctAnswer.parentElement.classList.add('correct')
                 if (document.querySelector(".fa-volume-up ")) {
                     if (!incorrectSound || !correctSound) return;
                     incorrectSound.currentTime = 0;
@@ -124,10 +127,11 @@ const selectingChoice = () => {
             }
             selectedChoice.parentElement.classList.add(answerClass); //targetting parent element to get background colour change
             setTimeout(() => {
+                correctAnswer.parentElement.classList.remove('correct')
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 500);
+            }, 700);
         });
     });
 };
