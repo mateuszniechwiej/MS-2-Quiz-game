@@ -49,7 +49,7 @@ h2 span {
   margin-bottom: 5rem;
 }
 .qz-navbar i {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #f2f2f2;
 }
 button i:hover {
@@ -293,8 +293,9 @@ button.close:focus {
   color: #F2f2f2;
 }
 
-.GitHub i:hover {
-  transition: 1s;
+.GitHub i:hover,
+.mail i:hover {
+  transition: 1.5s;
   font-size: 4rem;
   color: #7957F2;
 }

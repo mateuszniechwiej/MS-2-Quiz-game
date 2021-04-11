@@ -72,7 +72,6 @@ const getNextQuestion = () => {
     question.innerText =`${counterQuestion}. ${decodeURIComponent(displayedQuestion.question)}` ; //displaying question by calling question property
 
     const possibleAnswers = displayedQuestion.possible_answers;
-
     possibleAnswers.forEach((answer, index) => {
         const alphabet = ["A", "B", "C", "D"];
         answer = answers.innerHTML += `
@@ -128,7 +127,7 @@ const selectingChoice = () => {
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 250);
+            }, 500);
         });
     });
 };
