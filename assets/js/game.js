@@ -118,7 +118,7 @@ const selectingChoice = () => {
                     correctSound.play();
                 }
             } else {
-                correctAnswer.parentElement.classList.add('correct')
+                correctAnswer.parentElement.classList.add('correct');
                 if (document.querySelector(".fa-volume-up ")) {
                     if (!incorrectSound || !correctSound) return;
                     incorrectSound.currentTime = 0;
@@ -127,7 +127,7 @@ const selectingChoice = () => {
             }
             selectedChoice.parentElement.classList.add(answerClass); //targetting parent element to get background colour change
             setTimeout(() => {
-                correctAnswer.parentElement.classList.remove('correct')
+                correctAnswer.parentElement.classList.remove('correct');
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();

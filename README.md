@@ -2,18 +2,22 @@
 # QUIZ GAME
 
 ### ABOUT 
+This project is a Quiz Game with questions and answers fetched from an API.
+The user will be able to choose between four categories and three difficulty levels.
+There are 10 questions per game with multiple and/or true or false answers.
+User will be able to see the highest Score and the name he typed in the game display HUD.
+ 
+This project is created for Milestone Project 2 ("Code Institute"). It was build using HTML5, CSS,  and JavaScript.
 
-This project was created for Milestone Project 2("Code Institute"). It was build using HTML5, CSS,  and JavaScript.
 
 
-![Quiz Game](assets/README/Mockup.PNG)
+![Quiz Game](assets/README_media/Mockup.PNG)
 :globe_with_meridians: [Live website](https://mateuszniechwiej.github.io/MS-2-Quiz-game/)
 
 :page_facing_up: [GitHub repository](https://github.com/mateuszniechwiej/MS-2-Quiz-game)
 
 # Table of Contest
 
-- [Table of Contest](#table-of-contest)
 - [Project Workflow](#project-workflow)
 - [UX](#ux)
   - [The Strategy Plane](#the-strategy-plane)
@@ -97,6 +101,7 @@ This project was created for Milestone Project 2("Code Institute"). It was build
     - [For Desktop:](#for-desktop)
   - [Performance](#performance)
   - [Colour Contrast](#colour-contrast)
+  - [Testing user stories](#Testing-user-stories)
   - [Functionality](#functionality)
 - [Deployment](#deployment)
   - [Project Initiation](#project-initiation)
@@ -111,14 +116,14 @@ This project was created for Milestone Project 2("Code Institute"). It was build
 # Project Workflow
  * To organise the project work - Jira project management toowas used:
   
-![JIRA](assets/README/Jira.PNG)
+![JIRA](assets/README_media/Jira.PNG)
   
   
 # UX   
 
 ## The Strategy Plane
   ### Project Goal 
-  The primary goal of this project is to create an easily navigated and entertaining Quiz Game for my Milestone Projexct 2 at Code Institute.
+  The primary goal of this project is to create an easily navigated and entertaining Quiz Game for my Milestone Project 2 at Code Institute.
   This game is designed for users of all age groups build using Html, CSS, and JavaScript.
 
   ### Site Goals
@@ -151,11 +156,11 @@ This project was created for Milestone Project 2("Code Institute"). It was build
 
   * As a new user, I want to be able to turn sound on/off anytime during the time I visit the website.
 
-  * As a new user, I want to see the form of progress through th quiz.
+  * As a new user, I want to see the form of progress during game.
 
-  * As a new user, I want to be able to see if my answer was correct or false during the game.
+  * As a new user, I want to be able to see if my answer was correct or false during the game and.
 
-  * As a new user, I want to get the final score of my quiz and be able to see my previous result.
+  * As a new user, I want to get the final score of my quiz.
 
   * As a new user, I want to be able to easily start a new quiz.
 
@@ -199,7 +204,7 @@ A solution to satisfy user requirements:
 
 > As a new user, I want to be able to input my name to collect high scores.
 A solution to satisfy user requirements:
-  * When the website starts a modal to input name will be displayed unless the name already present in local storage(in this case player name will be automatically assigned from local storage). 
+  * When the website starts a modal to input name will be displayed unless the name already presents in local storage (in this case player name will be automatically assigned from local storage). 
 
 > As a new user, I want to find clear instructions on how to play the game.
 
@@ -236,7 +241,7 @@ A solution to satisfy user requirements:
 * After every question, the correct answer will have a green background on the button and the user wrong answer button will get the red background.
 * Current score result displayed in the quiz section.
 
-> As a new user, I want to get the final score of my quiz and be able to see my previous result.
+> As a new user, I want to get the final score.
 
 A solution to satisfy user requirements:
 * After the quiz finished a modal with the final score displayed.
@@ -247,7 +252,7 @@ A solution to satisfy user requirements:
 A solution to satisfy user requirements:
 * After every game user will be easy to start again the game by choosing level difficulty again.
 
-> As a new user, I want to be able to contact the owner of the website and see if the developer created other projects I might be interested in.
+> As a new user, I want to be able to contact the owner of the website and see if the developer created other projects,I might be interested in.
 
 A solution to satisfy user requirements:
 * In the footer GitHub icon linked to the GitHub username site provided.
@@ -266,11 +271,11 @@ A solution to satisfy user requirements:
 
  :point_down: 
 
- * [Wireframes mobile pdf](assets/README/mobile.pdf)
- * [Wireframes tablet pdf](assets/README/tablet.pdf)
- * [Wireframes desktop pdf](assets/README/desktop.pdf)
+ * [Wireframes mobile pdf](assets/README_media/mobile.pdf)
+ * [Wireframes tablet pdf](assets/README_media/tablet.pdf)
+ * [Wireframes desktop pdf](assets/README_media/desktop.pdf)
 
-### Diference to design:
+### Differences to design:
 For all screen sizes:
 1. When game start username, High Score, categories and difficulty are not displayed.
 Comments: It was decided after feedback that that would increase user experience with better content readability.
@@ -278,14 +283,14 @@ Comments: It was decided after feedback that that would increase user experience
 Comments: Taking less viewing browser viewing space
 3. Not using next question buttons:
 Comments: It is more practically to jump to the next question after selecting an answer.
-4. minor difference in footer with email,copyrights and github icon.
+4. minor difference in footer with email, copyrights and github icon.
 
 For screens >= 576px : 
-1. Current score display located above question :
+1. Current score display located above question:
 
 Comment: It's easier to follow the score.
 
-2. Two answer choices beside each others:
+2. Two answer choices beside each other's:
 
 Comment: For visual purposes, it looks better on bigger screens to have two answers 
 choices per row.
@@ -297,8 +302,8 @@ choices per row.
 
 ### Colour Scheme
 
-* Used Adobe Color to chose the colour pallete.
-![Colour Pallete](assets/README/colours.jpeg)
+* Used Adobe Color to choose the colour pallet.
+![Colour Pallet](assets/README_media/colours.jpeg)
 
 ### Typography
 
@@ -306,7 +311,7 @@ choices per row.
  :black_nib:
 
 * The primary font used in this project is **Exo 2** with *sans-serif* as a fallback font. This font was chosen for this project because it gives a futuristic feeling while keeping an elegant design and delivering great readability.
-* The secondary font used for this website is **Open Sans**  with *sans-serif* as a fallback font.This font is elegant and modern. It offers an excellent reading experience.
+* The secondary font used for this website is **Open Sans**  with *sans-serif* as a fallback font. This font is elegant and modern. It offers an excellent reading experience.
 
 ### Imagery
 One image used as a background in this project
@@ -335,7 +340,7 @@ One image used as a background in this project
 :four: Active Game features:
  * progress bar displaying current question in the game.
  * current score display (to the right on desktop devices, above questions on mobiles).
- * correct/incorrect - selected answer changing background colours(red for wrong answer and green for good choice). 
+ * correct/incorrect - selected answer changing background colours (red for wrong answer and green for good choice). 
  * final modal displaying scores with three different messages with unique sound effects depending on the final score.
 
 :five: Footer :
@@ -372,9 +377,9 @@ One image used as a background in this project
   
 * [Adobe Xd](https://www.adobe.com/ie/products/xd/wireframing-tool.html#:~:text=Adobe%20XD%20is%20a%20powerful,all%20in%20one%20design%20tool.) - to create wireframes
 * [Adobe Colour](https://color.adobe.com/create/color-wheel) - for colour palette used in this project.
-* [Adobe Photoshop Express](https://photoshop.adobe.com/?promoid=SYBNM1DC&mv=other) - To crop the full page background image.
+* [Adobe Photoshop Express](https://photoshop.adobe.com/?promoid=SYBNM1DC&mv=other) - To crop the full-page background image.
 
-* [Canva](https://www.canva.com/) - to creat logo for the game.
+* [Canva](https://www.canva.com/) - to create logo for the game.
  * [JPEG-OPTIMIZER](http://jpeg-optimizer.com/) - optimized the size of images used in this project
 * [tinypng](https://tinypng.com/) - optimized Mockup.png for README
   
@@ -399,10 +404,10 @@ One image used as a background in this project
 
 # Testing
 
-This website is for Milestone Project 2 .Build with HTML,CSS and JavaScript.
+This website is for Milestone Project 2. Build with HTML, CSS and JavaScript.
 
 ### The test is covering:
-1. Html,Css  and Js validation
+1. Html, CSS  and JavaScript validation.
 2. Testing website responsiveness on devices from 280px width- elements should not overlap each other 
 3. Website performance and best practise
 4. Visual aspects of the website: fonts and colour contrast
@@ -415,7 +420,7 @@ This website is for Milestone Project 2 .Build with HTML,CSS and JavaScript.
 
 CSS Validator - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - PASS
 
-[CSS Validation PDF](assets/README/Css_Validator.pdf)
+[CSS Validation PDF](assets/_media/Css_Validator.pdf)
 
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -431,7 +436,7 @@ Comments: 1 error found - code was not needed and delated.
 
 HTML Validator - [W3C HTML Validator](https://validator.w3.org/) - PASS
 
-[HTML Validation PDF](assets/README/HTML_Validator.pdf)
+[HTML Validation PDF](assets/README_media/HTML_Validator.pdf)
 
  Comments: Errors been and fixed
 
@@ -439,7 +444,7 @@ HTML Validator - [W3C HTML Validator](https://validator.w3.org/) - PASS
 
 JS Validator  - [JSHint Validator](https://jshint.com/) - PASS
 
- Comments: Add missing semicolons and fix warning("is better use in dot notation").
+ Comments: Add missing semicolons and fix warning ("is better use in dot notation").
 
 ## Browsers Testing ... to be finished 
 |Screen size\Browser |Chrome            |Opera             |Edge              |Firefox           |Safari            
@@ -461,7 +466,7 @@ Surface Book in tablet view - Chrome, Opera, Firefox, Edge (screen size - 13.5- 
   2. Surface Book on the second monitor DELL U2419H(screen size - 24-inch)
    
   Tested on  Chrome, Opera, Firefox and Microsoft Edge
-* MacBook pro 13 :
+* MacBook pro 13:
   * Tested on Safari and Chrome browser.
 
   
@@ -471,12 +476,12 @@ Also, friends and family were asked to test this website and I did not receive a
 ## Performance
 ### To improve and check performance for this website I used [Lighthouse](https://developers.google.com/web/tools/lighthouse), which is part of [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).
 
-![Lighthouse Test](assets/README/lighthouse.PNG)
+![Lighthouse Test](assets/README_media/lighthouse.PNG)
 
 ## Colour Contrast
 * By using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) colour contrast was tested:
 
-1. On the this project website right click on the pc mouse
+1. On this project website right click on the pc mouse
 
 2. Press - "Inspect"
 
@@ -485,7 +490,34 @@ Also, friends and family were asked to test this website and I did not receive a
 4. Move the mouse cursor over elements to see under Accessibility->Contrast the result.
 
 * All Html elements on the Quiz page were tested and contrast was correct.
+## Testing user stories:
+![Test](/assets/_media/test.png)
 
+  * As a new user, I want to understand the purpose of this website. - TC010
+
+  * As a new user, I want to find clear instructions on how to play the game. - TC006
+
+  * As a new user, I want to find an intuitive game with easy to see and press buttons. - TC002,TC003,TC004,TC005
+
+  * As a new user, I want to be able to input my name to collect high scores. - TC001
+
+  * As a new user, I want to be able to select the difficulty level of the game. - TC003
+
+  * As a new user, I want to choose a quiz category. - TC003
+
+  * As a new user, I want to be able to turn sound on/off anytime during the time I visit the website. - TC007
+
+  * As a new user, I want to see the form of progress during game. - TC004
+
+  * As a new user, I want to be able to see if my answer was correct or false during the game and. - TC004
+
+  * As a new user, I want to get the final score of my quiz. - TC005, TC008
+
+  * As a new user, I want to be able to easily start a new quiz. - TC002, TC003 ,TC008
+
+  * As a new user, I want to be able to contact the owner of the website and see if the developer created other projects, I might be interested in.  - TC009
+
+* [Detailed user stories test in excel file](/assets/README_media/users.xlsx)
 
 ## Functionality 
 **Homepage**:
@@ -493,7 +525,7 @@ Also, friends and family were asked to test this website and I did not receive a
 ## Issues
     1.Encoding issue on some questions and answers fetched from Open Trivia API
   *  <del>partly resolved</del> 
-  * <del>solution explanation - by using Base64 encoding ,and then use atob() to decode questions and choices.(impoved however some answers choices still wrongly disoplayed).</del>
+  * <del>solution explanation - by using Base64 encoding, and then use atob() to decode questions and choices.(impoved however some answers choices still wrongly disoplayed).</del>
   * resolved
   * solution explained - change to URL Encoding (3986) and then decode to display by using decodeURIComponent() .
 
@@ -514,7 +546,7 @@ Also, friends and family were asked to test this website and I did not receive a
 
 ## Project Initiation
  This project was created using the following steps:
-1. Open Github in the browser and sign in to my account.
+1. Open GitHub in the browser and sign in to my account.
 2. Click on **Repositories**
 3. Press **New**
 4. Choose [Code Institute Temple](https://github.com/Code-Institute-Org/gitpod-full-template)
@@ -541,7 +573,7 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 # Credits
 
 * <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
-* <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline - www.freepik.com</a> - use for background image.
+
 ## Code
 * Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
 * [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
@@ -557,3 +589,10 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
   
 
 ## Acknowledgements
+* My mentor, **_Maranatha Ilesanmi_** for advice, guidance and support on this project.
+* **_Daisy Mc Girr_**(Code Institute student) for:
+  * webinar on Testing.
+* **_Thiago Santos_**(Code Institute student) for:
+  * leading Java Script study group.
+* **Slack Community** - for feedback on my project.
+* **My friends and family** - for giving feedback on my project and testing this website.
