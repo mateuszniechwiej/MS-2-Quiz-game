@@ -102,8 +102,7 @@ const selectingChoice = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
             if (!acceptAnswer) return;
-
-            acceptingAnswer = false;
+            acceptAnswer = false;
             const selectedChoice = e.target;
             const correctAnswer = document.querySelector('#correct_answer');
             const answerClass =

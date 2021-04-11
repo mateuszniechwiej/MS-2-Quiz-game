@@ -491,6 +491,7 @@ Also, friends and family were asked to test this website and I did not receive a
 
 * All Html elements on the Quiz page were tested and contrast was correct.
 ## Testing user stories:
+----Test Case----------------------Description
 ![Test](/assets/README_media/test.png)
 
   * As a new user, I want to understand the purpose of this website. - TC010
@@ -572,13 +573,12 @@ This website was published using [GitHub Pages](https://pages.github.com/) by:
 6. Click on the newly created link with the live page. (it can take a few minutes for the site to be published).
 # Credits
 
-* <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
-
 ## Code
 * Udemy tutorial *"Build a Quiz App with HTML, CSS, and JavaScript"* created by James Quick
 * [CSS-Tricks](https://css-tricks.com/perfect-full-page-background-image/) - learned how to find set up for full page background image.
 * [Bootsrap examples](https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/) - learn how to make bootstrap sticky footer with fixed navbar.
 * [JS30-"Drum_Kit"](https://javascript30.com/) -learned how to allow sound play after fast answers click in Quiz.
+* <a href="https://codepen.io/giana/pen/BZaGyP">Raise Button Effect</a> - use the efect for answer choices in the game.
 * [Bootstrap library](https://getbootstrap.com/) - used to create a responsive design
 
 ## Media
