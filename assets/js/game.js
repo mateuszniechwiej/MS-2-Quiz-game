@@ -86,7 +86,7 @@ const getNextQuestion = () => {
         const number = choice.dataset.number;
         choice.innerText = decodeURIComponent(displayedQuestion["choice" + number]);
         if (choice.innerText === decodeURIComponent(displayedQuestion.correct_answer))
-            choice.setAttribute("id", "correct_answer")
+            choice.setAttribute("id", "correct_answer");
     });
 
     //sync counter Question with progress bar
@@ -113,25 +113,25 @@ const selectingChoice = () => {
                 score += bonus;
                 currentScore.innerText = score;
                 if (document.querySelector(".fa-volume-up ")) {
-                    if (!incorrectSound || !correctSound) return;// stop sound going togheter
+                    if (!incorrectSound || !correctSound) return;
                     correctSound.currentTime = 0;
                     correctSound.play();
                 }
             } else {
-                correctAnswer.parentElement.classList.add('correct');
                 if (document.querySelector(".fa-volume-up ")) {
                     if (!incorrectSound || !correctSound) return;
                     incorrectSound.currentTime = 0;
                     incorrectSound.play();
                 }
             }
-            selectedChoice.parentElement.classList.add(answerClass); //targetting parent element to get background colour change
+            correctAnswer.parentElement.classList.add('correct');
+            selectedChoice.parentElement.classList.add(answerClass); 
             setTimeout(() => {
                 correctAnswer.parentElement.classList.remove('correct');
                 selectedChoice.parentElement.classList.remove(answerClass);
                 answers.innerHTML = "";
                 getNextQuestion();
-            }, 700);
+            }, 600);
         });
     });
 };
