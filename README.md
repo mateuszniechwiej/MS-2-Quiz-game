@@ -491,7 +491,7 @@ Also, friends and family were asked to test this website and I did not receive a
 
 * All Html elements on the Quiz page were tested and contrast was correct.
 ## Testing user stories:
-![Test](/assets/_media/test.png)
+![Test](/assets/README_media/test.png)
 
   * As a new user, I want to understand the purpose of this website. - TC010
 
@@ -517,7 +517,7 @@ Also, friends and family were asked to test this website and I did not receive a
 
   * As a new user, I want to be able to contact the owner of the website and see if the developer created other projects, I might be interested in.  - TC009
 
-* [Detailed user stories test in excel file](/assets/README_media/users.xlsx)
+* [Detailed user stories test in Excel file](/assets/README_media/users.xlsx)
 
 ## Functionality 
 **Homepage**:
