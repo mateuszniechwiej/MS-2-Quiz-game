@@ -58,7 +58,6 @@ This project is created for Milestone Project 2 ("Code Institute"). It was build
   - [Functionality](#functionality)
   - [Issues](#issues)
 - [Deployment](#deployment)
-    - [This website was developed using GitPod and VSCode, with a repository hosted on GitHub.](#this-website-was-developed-using-gitpod-and-vscode-with-a-repository-hosted-on-github)
   - [Project Initiation](#project-initiation)
   - [Local Clone](#local-clone)
   - [GitHub Pages](#github-pages)
