@@ -26,8 +26,6 @@ const checkUserData = () => {
 
 const setHighScore = () => {
     let gameScore = parseInt(currentScore.innerText);
-    console.log(gameScore);
-    console.log(gameScore > parseInt(userHighScore.innerText));
     if (gameScore > userHighScore.innerText && gameScore !== undefined) {
         finalLabel.innerText = "CONGRATULATIONS!!!";
         finalScore.innerText = `NEW HIGH SCORE!!! You scored ${gameScore} points`;
@@ -57,8 +55,8 @@ const userNameSubmit = () => {
     user = document.querySelector("#user").value;
     localStorage.setItem("user", user);
 
-    if (user) $("#playerModal").modal("hide"); //if there is some user input allow to close modal
-    displayUsernameInfo(); // function to display user data on dashboard
+    if (user) $("#playerModal").modal("hide"); 
+    displayUsernameInfo(); 
 };
 
 const displayUsernameInfo = () => {
@@ -104,7 +102,7 @@ const userInput = document.querySelector("#user");
 
 userInput.addEventListener("keypress", (e) => {
     if (e.which === 13) {
-        e.preventDefault(); //added to keep to behave the same as click event
+        e.preventDefault(); 
         userNameSubmit();
     }
 });

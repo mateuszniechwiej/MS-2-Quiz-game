@@ -57,7 +57,7 @@ const getNextQuestion = () => {
     //temprorary setting quiz after questions finish to refresh page so game starts again
     if (availableQuestions.length === 0) {
         question.innerHTML = "";
-        $('#finalModal').modal('show');        
+        $('#finalModal').modal('show');
         setHighScore();
         gameDashboard.classList.remove("display");
         return;
@@ -69,7 +69,7 @@ const getNextQuestion = () => {
 
     const indexQuestion = Math.floor(Math.random() * availableQuestions.length); //to get random number depending on number questions available
     displayedQuestion = availableQuestions[indexQuestion]; // displaying random order question
-    question.innerText =`${counterQuestion}. ${decodeURIComponent(displayedQuestion.question)}` ; //displaying question by calling question property
+    question.innerText = `${counterQuestion}. ${decodeURIComponent(displayedQuestion.question)}`; //displaying question by calling question property
 
     const possibleAnswers = displayedQuestion.possible_answers;
     possibleAnswers.forEach((answer, index) => {
@@ -124,7 +124,7 @@ const selectingChoice = () => {
                 }
             }
             correctAnswer.parentElement.classList.add('correct');
-            selectedChoice.parentElement.classList.add(answerClass); 
+            selectedChoice.parentElement.classList.add(answerClass);
             setTimeout(() => {
                 correctAnswer.parentElement.classList.remove('correct');
                 selectedChoice.parentElement.classList.remove(answerClass);
